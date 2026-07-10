@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Death Note Archive</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Metal+Mania&family=Kaisei+Tokumin:wght@400;700&family=Song+Myung&display=swap');
+    
+    body { 
+      font-family: 'Kaisei Tokumin', 'Song Myung', serif; 
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+    }
+    
+    ::selection {
+      background-color: #9b0000;
+      color: white;
+    }
+
+    /* 로딩 애니메이션 및 전환 효과 */
+    .fade-in { animation: fadeIn 0.5s ease-in-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-20">
+
+  <div class="sticky top-0 z-50 flex flex-col shadow-2xl">
+    <div class="bg-[#9b0000] text-[#0a0a0a] font-bold text-[9px] md:text-[10px] uppercase tracking-[0.3em] py-1.5 px-4 flex justify-between items-center w-full">
+      <span class="hidden sm:inline opacity-80">Kira Investigation Headquarters</span>
+      <span class="flex-1 text-center sm:flex-none">Classified Database // Terminal Active</span>
+      <span class="hidden sm:inline opacity-80">Authorization: L</span>
+    </div>
+    
+    <header class="bg-[#0a0a0a]/95 backdrop-blur-md border-b-2 border-[#9b0000]/50 px-4 py-3 flex items-center justify-between">
+      <h1 
+        class="text-xl md:text-2xl font-bold cursor-pointer tracking-tighter"
+        style="font-family: 'Metal Mania', cursive;"
+        onclick="app.goHome()"
+      >
+        DEATH NOTE <span class="text-[#9b0000] italic">ARCHIVE</span>
+      </h1>
+
+      <div class="flex items-center gap-2 md:gap-4">
+        <div class="hidden sm:flex items-center gap-2 bg-[#1a1a1a] px-3 py-1.5 rounded border border-[#333]">
+          <i data-lucide="filter" class="w-3.5 h-3.5 text-[#9b0000]"></i>
+          <select 
+            id="sort-select"
+            onchange="app.setSortOrder(this.value)"
+            class="bg-transparent text-[10px] md:text-xs font-bold text-[#aaa] outline-none cursor-pointer"
+          >
+            <option value="latest" class="bg-[#1a1a1a]">新しい順</option>
+            <option value="oldest" class="bg-[#1a1a1a]">古い順</option>
+            <option value="random" class="bg-[#1a1a1a]">ランダム</option>
+            <option value="name" class="bg-[#1a1a1a]">名前順</option>
+          </select>
+        </div>
+
+        <div class="hidden md:flex bg-[#1a1a1a] p-1 rounded border border-[#333] gap-1" id="view-mode-buttons">
+          <button id="btn-year" class="px-4 py-1 text-xs font-bold rounded transition-all bg-[#9b0000] text-white" onclick="app.setViewMode('year')">YEAR</button>
+          <button id="btn-creator" class="px-4 py-1 text-xs font-bold rounded transition-all text-[#777] hover:text-[#aaa]" onclick="app.setViewMode('creator')">CREATOR</button>
+        </div>
+
+        <div class="relative">
+          <i data-lucide="search" class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#555]"></i>
+          <input 
+            type="text"
+            id="search-input"
+            placeholder="Search..."
+            oninput="app.setSearchQuery(this.value)"
+            class="bg-[#1a1a1a] border border-[#333] text-xs px-9 py-2 rounded w-28 md:w-48 outline-none font-sans focus:border-[#9b0000] transition-colors" 
+          />
+        </div>
+        
+        <button onclick="app.fetchData()" class="p-2 bg-[#9b0000] rounded hover:bg-[#bf0000] transition-colors">
+          <i data-lucide="rotate-cw" id="reload-icon" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <main id="main-content" class="max-w-7xl mx-auto p-6"></main>
+  
+  <footer class="mt-20 py-10 text-center opacity-20 text-[9px] font-bold tracking-[0.4em] uppercase pointer-events-none">
+    Death Note Archive Project
+  </footer>
+
+  <script>
+    // --- Application Logic ---
+    const app = (function() {
+      const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwGmH1Hrr8RfKBsBzNIHEZ1LRp70cdSuR2S5hoxT5RBNxKbnDMQffZpkm1NVJjtdZ8zOA/exec";
+      const DEFAULT_PROFILE = "https://lh3.googleusercontent.com/d/1fsQCiwKwK-j-Qlcw6hFwlzqHmCtGs90F";
+
+      let state = {
+        loading: true,
+        rawData: { videoData: [], creatorMap: {}, profileMap: {} },
+        viewMode: 'year',
+        searchQuery: '',
+        selectedPlaylist: null,
+        activePlayers: {},
+        sortOrder: 'latest'
+      };
+
+      // 유틸리티 함수
+      const escapeHTML = (str) => {
+        if (!str) return '';
+        return str.replace(/[&<>'"]/g, 
+          tag => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            "'": '&#39;',
+            '"': '&quot;'
+          }[tag] || tag)
+        );
+      };
+
+      const extractYtId = (url) => {
+        if (!url) return null;
+        const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:v\/|u\/\w\/|embed\/|watch\?v=))([^#\&\?]*)/);
+        return (match && match[1].length === 11) ? match[1] : null;
+      };
+
+      const getThumbnail = (video) => {
+        if (!video) return '';
+        const arcId = video.archive_id || video.id;
+        if (arcId && arcId.length === 11) return `https://i.ytimg.com/vi/${arcId}/hqdefault.jpg`;
+        const ytOriginalId = video.yt_id || extractYtId(video.original_link);
+        if (ytOriginalId) return `https://i.ytimg.com/vi/${ytOriginalId}/hqdefault.jpg`;
+        if (video.nico_id) return `https://nicovideo.cdn.nimg.jp/thumbnails/${video.nico_id}/${video.nico_id}`;
+        return 'https://via.placeholder.com/300x170?text=NO+IMAGE';
+      };
+
+      // 데이터 처리
+      const getProcessedData = () => {
+        const cmap = state.rawData.creatorMap || {};
+        const pmap = state.rawData.profileMap || {};
+        const archive = Array.isArray(state.rawData.videoData) ? state.rawData.videoData : [];
+
+        const resolveName = (n) => {
+          if (!n) return "Unknown";
+          let curr = n.trim();
+          let visited = new Set();
+          while (cmap[curr] && !visited.has(curr)) {
+            visited.add(curr);
+            curr = cmap[curr].trim();
+          }
+          return curr;
+        };
+
+        const getRefinedDate = (v) => {
+          const d = String(v?.upload_date || "");
+          const m = d.match(/(\d{4})[\/\.-](\d{2})[\/\.-](\d{2})/);
+          if (m) return `${m[1]}/${m[2]}/${m[3]}`;
+          const m2 = d.match(/^(\d{4})(\d{2})(\d{2})$/);
+          if (m2) return `${m2[1]}/${m2[2]}/${m2[3]}`;
+          return "0000/00/00";
+        };
+
+        let yearGroups = {};
+        let creatorGroups = {};
+
+        archive.forEach(group => {
+          if (!group) return;
+          const yr = String(group.playlist_title || "Unknown").replace('年', '').replace('기타', 'UNKNOWN');
+          if (!yearGroups[yr]) yearGroups[yr] = [];
+
+          if (Array.isArray(group.videos)) {
+            group.videos.forEach(v => {
+              if (!v) return;
+              const mappedC = resolveName(v.creator);
+              const videoWithMeta = { ...v, mappedCreator: mappedC, refinedDate: getRefinedDate(v) };
+              yearGroups[yr].push(videoWithMeta);
+
+              if (!creatorGroups[mappedC]) {
+                creatorGroups[mappedC] = {
+                    videos: [],
+                    profile: pmap[mappedC] || pmap[v.creator] || DEFAULT_PROFILE
+                };
+              } else if (creatorGroups[mappedC].profile === DEFAULT_PROFILE && pmap[v.creator]) {
+                creatorGroups[mappedC].profile = pmap[v.creator];
+              }
+              creatorGroups[mappedC].videos.push(videoWithMeta);
+            });
+          }
+        });
+
+        const sortGroups = (groups, type) => {
+          let result = Object.keys(groups).map(k => {
+            const videos = (type === 'creator' ? groups[k].videos : [...groups[k]]);
+            const latestDate = videos.reduce((max, v) => (v.refinedDate > max ? v.refinedDate : max), "0000/00/00");
+            return {
+              playlist_title: k,
+              videos: videos,
+              profile: type === 'creator' ? groups[k].profile : null,
+              latestDate: latestDate
+            };
+          });
+
+          if (state.sortOrder === 'latest') result.sort((a, b) => b.latestDate.localeCompare(a.latestDate));
+          else if (state.sortOrder === 'oldest') result.sort((a, b) => a.latestDate.localeCompare(b.latestDate));
+          else if (state.sortOrder === 'name') result.sort((a, b) => a.playlist_title.localeCompare(b.playlist_title));
+          else if (state.sortOrder === 'random') result.sort(() => Math.random() - 0.5);
+          
+          return result;
+        };
+
+        return { year: sortGroups(yearGroups, 'year'), creator: sortGroups(creatorGroups, 'creator') };
+      };
+
+      // 렌더링 함수들
+      const renderVideoItem = (v, index) => {
+        const nicoId = v.nico_id;
+        const ytId = v.yt_id || extractYtId(v.original_link);
+        let arcId = (v.archive_id && v.archive_id !== "") ? v.archive_id : (v.id || null);
+        if (arcId === ytId) arcId = null;
+
+        const isYtOriginalViewable = v.is_viewable === true || (v.description || "").includes("視聴可能");
+        
+        let defaultSource = null;
+        if (v.is_viewable && nicoId) defaultSource = { type: 'nico', id: nicoId };
+        else if (ytId && isYtOriginalViewable) defaultSource = { type: 'yt', id: ytId };
+        else if (arcId) defaultSource = { type: 'yt', id: arcId };
+        else if (ytId) defaultSource = { type: 'yt', id: ytId };
+
+        const thumb = getThumbnail(v);
+        const videoKey = `${v.title}-${v.nico_id || index}`;
+        const playerState = state.activePlayers[videoKey];
+
+        const indicatorColor = v.is_viewable === true 
+          ? 'bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]' 
+          : 'bg-red-500 shadow-[0_0_12px_rgba(239,68,68,1)]';
+
+        let mediaAreaHTML = '';
+        if (playerState && playerState.type === 'nico') {
+          mediaAreaHTML = `
+            <div class="w-full h-full relative">
+              <iframe 
+                src="https://embed.nicovideo.jp/watch/${playerState.id}?autoplay=1"
+                class="w-full h-full border-none"
+                allowfullscreen
+                allow="autoplay; encrypted-media"
+                title="Nico Player" 
+              ></iframe>
+              <div class="absolute top-2 right-2 flex gap-1">
+                <button 
+                  onclick="window.open('https://www.nicovideo.jp/watch/${playerState.id}', '_blank')"
+                  class="bg-black/80 hover:bg-[#9b0000] text-white p-1.5 rounded-md text-[10px] flex items-center gap-1 transition-colors border border-white/20"
+                >
+                  <i data-lucide="external-link" class="w-3 h-3"></i>
+                  再生できない時
+                </button>
+              </div>
+            </div>
+          `;
+        } else {
+          mediaAreaHTML = `
+            <div 
+              class="w-full h-full bg-center bg-cover flex items-center justify-center cursor-pointer relative"
+              style="background-image: url('${thumb}')"
+              onclick="app.handleMediaClick('${defaultSource?.type || ''}', '${defaultSource?.id || ''}', '${escapeHTML(videoKey)}')"
+            >
+              <div class="z-10 w-14 h-14 bg-[#9b0000]/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all shadow-xl">
+                <i data-lucide="play" class="w-7 h-7 text-white fill-white"></i>
+              </div>
+            </div>
+          `;
+        }
+
+        let buttonsHTML = '';
+        if (nicoId) {
+          const btnClass = playerState?.type === 'nico' 
+            ? 'bg-[#9b0000] border-[#9b0000] text-white' 
+            : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
+          buttonsHTML += `
+            <button 
+              onclick="app.playVideo('${escapeHTML(videoKey)}', 'nico', '${nicoId}')"
+              class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
+            >
+              NICO ${v.is_viewable ? '✔' : '✖'}
+            </button>
+          `;
+        }
+        if (ytId) {
+          const btnClass = isYtOriginalViewable 
+            ? 'border-[#333] text-[#888] hover:border-[#9b0000]' 
+            : 'border-[#9b0000]/30 text-[#555] line-through';
+          buttonsHTML += `
+            <button 
+              onclick="window.open('https://www.youtube.com/watch?v=${ytId}', '_blank')"
+              class="px-3 py-1 text-[10px] bg-[#1a1a1a] border font-bold transition-colors ${btnClass}"
+            >
+              YT ${isYtOriginalViewable ? '✔' : '✖'}
+            </button>
+          `;
+        }
+        if (arcId) {
+          buttonsHTML += `
+            <button 
+              onclick="window.open('https://www.youtube.com/watch?v=${arcId}', '_blank')"
+              class="px-3 py-1 text-[10px] font-bold border bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000] transition-colors"
+            >
+              ARCHIVE
+            </button>
+          `;
+        }
+
+        return `
+          <div class="bg-[#121212] border border-[#222] flex flex-col overflow-hidden shadow-lg transition-all hover:border-[#444] relative h-full fade-in">
+            <div class="aspect-video bg-black relative group overflow-hidden">
+              ${mediaAreaHTML}
+              <div 
+                class="absolute left-3 bottom-3 w-2.5 h-2.5 rounded-full z-20 transition-all duration-300 ${indicatorColor}" 
+                title="${v.is_viewable ? "시청 가능" : "시청 불가"}"
+              ></div>
+            </div>
+            <div class="p-4 flex-grow flex flex-col relative">
+              <h5 class="text-sm font-bold text-[#f0f0f0] line-clamp-2 h-10 leading-snug">${escapeHTML(v.title)}</h5>
+              <div class="text-[11px] text-[#888] mt-2 flex items-center gap-2 font-sans">
+                <span class="text-[#9b0000] font-bold">${escapeHTML(v.mappedCreator)}</span>
+                <span class="opacity-30">|</span>
+                <span>${escapeHTML(v.refinedDate)}</span>
+              </div>
+              <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                ${buttonsHTML}
+              </div>
+            </div>
+          </div>
+        `;
+      };
+
+      const updateUI = () => {
+        const main = document.getElementById('main-content');
+        
+        // 헤더 UI 동기화
+        document.getElementById('btn-year').className = `px-4 py-1 text-xs font-bold rounded transition-all ${state.viewMode === 'year' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
+        document.getElementById('btn-creator').className = `px-4 py-1 text-xs font-bold rounded transition-all ${state.viewMode === 'creator' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
+        
+        const reloadIcon = document.getElementById('reload-icon');
+        if (state.loading) {
+          reloadIcon.classList.add('animate-spin');
+          main.innerHTML = `
+            <div class="flex flex-col items-center justify-center py-40 opacity-50 font-sans tracking-widest text-xs">
+              <div class="w-12 h-12 border-4 border-t-[#9b0000] border-[#1a1a1a] rounded-full animate-spin mb-4"></div>
+              LOADING ARCHIVE...
+            </div>
+          `;
+          return;
+        } else {
+          reloadIcon.classList.remove('animate-spin');
+        }
+
+        const processedData = getProcessedData();
+
+        if (state.selectedPlaylist) {
+          // 비디오 목록 뷰
+          let videos = [...state.selectedPlaylist.videos];
+          if (state.sortOrder === 'latest') videos.sort((a, b) => b.refinedDate.localeCompare(a.refinedDate));
+          else if (state.sortOrder === 'oldest') videos.sort((a, b) => a.refinedDate.localeCompare(b.refinedDate));
+          else if (state.sortOrder === 'name') videos.sort((a, b) => a.title.localeCompare(b.title));
+          else if (state.sortOrder === 'random') videos.sort(() => Math.random() - 0.5);
+
+          const sortLabel = state.sortOrder === 'latest' ? '최신순' : state.sortOrder === 'oldest' ? '오래된순' : state.sortOrder === 'name' ? '이름순' : '랜덤';
+
+          main.innerHTML = `
+            <div class="fade-in duration-500">
+              <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center gap-4">
+                  <button onclick="app.clearPlaylist()" class="p-2 bg-[#1a1a1a] border border-[#333] hover:border-[#9b0000] transition-colors rounded">
+                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                  </button>
+                  <div>
+                    <h2 class="text-2xl font-bold text-[#9b0000] uppercase italic tracking-tight">${escapeHTML(state.selectedPlaylist.playlist_title)}</h2>
+                    <p class="text-[10px] text-[#555] font-sans mt-0.5 uppercase tracking-widest">
+                      ${sortLabel} 정렬됨
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                ${videos.map((v, i) => renderVideoItem(v, i)).join('')}
+              </div>
+            </div>
+          `;
+        } else {
+          // 플레이리스트(폴더) 뷰
+          const data = processedData[state.viewMode] || [];
+          const q = state.searchQuery.toLowerCase();
+          const filteredData = q 
+            ? data.filter(p => p.playlist_title.toLowerCase().includes(q) || p.videos.some(v => v.title.toLowerCase().includes(q) || v.mappedCreator.toLowerCase().includes(q)))
+            : data;
+
+          let gridHTML = filteredData.map((p, idx) => {
+            const mainThumb = getThumbnail(p.videos[0]);
+            const profileHTML = (state.viewMode === 'creator' && p.profile) 
+              ? `<div class="absolute top-2 left-2 w-10 h-10 border-2 border-[#9b0000] rounded-full overflow-hidden shadow-2xl z-10 transform group-hover:scale-110 transition-transform bg-[#0a0a0a]">
+                   <img src="${p.profile}" class="w-full h-full object-cover" onerror="this.src='${DEFAULT_PROFILE}'" />
+                 </div>` 
+              : '';
+
+            return `
+              <div class="bg-[#121212] border border-[#222] hover:border-[#9b0000] cursor-pointer group transition-all rounded overflow-hidden flex flex-col fade-in" onclick="app.selectPlaylist(${idx})">
+                <div class="aspect-video bg-black overflow-hidden relative">
+                  <img src="${mainThumb}" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-300" onerror="this.src='https://via.placeholder.com/300x170?text=ARCHIVE'" />
+                  ${profileHTML}
+                </div>
+                <div class="p-3 bg-[#121212] flex-grow">
+                  <h4 class="text-sm font-bold truncate group-hover:text-[#9b0000] transition-colors">${escapeHTML(p.playlist_title)}</h4>
+                  <p class="text-[10px] text-[#555] mt-1 font-bold uppercase tracking-widest">${p.videos?.length || 0} Works</p>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          main.innerHTML = `
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 fade-in duration-700">
+              ${gridHTML}
+            </div>
+          `;
+        }
+
+        // 새롭게 렌더링된 요소의 아이콘 초기화
+        lucide.createIcons();
+      };
+
+      // API 노출
+      return {
+        init: async () => {
+          lucide.createIcons();
+          await app.fetchData();
+        },
+        fetchData: async () => {
+          state.loading = true;
+          updateUI();
+          try {
+            const response = await fetch(GAS_WEB_APP_URL);
+            if (!response.ok) throw new Error(`HTTP 에러! 상태: ${response.status}`);
+            const data = await response.json();
+            state.rawData = data || { videoData: [], creatorMap: {}, profileMap: {} };
+          } catch (error) {
+            console.error("데이터 로드 실패:", error);
+          } finally {
+            setTimeout(() => {
+              state.loading = false;
+              updateUI();
+            }, 300);
+          }
+        },
+        setViewMode: (mode) => {
+          if (state.selectedPlaylist) state.selectedPlaylist = null;
+          state.viewMode = mode;
+          window.scrollTo(0, 0);
+          updateUI();
+        },
+        setSearchQuery: (query) => {
+          if (state.selectedPlaylist && query !== "") state.selectedPlaylist = null;
+          state.searchQuery = query;
+          updateUI();
+        },
+        setSortOrder: (order) => {
+          state.sortOrder = order;
+          updateUI();
+        },
+        goHome: () => {
+          state.selectedPlaylist = null;
+          state.viewMode = 'year';
+          window.scrollTo(0, 0);
+          updateUI();
+        },
+        selectPlaylist: (index) => {
+          const processedData = getProcessedData();
+          const data = processedData[state.viewMode] || [];
+          const q = state.searchQuery.toLowerCase();
+          const filteredData = q 
+            ? data.filter(p => p.playlist_title.toLowerCase().includes(q) || p.videos.some(v => v.title.toLowerCase().includes(q) || v.mappedCreator.toLowerCase().includes(q)))
+            : data;
+            
+          state.selectedPlaylist = filteredData[index];
+          window.scrollTo(0, 0);
+          updateUI();
+        },
+        clearPlaylist: () => {
+          state.selectedPlaylist = null;
+          updateUI();
+        },
+        playVideo: (videoKey, type, id) => {
+          state.activePlayers = { ...state.activePlayers, [videoKey]: { type, id } };
+          updateUI();
+        },
+        handleMediaClick: (type, id, videoKey) => {
+          if (type === 'yt') window.open(`https://www.youtube.com/watch?v=${id}`, '_blank');
+          else if (type === 'nico') app.playVideo(videoKey, 'nico', id);
+        }
+      };
+    })();
+
+    // 앱 초기화 실행
+    document.addEventListener('DOMContentLoaded', app.init);
+  </script>
+</body>
+</html>
