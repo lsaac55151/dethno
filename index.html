@@ -6,7 +6,6 @@
   <title>Death Note Archive</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
-  
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <style>
@@ -41,12 +40,6 @@
 <body class="min-h-screen pb-20">
 
   <div class="sticky top-0 z-50 flex flex-col shadow-2xl">
-    <div class="bg-[#9b0000] text-[#0a0a0a] font-bold text-[9px] md:text-[10px] uppercase tracking-[0.3em] py-1.5 px-4 flex justify-between items-center w-full">
-      <span class="hidden sm:inline opacity-80">Kira Investigation Headquarters</span>
-      <span class="flex-1 text-center sm:flex-none">Classified Database // Terminal Active</span>
-      <span class="hidden sm:inline opacity-80">Authorization: L</span>
-    </div>
-    
     <header class="bg-[#0a0a0a]/95 backdrop-blur-md border-b-2 border-[#9b0000]/50 px-4 py-3 flex items-center justify-between">
       <h1 
         class="text-xl md:text-2xl font-bold cursor-pointer tracking-tighter"
@@ -57,6 +50,12 @@
       </h1>
 
       <div class="flex items-center gap-2 md:gap-4">
+        <!-- 다국어 선택기 (Korean / Japanese Selector) -->
+        <div class="flex items-center bg-[#1a1a1a] p-1 rounded border border-[#333] gap-1">
+          <button id="btn-lang-ko" onclick="app.setLanguage('ko')" class="px-2 py-0.5 text-[10px] font-bold rounded transition-all">KO</button>
+          <button id="btn-lang-ja" onclick="app.setLanguage('ja')" class="px-2 py-0.5 text-[10px] font-bold rounded transition-all">JA</button>
+        </div>
+
         <div class="hidden sm:flex items-center gap-2 bg-[#1a1a1a] px-3 py-1.5 rounded border border-[#333]">
           <i data-lucide="filter" class="w-3.5 h-3.5 text-[#9b0000]"></i>
           <select 
@@ -64,26 +63,23 @@
             onchange="app.setSortOrder(this.value)"
             class="bg-transparent text-[10px] md:text-xs font-bold text-[#aaa] outline-none cursor-pointer"
           >
-            <option value="latest" class="bg-[#1a1a1a]">新しい順</option>
-            <option value="oldest" class="bg-[#1a1a1a]">古い順</option>
-            <option value="random" class="bg-[#1a1a1a]">ランダム</option>
-            <option value="name" class="bg-[#1a1a1a]">名前順</option>
+            <!-- 자바스크립트에서 동적 렌더링 -->
           </select>
         </div>
 
         <div class="hidden md:flex bg-[#1a1a1a] p-1 rounded border border-[#333] gap-1" id="view-mode-buttons">
-          <button id="btn-year" class="px-4 py-1 text-xs font-bold rounded transition-all bg-[#9b0000] text-white" onclick="app.setViewMode('year')">YEAR</button>
-          <button id="btn-creator" class="px-4 py-1 text-xs font-bold rounded transition-all text-[#777] hover:text-[#aaa]" onclick="app.setViewMode('creator')">CREATOR</button>
+          <button id="btn-year" class="px-4 py-1 text-xs font-bold rounded transition-all" onclick="app.setViewMode('year')">YEAR</button>
+          <button id="btn-creator" class="px-4 py-1 text-xs font-bold rounded transition-all" onclick="app.setViewMode('creator')">CREATOR</button>
         </div>
 
         <div class="relative">
-          <i data-lucide="search" class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#555]"></i>
+          <i data-lucide="search" class="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#555]"></i>
           <input 
             type="text"
             id="search-input"
             placeholder="Search..."
             oninput="app.setSearchQuery(this.value)"
-            class="bg-[#1a1a1a] border border-[#333] text-xs px-9 py-2 rounded w-28 md:w-48 outline-none font-sans focus:border-[#9b0000] transition-colors" 
+            class="bg-[#1a1a1a] border border-[#333] text-xs px-8 py-1.5 rounded w-24 sm:w-32 md:w-48 outline-none font-sans focus:border-[#9b0000] transition-colors" 
           />
         </div>
         
@@ -101,6 +97,42 @@
   </footer>
 
   <script>
+    // --- 다국어 리소스 설정 ---
+    const i18n = {
+      ko: {
+        sortLatest: "최신순",
+        sortOldest: "오래된순",
+        sortRandom: "랜덤순",
+        sortName: "이름순",
+        viewYear: "연도별",
+        viewCreator: "제작자별",
+        searchPlaceholder: "검색...",
+        loading: "데이터를 불러오는 중...",
+        viewable: "시청 가능",
+        notViewable: "시청 불가",
+        playFail: "재생이 안 될 경우",
+        sortedBy: "정렬됨",
+        works: "개 작품",
+        back: "뒤로 가기"
+      },
+      ja: {
+        sortLatest: "新しい順",
+        sortOldest: "古い順",
+        sortRandom: "ランダム",
+        sortName: "名前順",
+        viewYear: "YEAR",
+        viewCreator: "CREATOR",
+        searchPlaceholder: "検索...",
+        loading: "ARCHIVE LOADING...",
+        viewable: "視聴可能",
+        notViewable: "視聴不可",
+        playFail: "再生できない時",
+        sortedBy: "整列済み",
+        works: "作品",
+        back: "戻る"
+      }
+    };
+
     // --- Application Logic ---
     const app = (function() {
       const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwGmH1Hrr8RfKBsBzNIHEZ1LRp70cdSuR2S5hoxT5RBNxKbnDMQffZpkm1NVJjtdZ8zOA/exec";
@@ -113,7 +145,8 @@
         searchQuery: '',
         selectedPlaylist: null,
         activePlayers: {},
-        sortOrder: 'latest'
+        sortOrder: 'latest',
+        lang: 'ko' // 기본값 한국어
       };
 
       // 유틸리티 함수
@@ -225,6 +258,9 @@
 
       // 렌더링 함수들
       const renderVideoItem = (v, index) => {
+        const lang = state.lang;
+        const currentI18n = i18n[lang];
+
         const nicoId = v.nico_id;
         const ytId = v.yt_id || extractYtId(v.original_link);
         let arcId = (v.archive_id && v.archive_id !== "") ? v.archive_id : (v.id || null);
@@ -240,11 +276,14 @@
 
         const thumb = getThumbnail(v);
         const videoKey = `${v.title}-${v.nico_id || index}`;
+        const safeDOMId = `media-${index}`; // 영상 고유 영역 ID
         const playerState = state.activePlayers[videoKey];
 
         const indicatorColor = v.is_viewable === true 
           ? 'bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]' 
           : 'bg-red-500 shadow-[0_0_12px_rgba(239,68,68,1)]';
+        
+        const indicatorTitle = v.is_viewable ? currentI18n.viewable : currentI18n.notViewable;
 
         let mediaAreaHTML = '';
         if (playerState && playerState.type === 'nico') {
@@ -263,7 +302,7 @@
                   class="bg-black/80 hover:bg-[#9b0000] text-white p-1.5 rounded-md text-[10px] flex items-center gap-1 transition-colors border border-white/20"
                 >
                   <i data-lucide="external-link" class="w-3 h-3"></i>
-                  再生できない時
+                  ${currentI18n.playFail}
                 </button>
               </div>
             </div>
@@ -273,12 +312,17 @@
             <div 
               class="w-full h-full bg-center bg-cover flex items-center justify-center cursor-pointer relative"
               style="background-image: url('${thumb}')"
-              onclick="app.handleMediaClick('${defaultSource?.type || ''}', '${defaultSource?.id || ''}', '${escapeHTML(videoKey)}')"
+              data-type="${defaultSource?.type || ''}"
+              data-id="${defaultSource?.id || ''}"
+              data-videokey="${escapeHTML(videoKey)}"
+              data-domid="${safeDOMId}"
+              onclick="app.handleMediaClick(this.dataset.type, this.dataset.id, this.dataset.videokey, this.dataset.domid)"
             >
               <div class="z-10 w-14 h-14 bg-[#9b0000]/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all shadow-xl">
                 <i data-lucide="play" class="w-7 h-7 text-white fill-white"></i>
               </div>
             </div>
+            <div class="absolute left-3 bottom-3 w-2.5 h-2.5 rounded-full z-20 transition-all duration-300 ${indicatorColor}" title="${indicatorTitle}"></div>
           `;
         }
 
@@ -289,7 +333,11 @@
             : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
           buttonsHTML += `
             <button 
-              onclick="app.playVideo('${escapeHTML(videoKey)}', 'nico', '${nicoId}')"
+              data-videokey="${escapeHTML(videoKey)}"
+              data-nicoid="${nicoId}"
+              data-domid="${safeDOMId}"
+              onclick="app.playVideo(this.dataset.videokey, 'nico', this.dataset.nicoid, this.dataset.domid)"
+              id="btn-nico-${safeDOMId}"
               class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
             >
               NICO ${v.is_viewable ? '✔' : '✖'}
@@ -322,12 +370,8 @@
 
         return `
           <div class="bg-[#121212] border border-[#222] flex flex-col overflow-hidden shadow-lg transition-all hover:border-[#444] relative h-full fade-in">
-            <div class="aspect-video bg-black relative group overflow-hidden">
+            <div class="aspect-video bg-black relative group overflow-hidden" id="${safeDOMId}">
               ${mediaAreaHTML}
-              <div 
-                class="absolute left-3 bottom-3 w-2.5 h-2.5 rounded-full z-20 transition-all duration-300 ${indicatorColor}" 
-                title="${v.is_viewable ? "시청 가능" : "시청 불가"}"
-              ></div>
             </div>
             <div class="p-4 flex-grow flex flex-col relative">
               <h5 class="text-sm font-bold text-[#f0f0f0] line-clamp-2 h-10 leading-snug">${escapeHTML(v.title)}</h5>
@@ -346,10 +390,51 @@
 
       const updateUI = () => {
         const main = document.getElementById('main-content');
-        
-        // 헤더 UI 동기화
-        document.getElementById('btn-year').className = `px-4 py-1 text-xs font-bold rounded transition-all ${state.viewMode === 'year' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
-        document.getElementById('btn-creator').className = `px-4 py-1 text-xs font-bold rounded transition-all ${state.viewMode === 'creator' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
+        const lang = state.lang;
+        const currentI18n = i18n[lang];
+
+        // HTML 태그의 lang 속성 실시간 동기화
+        document.documentElement.lang = lang;
+
+        // 다국어 선택기 스타일 업데이트
+        const btnKo = document.getElementById('btn-lang-ko');
+        const btnJa = document.getElementById('btn-lang-ja');
+        if (btnKo && btnJa) {
+          if (lang === 'ko') {
+            btnKo.className = "px-2 py-0.5 text-[10px] font-bold rounded transition-all bg-[#9b0000] text-white";
+            btnJa.className = "px-2 py-0.5 text-[10px] font-bold rounded transition-all text-[#777] hover:text-[#aaa]";
+          } else {
+            btnKo.className = "px-2 py-0.5 text-[10px] font-bold rounded transition-all text-[#777] hover:text-[#aaa]";
+            btnJa.className = "px-2 py-0.5 text-[10px] font-bold rounded transition-all bg-[#9b0000] text-white";
+          }
+        }
+
+        // 검색창 플레이스홀더 번역 업데이트
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+          searchInput.placeholder = currentI18n.searchPlaceholder;
+        }
+
+        // 정렬 드롭다운 실시간 번역
+        const sortSelect = document.getElementById('sort-select');
+        if (sortSelect) {
+          sortSelect.innerHTML = `
+            <option value="latest" class="bg-[#1a1a1a]" ${state.sortOrder === 'latest' ? 'selected' : ''}>${currentI18n.sortLatest}</option>
+            <option value="oldest" class="bg-[#1a1a1a]" ${state.sortOrder === 'oldest' ? 'selected' : ''}>${currentI18n.sortOldest}</option>
+            <option value="random" class="bg-[#1a1a1a]" ${state.sortOrder === 'random' ? 'selected' : ''}>${currentI18n.sortRandom}</option>
+            <option value="name" class="bg-[#1a1a1a]" ${state.sortOrder === 'name' ? 'selected' : ''}>${currentI18n.sortName}</option>
+          `;
+        }
+
+        // 정렬 보기 버튼 실시간 번역
+        const btnYear = document.getElementById('btn-year');
+        const btnCreator = document.getElementById('btn-creator');
+        if (btnYear && btnCreator) {
+          btnYear.textContent = currentI18n.viewYear;
+          btnCreator.textContent = currentI18n.viewCreator;
+          btnYear.className = `px-4 py-1 text-xs font-bold rounded transition-all ${state.viewMode === 'year' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
+          btnCreator.className = `px-4 py-1 text-xs font-bold rounded transition-all ${state.viewMode === 'creator' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
+        }
         
         const reloadIcon = document.getElementById('reload-icon');
         if (state.loading) {
@@ -357,7 +442,7 @@
           main.innerHTML = `
             <div class="flex flex-col items-center justify-center py-40 opacity-50 font-sans tracking-widest text-xs">
               <div class="w-12 h-12 border-4 border-t-[#9b0000] border-[#1a1a1a] rounded-full animate-spin mb-4"></div>
-              LOADING ARCHIVE...
+              ${currentI18n.loading}
             </div>
           `;
           return;
@@ -375,19 +460,29 @@
           else if (state.sortOrder === 'name') videos.sort((a, b) => a.title.localeCompare(b.title));
           else if (state.sortOrder === 'random') videos.sort(() => Math.random() - 0.5);
 
-          const sortLabel = state.sortOrder === 'latest' ? '최신순' : state.sortOrder === 'oldest' ? '오래된순' : state.sortOrder === 'name' ? '이름순' : '랜덤';
+          let sortLabel = "";
+          if (state.sortOrder === 'latest') sortLabel = currentI18n.sortLatest;
+          else if (state.sortOrder === 'oldest') sortLabel = currentI18n.sortOldest;
+          else if (state.sortOrder === 'name') sortLabel = currentI18n.sortName;
+          else if (state.sortOrder === 'random') sortLabel = currentI18n.sortRandom;
+
+          // 플레이리스트 제목 중 'UNKNOWN'을 선택한 언어에 맞게 번역
+          let displayPlaylistTitle = state.selectedPlaylist.playlist_title;
+          if (state.viewMode === 'year' && displayPlaylistTitle === 'UNKNOWN') {
+            displayPlaylistTitle = lang === 'ko' ? '기타 / 미분류' : 'その他 / 未分類';
+          }
 
           main.innerHTML = `
             <div class="fade-in duration-500">
               <div class="flex items-center justify-between mb-8">
                 <div class="flex items-center gap-4">
-                  <button onclick="app.clearPlaylist()" class="p-2 bg-[#1a1a1a] border border-[#333] hover:border-[#9b0000] transition-colors rounded">
+                  <button onclick="app.clearPlaylist()" class="p-2 bg-[#1a1a1a] border border-[#333] hover:border-[#9b0000] transition-colors rounded" title="${currentI18n.back}">
                     <i data-lucide="chevron-left" class="w-5 h-5"></i>
                   </button>
                   <div>
-                    <h2 class="text-2xl font-bold text-[#9b0000] uppercase italic tracking-tight">${escapeHTML(state.selectedPlaylist.playlist_title)}</h2>
+                    <h2 class="text-2xl font-bold text-[#9b0000] uppercase italic tracking-tight">${escapeHTML(displayPlaylistTitle)}</h2>
                     <p class="text-[10px] text-[#555] font-sans mt-0.5 uppercase tracking-widest">
-                      ${sortLabel} 정렬됨
+                      ${sortLabel} ${currentI18n.sortedBy}
                     </p>
                   </div>
                 </div>
@@ -413,6 +508,12 @@
                  </div>` 
               : '';
 
+            // 폴더 리스트에서도 'UNKNOWN' 명칭을 현지화
+            let displayFolderTitle = p.playlist_title;
+            if (state.viewMode === 'year' && displayFolderTitle === 'UNKNOWN') {
+              displayFolderTitle = lang === 'ko' ? '기타 / 미분류' : 'その他 / 未分類';
+            }
+
             return `
               <div class="bg-[#121212] border border-[#222] hover:border-[#9b0000] cursor-pointer group transition-all rounded overflow-hidden flex flex-col fade-in" onclick="app.selectPlaylist(${idx})">
                 <div class="aspect-video bg-black overflow-hidden relative">
@@ -420,8 +521,8 @@
                   ${profileHTML}
                 </div>
                 <div class="p-3 bg-[#121212] flex-grow">
-                  <h4 class="text-sm font-bold truncate group-hover:text-[#9b0000] transition-colors">${escapeHTML(p.playlist_title)}</h4>
-                  <p class="text-[10px] text-[#555] mt-1 font-bold uppercase tracking-widest">${p.videos?.length || 0} Works</p>
+                  <h4 class="text-sm font-bold truncate group-hover:text-[#9b0000] transition-colors">${escapeHTML(displayFolderTitle)}</h4>
+                  <p class="text-[10px] text-[#555] mt-1 font-bold uppercase tracking-widest">${p.videos?.length || 0} ${currentI18n.works}</p>
                 </div>
               </div>
             `;
@@ -441,6 +542,15 @@
       // API 노출
       return {
         init: async () => {
+          // 브라우저 저장소에서 이전에 사용한 언어 설정 로드
+          try {
+            const savedLang = localStorage.getItem('dna_lang');
+            if (savedLang === 'ko' || savedLang === 'ja') {
+              state.lang = savedLang;
+            }
+          } catch (e) {
+            console.warn("로컬 스토리지 로드 실패:", e);
+          }
           lucide.createIcons();
           await app.fetchData();
         },
@@ -476,6 +586,17 @@
           state.sortOrder = order;
           updateUI();
         },
+        setLanguage: (lang) => {
+          if (lang === 'ko' || lang === 'ja') {
+            state.lang = lang;
+            try {
+              localStorage.setItem('dna_lang', lang);
+            } catch (e) {
+              console.warn("로컬 스토리지 저장 실패:", e);
+            }
+            updateUI();
+          }
+        },
         goHome: () => {
           state.selectedPlaylist = null;
           state.viewMode = 'year';
@@ -498,13 +619,55 @@
           state.selectedPlaylist = null;
           updateUI();
         },
-        playVideo: (videoKey, type, id) => {
+        playVideo: (videoKey, type, id, domId) => {
           state.activePlayers = { ...state.activePlayers, [videoKey]: { type, id } };
-          updateUI();
+          const lang = state.lang;
+          const currentI18n = i18n[lang];
+          
+          if (domId) {
+            // updateUI() 대신 특정 DOM 영역만 교체하여 리렌더링 깜빡임 방지
+            const container = document.getElementById(domId);
+            if (container && type === 'nico') {
+              container.innerHTML = `
+                <div class="w-full h-full relative">
+                  <iframe 
+                    src="https://embed.nicovideo.jp/watch/${id}?autoplay=1"
+                    class="w-full h-full border-none"
+                    allowfullscreen
+                    allow="autoplay; encrypted-media"
+                    title="Nico Player" 
+                  ></iframe>
+                  <div class="absolute top-2 right-2 flex gap-1">
+                    <button 
+                      onclick="window.open('https://www.nicovideo.jp/watch/${id}', '_blank')"
+                      class="bg-black/80 hover:bg-[#9b0000] text-white p-1.5 rounded-md text-[10px] flex items-center gap-1 transition-colors border border-white/20"
+                    >
+                      <i data-lucide="external-link" class="w-3 h-3"></i>
+                      ${currentI18n.playFail}
+                    </button>
+                  </div>
+                </div>
+              `;
+              lucide.createIcons(); // 주입된 HTML 내부 아이콘 렌더링
+            }
+
+            // 버튼 색상 업데이트 (활성화 스타일 적용)
+            const btn = document.getElementById(`btn-nico-${domId}`);
+            if (btn && type === 'nico') {
+              btn.className = btn.className
+                .replace('bg-[#1a1a1a]', 'bg-[#9b0000]')
+                .replace('border-[#333]', 'border-[#9b0000]')
+                .replace('text-[#888]', 'text-white')
+                .replace('hover:border-[#9b0000]', '');
+            }
+          } else {
+            // 예외상황을 위한 Fallback
+            updateUI();
+          }
         },
-        handleMediaClick: (type, id, videoKey) => {
+        handleMediaClick: (type, id, videoKey, domId) => {
           if (type === 'yt') window.open(`https://www.youtube.com/watch?v=${id}`, '_blank');
-          else if (type === 'nico') app.playVideo(videoKey, 'nico', id);
+          else if (type === 'nico') app.playVideo(videoKey, 'nico', id, domId);
         }
       };
     })();
