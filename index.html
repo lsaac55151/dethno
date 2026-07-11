@@ -138,7 +138,7 @@
 
     // --- Application Logic ---
     const app = (function() {
-      const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwGmH1Hrr8RfKBsBzNIHEZ1LRp70cdSuR2S5hoxT5RBNxKbnDMQffZpkm1NVJjtdZ8zOA/exec";
+      const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyBYQPZbTcfQdojK2eff3UYlHjF-b2o8LlUHUWRgVfKAXR7Rv8U5xOpetZtrqUMaEjy3g/exec";
       const DEFAULT_PROFILE = "https://lh3.googleusercontent.com/d/1fsQCiwKwK-j-Qlcw6hFwlzqHmCtGs90F";
 
       let state = {
@@ -570,11 +570,30 @@
         fetchData: async () => {
           state.loading = true;
           updateUI();
+          
+          // 깃허브 Raw JSON 링크 정의
+          const videoDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/video_data.json"; 
+          const creatorMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/creator_map.json"; 
+          const profileMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/profile_map.json";
+
           try {
-            const response = await fetch(GAS_WEB_APP_URL);
-            if (!response.ok) throw new Error(`HTTP 에러! 상태: ${response.status}`);
-            const data = await response.json();
-            state.rawData = data || { videoData: [], creatorMap: {}, profileMap: {} };
+            // Promise.all을 사용하여 3개의 파일 동시 다운로드
+            const [resVideo, resCreator, resProfile] = await Promise.all([
+              fetch(videoDataUrl),
+              fetch(creatorMapUrl),
+              fetch(profileMapUrl)
+            ]);
+
+            if (!resVideo.ok || !resCreator.ok || !resProfile.ok) {
+              throw new Error("GitHub에서 데이터를 가져오는 중 오류가 발생했습니다.");
+            }
+
+            // 다운로드된 JSON 파싱하여 state에 저장
+            state.rawData = {
+              videoData: await resVideo.json(),
+              creatorMap: await resCreator.json(),
+              profileMap: await resProfile.json()
+            };
           } catch (error) {
             console.error("데이터 로드 실패:", error);
           } finally {
