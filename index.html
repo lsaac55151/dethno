@@ -66,7 +66,7 @@
             onchange="app.setSortOrder(this.value)"
             class="bg-transparent text-[10px] md:text-xs font-bold text-[#aaa] outline-none cursor-pointer"
           >
-            </select>
+          </select>
         </div>
 
         <div class="flex bg-[#1a1a1a] p-1 rounded border border-[#333] gap-1 shrink-0" id="view-mode-buttons">
@@ -175,6 +175,11 @@
       const getThumbnail = (video) => {
         if (!video) return '';
         const arcId = video.archive_id || video.id;
+        
+        // [수정] 아카이브 ID가 니코동 ID 패턴(sm/nm/so/am+숫자)인 경우 니코동 썸네일 우선 반환
+        const arcNicoMatch = arcId ? String(arcId).match(/(sm|nm|so|am)\d+/) : null;
+        if (arcNicoMatch) return `https://nicovideo.cdn.nimg.jp/thumbnails/${arcNicoMatch[0]}/${arcNicoMatch[0]}`;
+
         if (arcId && arcId.length === 11) return `https://i.ytimg.com/vi/${arcId}/hqdefault.jpg`;
         const ytOriginalId = video.yt_id || extractYtId(video.original_link);
         if (ytOriginalId) return `https://i.ytimg.com/vi/${ytOriginalId}/hqdefault.jpg`;
@@ -269,12 +274,19 @@
         let arcId = (v.archive_id && v.archive_id !== "") ? v.archive_id : (v.id || null);
         if (arcId === ytId) arcId = null;
 
+        // [수정] 아카이브 ID가 니코동 포맷인지 분석하여 분기 처리
+        const arcNicoMatch = arcId ? String(arcId).match(/(sm|nm|so|am)\d+/) : null;
+        const arcNicoId = arcNicoMatch ? arcNicoMatch[0] : null;
+        const arcYtId = (!arcNicoId && arcId) ? arcId : null;
+
         const isYtOriginalViewable = v.is_viewable === true || (v.description || "").includes("視聴可能");
         
+        // [수정] 기본 재생 우선순위에 니코동 아카이브(arcNicoId) 조건 추가
         let defaultSource = null;
         if (v.is_viewable && nicoId) defaultSource = { type: 'nico', id: nicoId };
         else if (ytId && isYtOriginalViewable) defaultSource = { type: 'yt', id: ytId };
-        else if (arcId) defaultSource = { type: 'yt', id: arcId };
+        else if (arcNicoId) defaultSource = { type: 'nico', id: arcNicoId };
+        else if (arcYtId) defaultSource = { type: 'yt', id: arcYtId };
         else if (ytId) defaultSource = { type: 'yt', id: ytId };
 
         const thumb = getThumbnail(v);
@@ -335,7 +347,7 @@
 
         let buttonsHTML = '';
         if (nicoId) {
-          const btnClass = playerState?.type === 'nico' 
+          const btnClass = playerState?.type === 'nico' && playerState?.id === nicoId
             ? 'bg-[#9b0000] border-[#9b0000] text-white' 
             : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
           buttonsHTML += `
@@ -365,14 +377,33 @@
           `;
         }
         if (arcId) {
-          buttonsHTML += `
-            <button 
-              onclick="window.open('https://www.youtube.com/watch?v=${arcId}', '_blank')"
-              class="px-3 py-1 text-[10px] font-bold border bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000] transition-colors"
-            >
-              ARCHIVE
-            </button>
-          `;
+          // [수정] 아카이브 ID가 니코동인 경우 인라인 플레이어로 재생 가능하도록 버튼 속성 분기 처리
+          if (arcNicoId) {
+            const btnClass = playerState?.type === 'nico' && playerState?.id === arcNicoId
+              ? 'bg-[#9b0000] border-[#9b0000] text-white' 
+              : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
+            buttonsHTML += `
+              <button 
+                data-videokey="${escapeHTML(videoKey)}"
+                data-nicoid="${arcNicoId}"
+                data-domid="${safeDOMId}"
+                onclick="app.playVideo(this.dataset.videokey, 'nico', this.dataset.nicoid, this.dataset.domid)"
+                id="btn-arc-${safeDOMId}"
+                class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
+              >
+                ARCHIVE (NICO)
+              </button>
+            `;
+          } else {
+            buttonsHTML += `
+              <button 
+                onclick="window.open('https://www.youtube.com/watch?v=${arcYtId}', '_blank')"
+                class="px-3 py-1 text-[10px] font-bold border bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000] transition-colors"
+              >
+                ARCHIVE
+              </button>
+            `;
+          }
         }
 
         return `
@@ -383,7 +414,6 @@
             <div class="p-4 flex-grow flex flex-col relative">
               <h5 class="text-sm font-bold text-[#f0f0f0] line-clamp-2 h-10 leading-snug">${escapeHTML(v.title)}</h5>
               
-              <!-- 제작자 프로필 둥근 아이콘 추가 영역 -->
               <div class="text-[11px] text-[#888] mt-2 flex items-center gap-2 font-sans">
                 <div class="w-10 h-10 rounded-full overflow-hidden border border-[#9b0000]/40 shrink-0 bg-[#0a0a0a]">
                   <img src="${profileUrl}" class="w-full h-full object-cover" onerror="this.src='${DEFAULT_PROFILE}'" />
@@ -683,14 +713,37 @@
               lucide.createIcons(); // 주입된 HTML 내부 아이콘 렌더링
             }
 
-            // 버튼 색상 업데이트 (활성화 스타일 적용)
-            const btn = document.getElementById(`btn-nico-${domId}`);
-            if (btn && type === 'nico') {
+            // [수정] 오리지널 NICO 버튼과 NICO 아카이브 버튼 모두 스타일 클래스가 유기적으로 스위칭되도록 구현
+            const btnNico = document.getElementById(`btn-nico-${domId}`);
+            const btnArc = document.getElementById(`btn-arc-${domId}`);
+            
+            const setActive = (btn) => {
+              if(!btn) return;
               btn.className = btn.className
                 .replace('bg-[#1a1a1a]', 'bg-[#9b0000]')
                 .replace('border-[#333]', 'border-[#9b0000]')
                 .replace('text-[#888]', 'text-white')
                 .replace('hover:border-[#9b0000]', '');
+            };
+            
+            const setInactive = (btn) => {
+              if(!btn) return;
+              btn.className = btn.className
+                .replace('bg-[#9b0000]', 'bg-[#1a1a1a]')
+                .replace('border-[#9b0000]', 'border-[#333]')
+                .replace('text-white', 'text-[#888]')
+                + ' hover:border-[#9b0000]';
+            };
+
+            if (type === 'nico') {
+              if (btnNico) {
+                if (btnNico.dataset.nicoid === id) setActive(btnNico);
+                else setInactive(btnNico);
+              }
+              if (btnArc) {
+                if (btnArc.dataset.nicoid === id) setActive(btnArc);
+                else setInactive(btnArc);
+              }
             }
           } else {
             // 예외상황을 위한 Fallback
