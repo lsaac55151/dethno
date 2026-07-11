@@ -282,6 +282,10 @@
         const safeDOMId = `media-${index}`; // 영상 고유 영역 ID
         const playerState = state.activePlayers[videoKey];
 
+        // --- 제작자 프로필 이미지 가져오기 로직 추가 ---
+        const pmap = state.rawData.profileMap || {};
+        const profileUrl = pmap[v.mappedCreator] || pmap[v.creator] || DEFAULT_PROFILE;
+
         const indicatorColor = v.is_viewable === true 
           ? 'bg-green-500 shadow-[0_0_12px_rgba(34,197,94,1)]' 
           : 'bg-red-500 shadow-[0_0_12px_rgba(239,68,68,1)]';
@@ -378,11 +382,17 @@
             </div>
             <div class="p-4 flex-grow flex flex-col relative">
               <h5 class="text-sm font-bold text-[#f0f0f0] line-clamp-2 h-10 leading-snug">${escapeHTML(v.title)}</h5>
+              
+              <!-- 제작자 프로필 둥근 아이콘 추가 영역 -->
               <div class="text-[11px] text-[#888] mt-2 flex items-center gap-2 font-sans">
+                <div class="w-10 h-10 rounded-full overflow-hidden border border-[#9b0000]/40 shrink-0 bg-[#0a0a0a]">
+                  <img src="${profileUrl}" class="w-full h-full object-cover" onerror="this.src='${DEFAULT_PROFILE}'" />
+                </div>
                 <span class="text-[#9b0000] font-bold">${escapeHTML(v.mappedCreator)}</span>
                 <span class="opacity-30">|</span>
                 <span>${escapeHTML(v.refinedDate)}</span>
               </div>
+              
               <div class="flex flex-wrap gap-2 mt-auto pt-4">
                 ${buttonsHTML}
               </div>
