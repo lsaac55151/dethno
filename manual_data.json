@@ -5830,5 +5830,24 @@
         "yt_id": "IeotRx2V8Rs",
         "added_at": 1783832545.282584,
         "is_viewable": true
+    },
+    {
+        "id": "pfQPDHv_bPE",
+        "nico_id": null,
+        "title": "[데스노트]라이토 오브 라이츠",
+        "creator": "페도",
+        "upload_date": "2015/02/22",
+        "original_link": "https://www.youtube.com/watch?v=pfQPDHv_bPE",
+        "description": "' 나이트 오브 나이츠 ' 라는 동방 어레인지 곡을 데스노트로 MAD화 한 영상입니다.\n\n2014년도에 완성되었던 MAD입니다.",
+        "is_archive": false,
+        "tags": [
+            "Light Yagami (Fictional Character)",
+            "Touhou Project (Video Game Series)"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/pfQPDHv_bPE/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "pfQPDHv_bPE",
+        "added_at": 1783850987.3199584,
+        "is_viewable": true
     }
 ]
