@@ -188,10 +188,12 @@
       };
 
       // 데이터 처리
+      // 데이터 처리
       const getProcessedData = () => {
         const cmap = state.rawData.creatorMap || {};
         const pmap = state.rawData.profileMap || {};
         const archive = Array.isArray(state.rawData.videoData) ? state.rawData.videoData : [];
+        const manual = Array.isArray(state.rawData.manualData) ? state.rawData.manualData : []; // ◀ [수정] 누락되었던 선언문 추가
 
         const resolveName = (n) => {
           if (!n) return "Unknown";
@@ -239,6 +241,33 @@
               creatorGroups[mappedC].videos.push(videoWithMeta);
             });
           }
+        });
+
+        manual.forEach(v => {
+          if (!v) return;
+          
+          const mappedC = resolveName(v.creator);
+          const refinedDate = getRefinedDate(v);
+          const videoWithMeta = { ...v, mappedCreator: mappedC, refinedDate: refinedDate };
+          
+          // 날짜 형식("2024/05/12")에서 연도(예: "2024")만 추출
+          let yr = refinedDate.split('/')[0];
+          if (yr === "0000") yr = "UNKNOWN";
+          
+          // 연도별 그룹에 매칭해서 밀어넣기
+          if (!yearGroups[yr]) yearGroups[yr] = [];
+          yearGroups[yr].push(videoWithMeta);
+          
+          // 제작자별 그룹에 매칭해서 밀어넣기
+          if (!creatorGroups[mappedC]) {
+            creatorGroups[mappedC] = {
+                videos: [],
+                profile: pmap[mappedC] || pmap[v.creator] || DEFAULT_PROFILE
+            };
+          } else if (creatorGroups[mappedC].profile === DEFAULT_PROFILE && pmap[v.creator]) {
+            creatorGroups[mappedC].profile = pmap[v.creator];
+          }
+          creatorGroups[mappedC].videos.push(videoWithMeta);
         });
 
         const sortGroups = (groups, type) => {
@@ -603,24 +632,28 @@
           
           // 깃허브 Raw JSON 링크 정의
           const videoDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/video_data.json"; 
+          const manualDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/manual_data.json";
           const creatorMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/creator_map.json"; 
           const profileMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/profile_map.json";
 
           try {
-            // Promise.all을 사용하여 3개의 파일 동시 다운로드
-            const [resVideo, resCreator, resProfile] = await Promise.all([
+            // [수정] Promise.all 안에 fetch(manualDataUrl)를 추가하고 resManual 변수를 받도록 설정
+            const [resVideo, resManual, resCreator, resProfile] = await Promise.all([
               fetch(videoDataUrl),
+              fetch(manualDataUrl),
               fetch(creatorMapUrl),
               fetch(profileMapUrl)
             ]);
 
-            if (!resVideo.ok || !resCreator.ok || !resProfile.ok) {
+            // [수정] !resManual.ok 체크도 조건에 포함
+            if (!resVideo.ok || !resManual.ok || !resCreator.ok || !resProfile.ok) {
               throw new Error("GitHub에서 데이터를 가져오는 중 오류가 발생했습니다.");
             }
 
             // 다운로드된 JSON 파싱하여 state에 저장
             state.rawData = {
               videoData: await resVideo.json(),
+              manualData: await resManual.json(),
               creatorMap: await resCreator.json(),
               profileMap: await resProfile.json()
             };
