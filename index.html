@@ -72,6 +72,7 @@
         <div class="flex bg-[#1a1a1a] p-1 rounded border border-[#333] gap-1 shrink-0" id="view-mode-buttons">
           <button id="btn-year" class="px-3 md:px-4 py-1 text-[10px] md:text-xs font-bold rounded transition-all" onclick="app.setViewMode('year')">YEAR</button>
           <button id="btn-creator" class="px-3 md:px-4 py-1 text-[10px] md:text-xs font-bold rounded transition-all" onclick="app.setViewMode('creator')">CREATOR</button>
+          <button id="btn-all" class="px-3 md:px-4 py-1 text-[10px] md:text-xs font-bold rounded transition-all" onclick="app.setViewMode('all')">ALL</button>
         </div>
 
         <button onclick="app.fetchData()" class="p-2 bg-[#9b0000] rounded hover:bg-[#bf0000] transition-colors shrink-0 sm:order-last">
@@ -109,6 +110,7 @@
         sortName: "이름순",
         viewYear: "연도별",
         viewCreator: "제작자별",
+        viewAll: "전체 영상",
         searchPlaceholder: "검색...",
         loading: "데이터를 불러오는 중...",
         viewable: "시청 가능",
@@ -125,6 +127,7 @@
         sortName: "名前順",
         viewYear: "YEAR",
         viewCreator: "CREATOR",
+        viewAll: "ALL",
         searchPlaceholder: "検索...",
         loading: "ARCHIVE LOADING...",
         viewable: "視聴可能",
@@ -176,7 +179,6 @@
         if (!video) return '';
         const arcId = video.archive_id || video.id;
         
-        // [수정] 아카이브 ID가 니코동 ID 패턴(sm/nm/so/am+숫자)인 경우 니코동 썸네일 우선 반환
         const arcNicoMatch = arcId ? String(arcId).match(/(sm|nm|so|am)\d+/) : null;
         if (arcNicoMatch) return `https://nicovideo.cdn.nimg.jp/thumbnails/${arcNicoMatch[0]}/${arcNicoMatch[0]}`;
 
@@ -188,12 +190,11 @@
       };
 
       // 데이터 처리
-      // 데이터 처리
       const getProcessedData = () => {
         const cmap = state.rawData.creatorMap || {};
         const pmap = state.rawData.profileMap || {};
         const archive = Array.isArray(state.rawData.videoData) ? state.rawData.videoData : [];
-        const manual = Array.isArray(state.rawData.manualData) ? state.rawData.manualData : []; // ◀ [수정] 누락되었던 선언문 추가
+        const manual = Array.isArray(state.rawData.manualData) ? state.rawData.manualData : [];
 
         const resolveName = (n) => {
           if (!n) return "Unknown";
@@ -217,6 +218,7 @@
 
         let yearGroups = {};
         let creatorGroups = {};
+        let allVideos = []; // 개별 영상 전체를 담을 배열 추가
 
         archive.forEach(group => {
           if (!group) return;
@@ -239,6 +241,7 @@
                 creatorGroups[mappedC].profile = pmap[v.creator];
               }
               creatorGroups[mappedC].videos.push(videoWithMeta);
+              allVideos.push(videoWithMeta); // 전체 목록에 추가
             });
           }
         });
@@ -250,15 +253,12 @@
           const refinedDate = getRefinedDate(v);
           const videoWithMeta = { ...v, mappedCreator: mappedC, refinedDate: refinedDate };
           
-          // 날짜 형식("2024/05/12")에서 연도(예: "2024")만 추출
           let yr = refinedDate.split('/')[0];
           if (yr === "0000") yr = "UNKNOWN";
           
-          // 연도별 그룹에 매칭해서 밀어넣기
           if (!yearGroups[yr]) yearGroups[yr] = [];
           yearGroups[yr].push(videoWithMeta);
           
-          // 제작자별 그룹에 매칭해서 밀어넣기
           if (!creatorGroups[mappedC]) {
             creatorGroups[mappedC] = {
                 videos: [],
@@ -268,6 +268,7 @@
             creatorGroups[mappedC].profile = pmap[v.creator];
           }
           creatorGroups[mappedC].videos.push(videoWithMeta);
+          allVideos.push(videoWithMeta); // 전체 목록에 추가
         });
 
         const sortGroups = (groups, type) => {
@@ -284,13 +285,17 @@
 
           if (state.sortOrder === 'latest') result.sort((a, b) => b.latestDate.localeCompare(a.latestDate));
           else if (state.sortOrder === 'oldest') result.sort((a, b) => a.latestDate.localeCompare(b.latestDate));
-          else if (state.sortOrder === 'name') result.sort((a, b) => a.playlist_title.localeCompare(b.playlist_title));
+          else if (state.sortOrder === 'name') result.sort((a, b) => a.playlist_title.localeCompare(b.playlist_title, state.lang));
           else if (state.sortOrder === 'random') result.sort(() => Math.random() - 0.5);
           
           return result;
         };
 
-        return { year: sortGroups(yearGroups, 'year'), creator: sortGroups(creatorGroups, 'creator') };
+        return { 
+          year: sortGroups(yearGroups, 'year'), 
+          creator: sortGroups(creatorGroups, 'creator'),
+          all: allVideos // 구조 분해 할당을 위해 객체에 바인딩
+        };
       };
 
       // 렌더링 함수들
@@ -303,14 +308,12 @@
         let arcId = (v.archive_id && v.archive_id !== "") ? v.archive_id : (v.id || null);
         if (arcId === ytId) arcId = null;
 
-        // [수정] 아카이브 ID가 니코동 포맷인지 분석하여 분기 처리
         const arcNicoMatch = arcId ? String(arcId).match(/(sm|nm|so|am)\d+/) : null;
         const arcNicoId = arcNicoMatch ? arcNicoMatch[0] : null;
         const arcYtId = (!arcNicoId && arcId) ? arcId : null;
 
         const isYtOriginalViewable = v.is_viewable === true || (v.description || "").includes("視聴可能");
         
-        // [수정] 기본 재생 우선순위에 니코동 아카이브(arcNicoId) 조건 추가
         let defaultSource = null;
         if (v.is_viewable && nicoId) defaultSource = { type: 'nico', id: nicoId };
         else if (ytId && isYtOriginalViewable) defaultSource = { type: 'yt', id: ytId };
@@ -320,10 +323,9 @@
 
         const thumb = getThumbnail(v);
         const videoKey = `${v.title}-${v.nico_id || index}`;
-        const safeDOMId = `media-${index}`; // 영상 고유 영역 ID
+        const safeDOMId = `media-${index}`;
         const playerState = state.activePlayers[videoKey];
 
-        // --- 제작자 프로필 이미지 가져오기 로직 추가 ---
         const pmap = state.rawData.profileMap || {};
         const profileUrl = pmap[v.mappedCreator] || pmap[v.creator] || DEFAULT_PROFILE;
 
@@ -406,7 +408,6 @@
           `;
         }
         if (arcId) {
-          // [수정] 아카이브 ID가 니코동인 경우 인라인 플레이어로 재생 가능하도록 버튼 속성 분기 처리
           if (arcNicoId) {
             const btnClass = playerState?.type === 'nico' && playerState?.id === arcNicoId
               ? 'bg-[#9b0000] border-[#9b0000] text-white' 
@@ -465,10 +466,8 @@
         const lang = state.lang;
         const currentI18n = i18n[lang];
 
-        // HTML 태그의 lang 속성 실시간 동기화
         document.documentElement.lang = lang;
 
-        // 다국어 선택기 스타일 업데이트
         const btnKo = document.getElementById('btn-lang-ko');
         const btnJa = document.getElementById('btn-lang-ja');
         if (btnKo && btnJa) {
@@ -481,13 +480,11 @@
           }
         }
 
-        // 검색창 플레이스홀더 번역 업데이트
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
           searchInput.placeholder = currentI18n.searchPlaceholder;
         }
 
-        // 정렬 드롭다운 실시간 번역
         const sortSelect = document.getElementById('sort-select');
         if (sortSelect) {
           sortSelect.innerHTML = `
@@ -498,14 +495,17 @@
           `;
         }
 
-        // 정렬 보기 버튼 실시간 번역
         const btnYear = document.getElementById('btn-year');
         const btnCreator = document.getElementById('btn-creator');
-        if (btnYear && btnCreator) {
+        const btnAll = document.getElementById('btn-all');
+        if (btnYear && btnCreator && btnAll) {
           btnYear.textContent = currentI18n.viewYear;
           btnCreator.textContent = currentI18n.viewCreator;
+          btnAll.textContent = currentI18n.viewAll;
+          
           btnYear.className = `px-3 md:px-4 py-1 text-[10px] md:text-xs font-bold rounded transition-all ${state.viewMode === 'year' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
           btnCreator.className = `px-3 md:px-4 py-1 text-[10px] md:text-xs font-bold rounded transition-all ${state.viewMode === 'creator' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
+          btnAll.className = `px-3 md:px-4 py-1 text-[10px] md:text-xs font-bold rounded transition-all ${state.viewMode === 'all' ? 'bg-[#9b0000] text-white' : 'text-[#777] hover:text-[#aaa]'}`;
         }
         
         const reloadIcon = document.getElementById('reload-icon');
@@ -524,12 +524,19 @@
 
         const processedData = getProcessedData();
 
-        if (state.selectedPlaylist) {
-          // 비디오 목록 뷰
-          let videos = [...state.selectedPlaylist.videos];
+        // [수정] 폴더를 선택했거나 혹은 '전체 영상(all)' 탭을 누른 경우 비디오 목록 뷰 렌더링
+        if (state.selectedPlaylist || state.viewMode === 'all') {
+          let videos = state.selectedPlaylist ? [...state.selectedPlaylist.videos] : [...processedData.all];
+          
+          // 전체 영상 보기 모드이고 검색창에 입력 값이 있다면 개별 리스트 직접 필터링
+          if (state.viewMode === 'all' && state.searchQuery) {
+            const q = state.searchQuery.toLowerCase();
+            videos = videos.filter(v => v.title.toLowerCase().includes(q) || v.mappedCreator.toLowerCase().includes(q));
+          }
+
           if (state.sortOrder === 'latest') videos.sort((a, b) => b.refinedDate.localeCompare(a.refinedDate));
           else if (state.sortOrder === 'oldest') videos.sort((a, b) => a.refinedDate.localeCompare(b.refinedDate));
-          else if (state.sortOrder === 'name') videos.sort((a, b) => a.title.localeCompare(b.title));
+          else if (state.sortOrder === 'name') videos.sort((a, b) => a.title.localeCompare(b.title, state.lang));
           else if (state.sortOrder === 'random') videos.sort(() => Math.random() - 0.5);
 
           let sortLabel = "";
@@ -538,9 +545,8 @@
           else if (state.sortOrder === 'name') sortLabel = currentI18n.sortName;
           else if (state.sortOrder === 'random') sortLabel = currentI18n.sortRandom;
 
-          // 플레이리스트 제목 중 'UNKNOWN'을 선택한 언어에 맞게 번역
-          let displayPlaylistTitle = state.selectedPlaylist.playlist_title;
-          if (state.viewMode === 'year' && displayPlaylistTitle === 'UNKNOWN') {
+          let displayPlaylistTitle = state.selectedPlaylist ? state.selectedPlaylist.playlist_title : currentI18n.viewAll;
+          if (state.selectedPlaylist && state.viewMode === 'year' && displayPlaylistTitle === 'UNKNOWN') {
             displayPlaylistTitle = lang === 'ko' ? '기타 / 미분류' : 'その他 / 未分類';
           }
 
@@ -548,13 +554,15 @@
             <div class="fade-in duration-500">
               <div class="flex items-center justify-between mb-8">
                 <div class="flex items-center gap-4">
+                  ${state.selectedPlaylist ? `
                   <button onclick="app.clearPlaylist()" class="p-2 bg-[#1a1a1a] border border-[#333] hover:border-[#9b0000] transition-colors rounded" title="${currentI18n.back}">
                     <i data-lucide="chevron-left" class="w-5 h-5"></i>
                   </button>
+                  ` : ''}
                   <div>
                     <h2 class="text-2xl font-bold text-[#9b0000] uppercase italic tracking-tight">${escapeHTML(displayPlaylistTitle)}</h2>
                     <p class="text-[10px] text-[#555] font-sans mt-0.5 uppercase tracking-widest">
-                      ${sortLabel} ${currentI18n.sortedBy}
+                      ${sortLabel} ${currentI18n.sortedBy} (${videos.length}${currentI18n.works})
                     </p>
                   </div>
                 </div>
@@ -580,7 +588,6 @@
                  </div>` 
               : '';
 
-            // 폴더 리스트에서도 'UNKNOWN' 명칭을 현지화
             let displayFolderTitle = p.playlist_title;
             if (state.viewMode === 'year' && displayFolderTitle === 'UNKNOWN') {
               displayFolderTitle = lang === 'ko' ? '기타 / 미분류' : 'その他 / 未分類';
@@ -607,14 +614,12 @@
           `;
         }
 
-        // 새롭게 렌더링된 요소의 아이콘 초기화
         lucide.createIcons();
       };
 
       // API 노출
       return {
         init: async () => {
-          // 브라우저 저장소에서 이전에 사용한 언어 설정 로드
           try {
             const savedLang = localStorage.getItem('dna_lang');
             if (savedLang === 'ko' || savedLang === 'ja') {
@@ -630,14 +635,12 @@
           state.loading = true;
           updateUI();
           
-          // 깃허브 Raw JSON 링크 정의
           const videoDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/video_data.json"; 
           const manualDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/manual_data.json";
           const creatorMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/creator_map.json"; 
           const profileMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/profile_map.json";
 
           try {
-            // [수정] Promise.all 안에 fetch(manualDataUrl)를 추가하고 resManual 변수를 받도록 설정
             const [resVideo, resManual, resCreator, resProfile] = await Promise.all([
               fetch(videoDataUrl),
               fetch(manualDataUrl),
@@ -645,12 +648,10 @@
               fetch(profileMapUrl)
             ]);
 
-            // [수정] !resManual.ok 체크도 조건에 포함
             if (!resVideo.ok || !resManual.ok || !resCreator.ok || !resProfile.ok) {
               throw new Error("GitHub에서 데이터를 가져오는 중 오류가 발생했습니다.");
             }
 
-            // 다운로드된 JSON 파싱하여 state에 저장
             state.rawData = {
               videoData: await resVideo.json(),
               manualData: await resManual.json(),
@@ -720,7 +721,6 @@
           const currentI18n = i18n[lang];
           
           if (domId) {
-            // updateUI() 대신 특정 DOM 영역만 교체하여 리렌더링 깜빡임 방지
             const container = document.getElementById(domId);
             if (container && type === 'nico') {
               container.innerHTML = `
@@ -743,10 +743,9 @@
                   </div>
                 </div>
               `;
-              lucide.createIcons(); // 주입된 HTML 내부 아이콘 렌더링
+              lucide.createIcons();
             }
 
-            // [수정] 오리지널 NICO 버튼과 NICO 아카이브 버튼 모두 스타일 클래스가 유기적으로 스위칭되도록 구현
             const btnNico = document.getElementById(`btn-nico-${domId}`);
             const btnArc = document.getElementById(`btn-arc-${domId}`);
             
@@ -779,7 +778,6 @@
               }
             }
           } else {
-            // 예외상황을 위한 Fallback
             updateUI();
           }
         },
@@ -790,7 +788,6 @@
       };
     })();
 
-    // 앱 초기화 실행
     document.addEventListener('DOMContentLoaded', app.init);
   </script>
 </body>
