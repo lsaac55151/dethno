@@ -152,7 +152,9 @@
         selectedPlaylist: null,
         activePlayers: {},
         sortOrder: 'latest',
-        lang: 'ko' // 기본값 한국어
+        lang: 'ko', // 기본값 한국어
+        mainScrollPosition: 0,
+        randomWeights: {} // [추가] 랜덤 정렬 시 순서를 고정하기 위한 고유 가중치 저장소
       };
 
       // 유틸리티 함수
@@ -163,10 +165,19 @@
             '&': '&',
             '<': '<',
             '>': '>',
-            "'": '&#39;',
-            '"': '&quot;'
+            "'": "'",
+            '"': '"'
           }[tag] || tag)
         );
+      };
+
+      // [추가] 고유 키값을 기준으로 일정한 난수 가중치를 반환하는 함수 (새로 정렬하기 전까지 고정됨)
+      const getRandomWeight = (key) => {
+        if (!state.randomWeights) state.randomWeights = {};
+        if (state.randomWeights[key] === undefined) {
+          state.randomWeights[key] = Math.random();
+        }
+        return state.randomWeights[key];
       };
 
       const extractYtId = (url) => {
@@ -218,7 +229,7 @@
 
         let yearGroups = {};
         let creatorGroups = {};
-        let allVideos = []; // 개별 영상 전체를 담을 배열 추가
+        let allVideos = []; 
 
         archive.forEach(group => {
           if (!group) return;
@@ -241,7 +252,7 @@
                 creatorGroups[mappedC].profile = pmap[v.creator];
               }
               creatorGroups[mappedC].videos.push(videoWithMeta);
-              allVideos.push(videoWithMeta); // 전체 목록에 추가
+              allVideos.push(videoWithMeta); 
             });
           }
         });
@@ -260,7 +271,7 @@
           yearGroups[yr].push(videoWithMeta);
           
           if (!creatorGroups[mappedC]) {
-            creatorGroups[mappedC] = {
+                creatorGroups[mappedC] = {
                 videos: [],
                 profile: pmap[mappedC] || pmap[v.creator] || DEFAULT_PROFILE
             };
@@ -268,7 +279,7 @@
             creatorGroups[mappedC].profile = pmap[v.creator];
           }
           creatorGroups[mappedC].videos.push(videoWithMeta);
-          allVideos.push(videoWithMeta); // 전체 목록에 추가
+          allVideos.push(videoWithMeta); 
         });
 
         const sortGroups = (groups, type) => {
@@ -286,7 +297,10 @@
           if (state.sortOrder === 'latest') result.sort((a, b) => b.latestDate.localeCompare(a.latestDate));
           else if (state.sortOrder === 'oldest') result.sort((a, b) => a.latestDate.localeCompare(b.latestDate));
           else if (state.sortOrder === 'name') result.sort((a, b) => a.playlist_title.localeCompare(b.playlist_title, state.lang));
-          else if (state.sortOrder === 'random') result.sort(() => Math.random() - 0.5);
+          else if (state.sortOrder === 'random') {
+            // [수정] 불안정한 Math.random() 대신 고유 타이틀 기준 고정 난수 가중치 적용
+            result.sort((a, b) => getRandomWeight(a.playlist_title) - getRandomWeight(b.playlist_title));
+          }
           
           return result;
         };
@@ -294,7 +308,7 @@
         return { 
           year: sortGroups(yearGroups, 'year'), 
           creator: sortGroups(creatorGroups, 'creator'),
-          all: allVideos // 구조 분해 할당을 위해 객체에 바인딩
+          all: allVideos 
         };
       };
 
@@ -348,7 +362,7 @@
               ></iframe>
               <div class="absolute top-2 right-2 flex gap-1">
                 <button 
-                  onclick="window.open('https://www.nicovideo.jp/watch/${playerState.id}', '_blank')"
+                  onclick="app.openLink('https://www.nicovideo.jp/watch/${playerState.id}')"
                   class="bg-black/80 hover:bg-[#9b0000] text-white p-1.5 rounded-md text-[10px] flex items-center gap-1 transition-colors border border-white/20"
                 >
                   <i data-lucide="external-link" class="w-3 h-3"></i>
@@ -400,7 +414,7 @@
             : 'border-[#9b0000]/30 text-[#555] line-through';
           buttonsHTML += `
             <button 
-              onclick="window.open('https://www.youtube.com/watch?v=${ytId}', '_blank')"
+              onclick="app.openLink('https://www.youtube.com/watch?v=${ytId}')"
               class="px-3 py-1 text-[10px] bg-[#1a1a1a] border font-bold transition-colors ${btnClass}"
             >
               YT ${isYtOriginalViewable ? '✔' : '✖'}
@@ -427,7 +441,7 @@
           } else {
             buttonsHTML += `
               <button 
-                onclick="window.open('https://www.youtube.com/watch?v=${arcYtId}', '_blank')"
+                onclick="app.openLink('https://www.youtube.com/watch?v=${arcYtId}')"
                 class="px-3 py-1 text-[10px] font-bold border bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000] transition-colors"
               >
                 ARCHIVE
@@ -524,11 +538,9 @@
 
         const processedData = getProcessedData();
 
-        // [수정] 폴더를 선택했거나 혹은 '전체 영상(all)' 탭을 누른 경우 비디오 목록 뷰 렌더링
         if (state.selectedPlaylist || state.viewMode === 'all') {
           let videos = state.selectedPlaylist ? [...state.selectedPlaylist.videos] : [...processedData.all];
           
-          // 전체 영상 보기 모드이고 검색창에 입력 값이 있다면 개별 리스트 직접 필터링
           if (state.viewMode === 'all' && state.searchQuery) {
             const q = state.searchQuery.toLowerCase();
             videos = videos.filter(v => v.title.toLowerCase().includes(q) || v.mappedCreator.toLowerCase().includes(q));
@@ -537,7 +549,14 @@
           if (state.sortOrder === 'latest') videos.sort((a, b) => b.refinedDate.localeCompare(a.refinedDate));
           else if (state.sortOrder === 'oldest') videos.sort((a, b) => a.refinedDate.localeCompare(b.refinedDate));
           else if (state.sortOrder === 'name') videos.sort((a, b) => a.title.localeCompare(b.title, state.lang));
-          else if (state.sortOrder === 'random') videos.sort(() => Math.random() - 0.5);
+          else if (state.sortOrder === 'random') {
+            // [수정] 비디오 개별 리스트 정렬도 고정 가중치 난수를 적용하여 UI 조작시 순서 뒤바뀜 방지
+            videos.sort((a, b) => {
+              const keyA = `${a.title}-${a.nico_id || a.yt_id || ''}`;
+              const keyB = `${b.title}-${b.nico_id || b.yt_id || ''}`;
+              return getRandomWeight(keyA) - getRandomWeight(keyB);
+            });
+          }
 
           let sortLabel = "";
           if (state.sortOrder === 'latest') sortLabel = currentI18n.sortLatest;
@@ -573,7 +592,6 @@
             </div>
           `;
         } else {
-          // 플레이리스트(폴더) 뷰
           const data = processedData[state.viewMode] || [];
           const q = state.searchQuery.toLowerCase();
           const filteredData = q 
@@ -593,8 +611,11 @@
               displayFolderTitle = lang === 'ko' ? '기타 / 미분류' : 'その他 / 未分類';
             }
 
+            // [수정] onclick 이벤트를 인덱스(idx)대신 고유 이름인 playlist_title(dataset.title)을 넘기도록 변경
             return `
-              <div class="bg-[#121212] border border-[#222] hover:border-[#9b0000] cursor-pointer group transition-all rounded overflow-hidden flex flex-col fade-in" onclick="app.selectPlaylist(${idx})">
+              <div class="bg-[#121212] border border-[#222] hover:border-[#9b0000] cursor-pointer group transition-all rounded overflow-hidden flex flex-col fade-in" 
+                   data-title="${escapeHTML(p.playlist_title)}" 
+                   onclick="app.selectPlaylist(this.dataset.title)">
                 <div class="aspect-video bg-black overflow-hidden relative">
                   <img src="${mainThumb}" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-300" onerror="this.src='https://via.placeholder.com/300x170?text=ARCHIVE'" />
                   ${profileHTML}
@@ -663,6 +684,35 @@
           } finally {
             setTimeout(() => {
               state.loading = false;
+              
+              try {
+                const saved = sessionStorage.getItem('dna_state');
+                if (saved) {
+                  const parsed = JSON.parse(saved);
+                  state.viewMode = parsed.viewMode || 'year';
+                  state.sortOrder = parsed.sortOrder || 'latest';
+                  state.searchQuery = parsed.searchQuery || '';
+                  state.mainScrollPosition = parsed.mainScrollPosition || 0;
+                  
+                  if (parsed.selectedPlaylistTitle) {
+                    const processed = getProcessedData();
+                    const data = processed[state.viewMode] || [];
+                    state.selectedPlaylist = data.find(p => p.playlist_title === parsed.selectedPlaylistTitle) || null;
+                  }
+                  
+                  updateUI();
+                  
+                  if (parsed.scrollPosition) {
+                    window.scrollTo(0, parsed.scrollPosition);
+                  }
+                  
+                  sessionStorage.removeItem('dna_state'); 
+                  return;
+                }
+              } catch (e) {
+                console.warn("세션 복원 실패:", e);
+              }
+
               updateUI();
             }, 300);
           }
@@ -670,6 +720,7 @@
         setViewMode: (mode) => {
           if (state.selectedPlaylist) state.selectedPlaylist = null;
           state.viewMode = mode;
+          state.mainScrollPosition = 0; 
           window.scrollTo(0, 0);
           updateUI();
         },
@@ -679,6 +730,9 @@
           updateUI();
         },
         setSortOrder: (order) => {
+          if (order === 'random') {
+            state.randomWeights = {}; // [추가] 셀렉트박스에서 유저가 '랜덤순'을 새로 클릭할 때만 완전히 새로운 난수를 부여 (새로고침 효과)
+          }
           state.sortOrder = order;
           updateUI();
         },
@@ -696,24 +750,46 @@
         goHome: () => {
           state.selectedPlaylist = null;
           state.viewMode = 'year';
+          state.mainScrollPosition = 0;
+          try { sessionStorage.removeItem('dna_state'); } catch(e){}
           window.scrollTo(0, 0);
           updateUI();
         },
-        selectPlaylist: (index) => {
+        // [수정] index 대신 playlist의 타이틀 문자열을 직접 받아 검색하도록 아키텍처 개선
+        selectPlaylist: (title) => {
+          state.mainScrollPosition = window.scrollY;
+
           const processedData = getProcessedData();
           const data = processedData[state.viewMode] || [];
-          const q = state.searchQuery.toLowerCase();
-          const filteredData = q 
-            ? data.filter(p => p.playlist_title.toLowerCase().includes(q) || p.videos.some(v => v.title.toLowerCase().includes(q) || v.mappedCreator.toLowerCase().includes(q)))
-            : data;
-            
-          state.selectedPlaylist = filteredData[index];
+          
+          // 난수가 다시 생성되더라도 순서와 상관없이 title 고유값으로 원본 오브젝트를 정밀 조회하므로 안전합니다.
+          state.selectedPlaylist = data.find(p => p.playlist_title === title) || null;
           window.scrollTo(0, 0);
           updateUI();
         },
         clearPlaylist: () => {
           state.selectedPlaylist = null;
           updateUI();
+          setTimeout(() => {
+            window.scrollTo(0, state.mainScrollPosition);
+          }, 0);
+        },
+        openLink: (url) => {
+          try {
+            const sessionState = {
+              viewMode: state.viewMode,
+              selectedPlaylistTitle: state.selectedPlaylist ? state.selectedPlaylist.playlist_title : null,
+              scrollPosition: window.scrollY,
+              mainScrollPosition: state.mainScrollPosition,
+              sortOrder: state.sortOrder,
+              searchQuery: state.searchQuery,
+              lang: state.lang
+            };
+            sessionStorage.setItem('dna_state', JSON.stringify(sessionState));
+          } catch (e) {
+            console.warn("세션 저장 실패:", e);
+          }
+          window.open(url, '_blank');
         },
         playVideo: (videoKey, type, id, domId) => {
           state.activePlayers = { ...state.activePlayers, [videoKey]: { type, id } };
@@ -734,7 +810,7 @@
                   ></iframe>
                   <div class="absolute top-2 right-2 flex gap-1">
                     <button 
-                      onclick="window.open('https://www.nicovideo.jp/watch/${id}', '_blank')"
+                      onclick="app.openLink('https://www.nicovideo.jp/watch/${id}')"
                       class="bg-black/80 hover:bg-[#9b0000] text-white p-1.5 rounded-md text-[10px] flex items-center gap-1 transition-colors border border-white/20"
                     >
                       <i data-lucide="external-link" class="w-3 h-3"></i>
@@ -782,7 +858,7 @@
           }
         },
         handleMediaClick: (type, id, videoKey, domId) => {
-          if (type === 'yt') window.open(`https://www.youtube.com/watch?v=${id}`, '_blank');
+          if (type === 'yt') app.openLink(`https://www.youtube.com/watch?v=${id}`);
           else if (type === 'nico') app.playVideo(videoKey, 'nico', id, domId);
         }
       };
