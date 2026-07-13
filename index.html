@@ -845,17 +845,23 @@
               throw new Error("GitHub에서 데이터를 가져오는 중 오류가 발생했습니다.");
             }
 
-            // [추가] 텍스트 파일 파싱 로직 (원본제목:번역본 형태 매핑)
+            // [추가] 텍스트 파일 파싱 로직 (원본제목==번역본 형태 매핑)
             const translationText = await resTranslation.text();
             const translationMap = {};
             translationText.split('\n').forEach(line => {
               const trimmed = line.trim();
               if (!trimmed || trimmed.startsWith('#')) return; // 빈 줄이나 주석(#) 제외
 
-              const colonIndex = trimmed.lastIndexOf(':');
-              if (colonIndex !== -1) {
-                const key = trimmed.substring(0, colonIndex).trim();
-                const value = trimmed.substring(colonIndex + 1).trim();
+              // 1. 가장 마지막에 나온 '==' 의 위치를 찾습니다.
+              const delimiterIndex = trimmed.lastIndexOf('==');
+
+              if (delimiterIndex !== -1) {
+                // 2. '==' 앞부분을 원본 제목(Key)으로 지정
+                const key = trimmed.substring(0, delimiterIndex).trim();
+
+                // 3. '=='가 2글자이므로 delimiterIndex에 2를 더한 위치부터 끝까지를 번역본(Value)으로 지정
+                const value = trimmed.substring(delimiterIndex + 2).trim();
+
                 if (key) translationMap[key] = value;
               }
             });
