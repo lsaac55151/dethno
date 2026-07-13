@@ -155,7 +155,7 @@
 
       let state = {
         loading: true,
-        rawData: { videoData: [], creatorMap: {}, profileMap: {} },
+        rawData: { videoData: [], creatorMap: {}, profileMap: {}, translationMap: {} }, // ← translationMap 추가
         viewMode: 'year',
         searchQuery: '',
         selectedPlaylist: null,
@@ -358,8 +358,27 @@
           }
         });
 
-        // 3. 아카이브 전체 목록과 매칭되지 않은 독립 매뉴얼 목록을 최종 결합 (데이터 누락 0%)
-        const allVideos = [...archiveVideos, ...manualVideos];
+        // 3. 아카이브 전체 목록과 매칭되지 않은 독립 매뉴얼 목록을 최종 결합
+        const allVideos = [...archiveVideos, ...manualVideos]; //
+
+        // [개선 반영] KO 상태일 때 번역본 데이터(translationMap)를 기반으로 타이틀 치환
+        if (state.lang === 'ko' && state.rawData.translationMap) {
+
+          // ⭐️ 중요: 짧은 단어가 긴 단어를 먼저 채 가기 방지하기 위해, 글자 수가 긴 원본 제목 순서로 정렬합니다.
+          const sortedTranslations = Object.entries(state.rawData.translationMap)
+            .sort((a, b) => b[0].length - a[0].length);
+
+          allVideos.forEach(video => {
+            if (video.title) {
+              sortedTranslations.forEach(([original, translated]) => {
+                if (video.title.includes(original)) {
+                  // 일치하는 부분을 한국어 번역본으로 교체
+                  video.title = video.title.split(original).join(translated);
+                }
+              });
+            }
+          });
+        }
 
         let yearGroups = {};
         let creatorGroups = {};
@@ -600,7 +619,7 @@
               ${mediaAreaHTML}
             </div>
             <div class="p-4 flex-grow flex flex-col relative">
-              <h5 class="text-sm font-bold text-[#f0f0f0] line-clamp-2 h-10 leading-snug">${escapeHTML(v.title)}</h5>
+              <h5 class="text-lg font-bold text-[#f0f0f0] line-clamp-2 h-14 leading-snug">${escapeHTML(v.title)}</h5>
               
               <div class="text-[11px] text-[#888] mt-2 flex items-center gap-2 font-sans">
                 <div class="w-10 h-10 rounded-full overflow-hidden border border-[#9b0000]/40 shrink-0 bg-[#0a0a0a]">
@@ -809,24 +828,44 @@
           const manualDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/manual_data.json";
           const creatorMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/creator_map.json";
           const profileMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/profile_map.json";
+          const translationUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EB%B2%88%EC%97%AD%EC%9A%A9.txt"; // [추가] 번역 파일 URL
 
           try {
-            const [resVideo, resManual, resCreator, resProfile] = await Promise.all([
+            // [수정] Promise.all에 resTranslation 추가
+            const [resVideo, resManual, resCreator, resProfile, resTranslation] = await Promise.all([
               fetch(videoDataUrl),
               fetch(manualDataUrl),
               fetch(creatorMapUrl),
-              fetch(profileMapUrl)
+              fetch(profileMapUrl),
+              fetch(translationUrl) // [추가]
             ]);
 
-            if (!resVideo.ok || !resManual.ok || !resCreator.ok || !resProfile.ok) {
+            // [수정] 조건문에 !resTranslation.ok 추가
+            if (!resVideo.ok || !resManual.ok || !resCreator.ok || !resProfile.ok || !resTranslation.ok) {
               throw new Error("GitHub에서 데이터를 가져오는 중 오류가 발생했습니다.");
             }
+
+            // [추가] 텍스트 파일 파싱 로직 (원본제목:번역본 형태 매핑)
+            const translationText = await resTranslation.text();
+            const translationMap = {};
+            translationText.split('\n').forEach(line => {
+              const trimmed = line.trim();
+              if (!trimmed || trimmed.startsWith('#')) return; // 빈 줄이나 주석(#) 제외
+
+              const colonIndex = trimmed.indexOf(':');
+              if (colonIndex !== -1) {
+                const key = trimmed.substring(0, colonIndex).trim();
+                const value = trimmed.substring(colonIndex + 1).trim();
+                if (key) translationMap[key] = value;
+              }
+            });
 
             state.rawData = {
               videoData: await resVideo.json(),
               manualData: await resManual.json(),
               creatorMap: await resCreator.json(),
-              profileMap: await resProfile.json()
+              profileMap: await resProfile.json(),
+              translationMap: translationMap // [추가] 담아두기
             };
           } catch (error) {
             console.error("데이터 로드 실패:", error);
