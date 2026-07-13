@@ -790,14 +790,16 @@
             {
                 "id": "J6lsKRqIVPY",
                 "title": "マツダイダイダイダイキラい  /【2025/05/25】",
-                "upload_date": "20250525",
+                "upload_date": "2025/05/25",
                 "description": "https://www.nicovideo.jp/watch/sm45020400\n状態：視聴可能 ( 2025/10/03 )\n投稿日時：2025/05/25 17:11\n投稿者：ゲスト (ID:140230974)",
                 "original_link": "https://www.nicovideo.jp/watch/sm45020400",
                 "nico_id": "sm45020400",
-                "is_viewable": true,
+                "is_viewable": false,
                 "creator": "ゲスト",
                 "is_archive": true,
-                "added_at": 1777614718.3346367
+                "added_at": 1777614718.3346367,
+                "archive_id": "J6lsKRqIVPY",
+                "yt_id": null
             },
             {
                 "id": "GgsIyDd8R7k",
