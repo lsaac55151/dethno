@@ -2403,7 +2403,7 @@
         "nico_id": null,
         "title": "이웃집 출혈귀 씨",
         "creator": "EvilServant 이블서번트",
-        "upload_date": "2022/08/30",
+        "upload_date": "2019/01/28",
         "original_link": "https://www.youtube.com/watch?v=9Vw3KifCp9g",
         "description": "2019년 TB님과의 합작이었습니다!\n얼마 전에도 옛날 작품 하나 올렸는데 어쩌다 보니 또 옛날작품을 올리네요.\n차단당하긴 너무 아까운 작품이라 조금 바꿔서 올렸습니다.\n이번엔 걸리지 않았으면 좋겠네요.",
         "is_archive": false,
@@ -2415,9 +2415,10 @@
         ],
         "thumbnail": "https://i.ytimg.com/vi_webp/9Vw3KifCp9g/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
-        "yt_id": "9Vw3KifCp9g",
+        "yt_id": "YbhJfDZEc3E",
         "added_at": 1772852643.2128925,
-        "is_viewable": true
+        "is_viewable": false,
+        "archive_id": "9Vw3KifCp9g"
     },
     {
         "id": "Y3pgkB7FEoo",
