@@ -109,6 +109,31 @@
     Death Note Archive Project
   </footer>
 
+  <!-- 크리에이터 작품 목록 모달 레이아웃 추가 -->
+  <div id="creator-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 fade-in">
+    <div class="bg-[#121212] border-2 border-[#9b0000]/50 w-full max-w-7xl max-h-[85vh] flex flex-col rounded shadow-2xl overflow-hidden">
+      <div class="p-4 border-b border-[#222] flex items-center justify-between bg-[#0a0a0a]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full overflow-hidden border border-[#9b0000]/40 bg-[#0a0a0a]">
+            <img id="modal-creator-profile" src="" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h3 id="modal-creator-name" class="text-xl font-bold text-[#9b0000] italic"></h3>
+            <p id="modal-creator-count" class="text-[10px] text-[#555] font-sans uppercase tracking-widest"></p>
+          </div>
+        </div>
+        <button onclick="app.closeCreatorModal()" class="p-2 bg-[#1a1a1a] border border-[#333] hover:border-[#9b0000] text-[#888] hover:text-white transition-colors rounded">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      
+      <div class="p-6 overflow-y-auto flex-grow min-h-0">
+        <div id="modal-creator-works" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
     // --- 다국어 리소스 설정 ---
     const i18n = {
@@ -155,18 +180,17 @@
 
       let state = {
         loading: true,
-        rawData: { videoData: [], creatorMap: {}, profileMap: {}, translationMap: {} }, // ← translationMap 추가
+        rawData: { videoData: [], creatorMap: {}, profileMap: {}, translationMap: {} },
         viewMode: 'year',
         searchQuery: '',
         selectedPlaylist: null,
         activePlayers: {},
         sortOrder: 'latest',
-        lang: 'ko', // 기본값 한국어
+        lang: 'ko',
         mainScrollPosition: 0,
-        randomWeights: {} // [추가] 랜덤 정렬 시 순서를 고정하기 위한 고유 가중치 저장소
+        randomWeights: {}
       };
 
-      // 유틸리티 함수
       // 유틸리티 함수
       const escapeHTML = (str) => {
         if (!str) return '';
@@ -175,25 +199,20 @@
         );
       };
 
-      // [추가] 특수문자와 공백을 제거하는 정제 함수 (removeNumbers가 true면 숫자까지 제거)
       const cleanStr = (str, removeNumbers = false) => {
         if (!str) return '';
-        // \p{L}은 모든 언어의 문자, \p{N}은 숫자를 의미합니다.
         const regex = removeNumbers ? /[^\p{L}]/gu : /[^\p{L}\p{N}]/gu;
         return str.toLowerCase().replace(regex, '');
       };
 
-      // [추가] 두 텍스트가 유연하게 매칭되는지 검증하는 함수
       const matchSearch = (target, query) => {
         if (!query) return true;
         if (!target) return false;
 
-        // 1차 비교: 공백/특수문자만 지우고 비교 (숫자 유지: 일반적인 검색)
         const t1 = cleanStr(target, false);
         const q1 = cleanStr(query, false);
         if (q1 && t1.includes(q1)) return true;
 
-        // 2차 비교: 숫자까지 완전히 지우고 문자만 비교 (Won(*3*)Chu 같은 특수 케이스 구제)
         const t2 = cleanStr(target, true);
         const q2 = cleanStr(query, true);
         if (q2 && t2.includes(q2)) return true;
@@ -201,7 +220,6 @@
         return false;
       };
 
-      // [추가] 고유 키값을 기준으로 일정한 난수 가중치를 반환하는 함수 (새로 정렬하기 전까지 고정됨)
       const getRandomWeight = (key) => {
         if (!state.randomWeights) state.randomWeights = {};
         if (state.randomWeights[key] === undefined) {
@@ -230,7 +248,6 @@
         return 'https://via.placeholder.com/300x170?text=NO+IMAGE';
       };
 
-      // 데이터 처리
       // 데이터 처리
       const getProcessedData = () => {
         const cmap = state.rawData.creatorMap || {};
@@ -262,7 +279,6 @@
         const ytLookup = new Map();
         const nicoLookup = new Map();
 
-        // 1. 모든 Archive (videoData) 영상들을 원본 그대로 배열에 보존 및 ID 인덱싱
         archive.forEach(group => {
           if (!group) return;
           const playlistYr = String(group.playlist_title || "Unknown").replace('年', '').replace('기타', 'UNKNOWN');
@@ -273,7 +289,6 @@
               const mappedC = resolveName(v.creator);
               const refinedDate = getRefinedDate(v);
 
-              // 원본 유지를 위해 객체 복사 생성
               const videoWithMeta = {
                 ...v,
                 mappedCreator: mappedC,
@@ -283,7 +298,6 @@
 
               archiveVideos.push(videoWithMeta);
 
-              // 주소(ID) 기반 정밀 매칭을 위해 조회용 맵(Lookup Map)에 등록
               const ytId = (v.yt_id && v.yt_id.length === 11) ? v.yt_id : extractYtId(v.original_link);
               if (ytId) ytLookup.set(ytId, videoWithMeta);
 
@@ -296,7 +310,6 @@
 
         const manualVideos = [];
 
-        // 2. Manual 데이터를 순회하며 주소가 일치하는 항목만 안전하게 필드 병합(Merge)
         manual.forEach(v => {
           if (!v) return;
 
@@ -309,7 +322,6 @@
           const nicoMatch = v.original_link ? v.original_link.match(/(sm|nm|so|am)\d+/) : null;
           const nicoId = v.nico_id || (nicoMatch ? nicoMatch[0] : null);
 
-          // 유튜브 ID 혹은 니코동 고유 ID 주소가 매칭되는 기존 아카이브 영상이 있는지 탐색
           let matchedVideo = null;
           if (ytId && ytLookup.has(ytId)) {
             matchedVideo = ytLookup.get(ytId);
@@ -318,36 +330,30 @@
           }
 
           if (matchedVideo) {
-            // [안전한 통합] 주소가 완벽히 일치할 때만 기존 객체의 데이터 필드를 보완/덮어쓰기 합니다.
             if (v.title) matchedVideo.title = v.title;
             if (v.nico_id) matchedVideo.nico_id = v.nico_id;
             if (v.yt_id && v.yt_id.length === 11) matchedVideo.yt_id = v.yt_id;
             if (v.archive_id) matchedVideo.archive_id = v.archive_id;
 
-            // 설명(description)이 양쪽에 다 존재할 경우 유실 방지를 위해 연결 처리
             if (v.description) {
               matchedVideo.description = matchedVideo.description
                 ? `${matchedVideo.description} / ${v.description}`
                 : v.description;
             }
 
-            // 시청 가능 여부 (속성이 존재할 경우 매뉴얼 데이터의 최신 상태 반영)
             if (v.is_viewable !== undefined) matchedVideo.is_viewable = v.is_viewable;
 
-            // 업로드 날짜 및 연도 보완 (기본값이 아닐 때만 갱신)
             if (refinedDate !== "0000/00/00") {
               matchedVideo.refinedDate = refinedDate;
               if (yr !== "UNKNOWN") matchedVideo.targetYear = yr;
             }
 
-            // 매뉴얼에만 기재된 기타 커스텀 필드가 있을 경우 유실 없이 추가
             Object.keys(v).forEach(key => {
               if (matchedVideo[key] === undefined) {
                 matchedVideo[key] = v[key];
               }
             });
           } else {
-            // 주소가 일치하는 영상이 전혀 없다면, '삭제하지 않고' 독립된 새 영상으로 취급하여 목록에 추가
             const newVideo = {
               ...v,
               mappedCreator: mappedC,
@@ -358,13 +364,9 @@
           }
         });
 
-        // 3. 아카이브 전체 목록과 매칭되지 않은 독립 매뉴얼 목록을 최종 결합
-        const allVideos = [...archiveVideos, ...manualVideos]; //
+        const allVideos = [...archiveVideos, ...manualVideos];
 
-        // [개선 반영] KO 상태일 때 번역본 데이터(translationMap)를 기반으로 타이틀 치환
         if (state.lang === 'ko' && state.rawData.translationMap) {
-
-          // ⭐️ 중요: 짧은 단어가 긴 단어를 먼저 채 가기 방지하기 위해, 글자 수가 긴 원본 제목 순서로 정렬합니다.
           const sortedTranslations = Object.entries(state.rawData.translationMap)
             .sort((a, b) => b[0].length - a[0].length);
 
@@ -372,7 +374,6 @@
             if (video.title) {
               sortedTranslations.forEach(([original, translated]) => {
                 if (video.title.includes(original)) {
-                  // 일치하는 부분을 한국어 번역본으로 교체
                   video.title = video.title.split(original).join(translated);
                 }
               });
@@ -387,11 +388,9 @@
           const yr = videoWithMeta.targetYear;
           const mappedC = videoWithMeta.mappedCreator;
 
-          // 연도별 그룹핑
           if (!yearGroups[yr]) yearGroups[yr] = [];
           yearGroups[yr].push(videoWithMeta);
 
-          // 크리에이터별 그룹핑
           if (!creatorGroups[mappedC]) {
             creatorGroups[mappedC] = {
               videos: [],
@@ -438,8 +437,6 @@
         const currentI18n = i18n[lang];
 
         const nicoId = v.nico_id;
-
-        // [수정] yt_id가 올바른 11자리 ID 포맷이 아닐 경우 original_link에서 재추출하도록 예외처리합니다.
         const ytId = (v.yt_id && v.yt_id.length === 11) ? v.yt_id : extractYtId(v.original_link);
 
         let arcId = (v.archive_id && v.archive_id !== "") ? v.archive_id : (v.id || null);
@@ -449,7 +446,6 @@
         const arcNicoId = arcNicoMatch ? arcNicoMatch[0] : null;
         const arcYtId = (!arcNicoId && arcId) ? arcId : null;
 
-        // [수정] 수동 데이터 등에서 is_viewable 속성이 누락되었을 때 명시적 false가 아니면 true(시청 가능)로 취급합니다.
         const isViewable = v.is_viewable !== false;
         const isYtOriginalViewable = isViewable || (v.description || "").includes("視聴可能");
 
@@ -613,6 +609,7 @@
           }
         }
 
+        // [수정 적용] 프로필 썸네일 박스 및 닉네임 span 태그에 모달 트리거 바인딩 및 호버 효과 연동
         return `
           <div class="bg-[#121212] border border-[#222] flex flex-col overflow-hidden shadow-lg transition-all hover:border-[#444] relative h-full fade-in">
             <div class="aspect-video bg-black relative group overflow-hidden" id="${safeDOMId}">
@@ -622,10 +619,14 @@
               <h5 class="text-lg font-bold text-[#f0f0f0] line-clamp-2 h-18 leading-snug">${escapeHTML(v.title)}</h5>
               
               <div class="text-[11px] text-[#888] mt-2 flex items-center gap-2 font-sans">
-                <div class="w-10 h-10 rounded-full overflow-hidden border border-[#9b0000]/40 shrink-0 bg-[#0a0a0a]">
+                <div class="w-10 h-10 rounded-full overflow-hidden border border-[#9b0000]/40 shrink-0 bg-[#0a0a0a] cursor-pointer hover:scale-105 transition-transform"
+                     data-creator="${escapeHTML(v.mappedCreator)}" onclick="app.openCreatorModal(this.dataset.creator)">
                   <img src="${profileUrl}" class="w-full h-full object-cover" onerror="this.src='${DEFAULT_PROFILE}'" />
                 </div>
-                <span class="text-[#9b0000] font-bold">${escapeHTML(v.mappedCreator)}</span>
+                <span class="text-[#9b0000] font-bold cursor-pointer hover:underline"
+                      data-creator="${escapeHTML(v.mappedCreator)}" onclick="app.openCreatorModal(this.dataset.creator)">
+                  ${escapeHTML(v.mappedCreator)}
+                </span>
                 <span class="opacity-30">|</span>
                 <span>${escapeHTML(v.refinedDate)}</span>
               </div>
@@ -706,7 +707,6 @@
 
           if (state.viewMode === 'all' && state.searchQuery) {
             const q = state.searchQuery;
-            // 고도화된 matchSearch 함수 적용
             videos = videos.filter(v => matchSearch(v.title, q) || matchSearch(v.mappedCreator, q));
           }
 
@@ -714,7 +714,6 @@
           else if (state.sortOrder === 'oldest') videos.sort((a, b) => a.refinedDate.localeCompare(b.refinedDate));
           else if (state.sortOrder === 'name') videos.sort((a, b) => a.title.localeCompare(b.title, state.lang));
           else if (state.sortOrder === 'random') {
-            // [수정] 비디오 개별 리스트 정렬도 고정 가중치 난수를 적용하여 UI 조작시 순서 뒤바뀜 방지
             videos.sort((a, b) => {
               const keyA = `${a.title}-${a.nico_id || a.yt_id || ''}`;
               const keyB = `${b.title}-${b.nico_id || b.yt_id || ''}`;
@@ -779,7 +778,6 @@
               displayFolderTitle = lang === 'ko' ? '기타 / 미분류' : 'その他 / 未分類';
             }
 
-            // [수정] onclick 이벤트를 인덱스(idx)대신 고유 이름인 playlist_title(dataset.title)을 넘기도록 변경
             return `
               <div class="bg-[#121212] border border-[#222] hover:border-[#9b0000] cursor-pointer group transition-all rounded overflow-hidden flex flex-col fade-in" 
                    data-title="${escapeHTML(p.playlist_title)}" 
@@ -828,38 +826,31 @@
           const manualDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/manual_data.json";
           const creatorMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/creator_map.json";
           const profileMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/profile_map.json";
-          const translationUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EB%B2%88%EC%97%AD%EC%9A%A9.txt"; // [추가] 번역 파일 URL
+          const translationUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EB%B2%88%EC%97%AD%EC%9A%A9.txt";
 
           try {
-            // [수정] Promise.all에 resTranslation 추가
             const [resVideo, resManual, resCreator, resProfile, resTranslation] = await Promise.all([
               fetch(videoDataUrl),
               fetch(manualDataUrl),
               fetch(creatorMapUrl),
               fetch(profileMapUrl),
-              fetch(translationUrl) // [추가]
+              fetch(translationUrl)
             ]);
 
-            // [수정] 조건문에 !resTranslation.ok 추가
             if (!resVideo.ok || !resManual.ok || !resCreator.ok || !resProfile.ok || !resTranslation.ok) {
               throw new Error("GitHub에서 데이터를 가져오는 중 오류가 발생했습니다.");
             }
 
-            // [추가] 텍스트 파일 파싱 로직 (원본제목==번역본 형태 매핑)
             const translationText = await resTranslation.text();
             const translationMap = {};
             translationText.split('\n').forEach(line => {
               const trimmed = line.trim();
-              if (!trimmed || trimmed.startsWith('#')) return; // 빈 줄이나 주석(#) 제외
+              if (!trimmed || trimmed.startsWith('#')) return;
 
-              // 1. 가장 마지막에 나온 '==' 의 위치를 찾습니다.
               const delimiterIndex = trimmed.lastIndexOf('==');
 
               if (delimiterIndex !== -1) {
-                // 2. '==' 앞부분을 원본 제목(Key)으로 지정
                 const key = trimmed.substring(0, delimiterIndex).trim();
-
-                // 3. '=='가 2글자이므로 delimiterIndex에 2를 더한 위치부터 끝까지를 번역본(Value)으로 지정
                 const value = trimmed.substring(delimiterIndex + 2).trim();
 
                 if (key) translationMap[key] = value;
@@ -871,7 +862,7 @@
               manualData: await resManual.json(),
               creatorMap: await resCreator.json(),
               profileMap: await resProfile.json(),
-              translationMap: translationMap // [추가] 담아두기
+              translationMap: translationMap
             };
           } catch (error) {
             console.error("데이터 로드 실패:", error);
@@ -925,7 +916,7 @@
         },
         setSortOrder: (order) => {
           if (order === 'random') {
-            state.randomWeights = {}; // [추가] 셀렉트박스에서 유저가 '랜덤순'을 새로 클릭할 때만 완전히 새로운 난수를 부여 (새로고침 효과)
+            state.randomWeights = {};
           }
           state.sortOrder = order;
           updateUI();
@@ -949,14 +940,12 @@
           window.scrollTo(0, 0);
           updateUI();
         },
-        // [수정] index 대신 playlist의 타이틀 문자열을 직접 받아 검색하도록 아키텍처 개선
         selectPlaylist: (title) => {
           state.mainScrollPosition = window.scrollY;
 
           const processedData = getProcessedData();
           const data = processedData[state.viewMode] || [];
 
-          // 난수가 다시 생성되더라도 순서와 상관없이 title 고유값으로 원본 오브젝트를 정밀 조회하므로 안전합니다.
           state.selectedPlaylist = data.find(p => p.playlist_title === title) || null;
           window.scrollTo(0, 0);
           updateUI();
@@ -1090,6 +1079,61 @@
         handleMediaClick: (type, id, videoKey, domId) => {
           if (type === 'yt') app.playVideo(videoKey, 'yt', id, domId);
           else if (type === 'nico') app.playVideo(videoKey, 'nico', id, domId);
+        },
+
+        // [추가 구현] 제작자 모달 열기 팝업 구현
+        openCreatorModal: (creatorName) => {
+          const processedData = getProcessedData();
+          // 정제된 데이터 내에서 클릭된 크리에이터 그룹 정보 매칭
+          const creatorData = processedData.creator.find(c => c.playlist_title === creatorName);
+          if (!creatorData) return;
+
+          const modal = document.getElementById('creator-modal');
+          const modalName = document.getElementById('modal-creator-name');
+          const modalProfile = document.getElementById('modal-creator-profile');
+          const modalCount = document.getElementById('modal-creator-count');
+          const modalWorks = document.getElementById('modal-creator-works');
+
+          // 모달 상단 정보 바인딩
+          modalName.textContent = creatorName;
+          modalProfile.src = creatorData.profile || DEFAULT_PROFILE;
+          modalProfile.onerror = () => { modalProfile.src = DEFAULT_PROFILE; };
+          
+          const lang = state.lang;
+          const currentI18n = i18n[lang];
+          modalCount.textContent = `${creatorData.videos.length}${currentI18n.works}`;
+
+          // 모달 안의 비디오 카드들도 현재 사이트의 전체 정렬 필터(최신순/오래된순 등)를 동일하게 추종하도록 처리
+          let modalVideos = [...creatorData.videos];
+          if (state.sortOrder === 'latest') modalVideos.sort((a, b) => b.refinedDate.localeCompare(a.refinedDate));
+          else if (state.sortOrder === 'oldest') modalVideos.sort((a, b) => a.refinedDate.localeCompare(b.refinedDate));
+          else if (state.sortOrder === 'name') modalVideos.sort((a, b) => a.title.localeCompare(b.title, state.lang));
+          else if (state.sortOrder === 'random') {
+            modalVideos.sort((a, b) => {
+              const keyA = `modal-${a.title}-${a.nico_id || a.yt_id || ''}`;
+              const keyB = `modal-${b.title}-${b.nico_id || b.yt_id || ''}`;
+              return getRandomWeight(keyA) - getRandomWeight(keyB);
+            });
+          }
+
+          // 메인 그리드 비디오들과의 DOM ID 충돌 방지를 위해 인덱스 접두어 고유값 처리 (`modal-${i}`)
+          modalWorks.innerHTML = modalVideos.map((v, i) => renderVideoItem(v, `modal-${i}`)).join('');
+
+          // 모달 노출
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+          
+          // 모달 안에 박힌 X 아이콘과 재생 아이콘을 Lucide로 초기화 적용
+          lucide.createIcons();
+        },
+
+        // [추가 구현] 제작자 모달 닫기 및 사운드 오프 처리
+        closeCreatorModal: () => {
+          const modal = document.getElementById('creator-modal');
+          modal.classList.remove('flex');
+          modal.classList.add('hidden');
+          // 모달을 닫을 때 백그라운드 재생 중이던 iframe 사운드가 완전히 꺼지도록 innerHTML을 제거해 리셋
+          document.getElementById('modal-creator-works').innerHTML = '';
         }
       };
     })();
