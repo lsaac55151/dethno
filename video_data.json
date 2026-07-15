@@ -7562,14 +7562,16 @@
             {
                 "id": "LVy2so06_oE",
                 "title": "【ドラマver】そうせいごろし！【がっこうぐらし！×バカヤロイド】/【2015/10/11】",
-                "upload_date": "20151011",
+                "upload_date": "2015/10/11",
                 "description": "https://www.nicovideo.jp/watch/sm27346660\n状態：視聴可能 ( 2024/11/05 )\n投稿日時：2015/10/11 15:36\n投稿者：めがっちP",
                 "original_link": "https://www.nicovideo.jp/watch/sm27346660",
                 "nico_id": "sm27346660",
                 "is_viewable": true,
                 "creator": "めがっちP",
                 "is_archive": true,
-                "added_at": 1777614506.7912917
+                "added_at": 1777614506.7912917,
+                "archive_id": "LVy2so06_oE",
+                "yt_id": null
             },
             {
                 "id": "ljS2-CERg10",
@@ -8804,15 +8806,17 @@
             },
             {
                 "id": "WiMznjlccTo",
-                "title": "NobananaNolife.avi  /【2014/09/10】",
-                "upload_date": "20140910",
+                "title": "[데스노트] 노 바나나 노 라이프 /【2014/08/12】",
+                "upload_date": "2014/08/12",
                 "description": "https://www.nicovideo.jp/watch/sm24438487\n状態：視聴可能 ( 2026/06/01 )\n投稿日時：2014/09/10 17:40\n投稿者：ニコ動輸出マシン / (ID:42937999)\n-\n出典：オリジナルより保存 _ ( DL - 2026/06/01 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm24438487",
                 "nico_id": "sm24438487",
-                "is_viewable": true,
-                "creator": "ニコ動輸出マシン",
+                "is_viewable": false,
+                "creator": "Tale",
                 "is_archive": true,
-                "added_at": 1780323167.193073
+                "added_at": 1780323167.193073,
+                "archive_id": "WiMznjlccTo",
+                "yt_id": "tvple.com/184181"
             },
             {
                 "id": "9XqHf00FMdI",
@@ -8876,15 +8880,17 @@
             },
             {
                 "id": "iM6KmLXVAxk",
-                "title": "デスノートxGGO(初めての作品)  /【2014/08/07】",
-                "upload_date": "20140807",
+                "title": "[데스노트] GGO 온라인  /【2014/08/07】",
+                "upload_date": "2014/08/07",
                 "description": "https://www.nicovideo.jp/watch/sm24183808\n状態：視聴可能 ( 2026/06/01 )\n投稿日時：2014/08/07 23:46\n投稿者：RaLa / (ID:36428233)\n-\n出典：オリジナルより保存 _ ( DL - 2026/06/01 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm24183808",
                 "nico_id": "sm24183808",
                 "is_viewable": true,
                 "creator": "RaLa",
                 "is_archive": true,
-                "added_at": 1780323156.7020683
+                "added_at": 1780323156.7020683,
+                "archive_id": "iM6KmLXVAxk",
+                "yt_id": "http://tvple.com/177523"
             },
             {
                 "id": "mlK_OuAvbjI",
