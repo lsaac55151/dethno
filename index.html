@@ -629,6 +629,28 @@
           }
         }
 
+        if (v.tvple_id && v.tvple_id !== "") {
+          buttonsHTML += `
+            <button 
+              onclick="app.openLink('https://tvple.com/${v.tvple_id}')"
+              class="px-3 py-1 text-[10px] font-bold border transition-colors bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]"
+            >
+              TVPLE
+            </button>
+          `;
+        }
+
+        if (v.archive_nico_id && v.archive_nico_id !== "") {
+          buttonsHTML += `
+            <button 
+              onclick="app.openLink('https://www.nicovideo.jp/watch/${v.archive_nico_id}')"
+              class="px-3 py-1 text-[10px] font-bold border transition-colors bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]"
+            >
+              NICO ARCHIVE
+            </button>
+          `;
+        }
+
         // [수정 적용] 프로필 썸네일 박스 및 닉네임 span 태그에 모달 트리거 바인딩 및 호버 효과 연동
         return `
           <div class="bg-[#121212] border border-[#222] flex flex-col overflow-hidden shadow-lg transition-all hover:border-[#444] relative h-full fade-in">

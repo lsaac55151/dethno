@@ -5851,7 +5851,7 @@
     },
     {
         "id": "xQNiMNUIVEQ",
-        "nico_id": null,
+        "nico_id": "",
         "title": "[바카야로이드] 은혼 17기 ED - 사무라이 하트",
         "creator": "Tale",
         "upload_date": "2014/09/06",
@@ -5861,10 +5861,12 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/xQNiMNUIVEQ/sddefault.jpg",
         "creator_thumbnail": null,
-        "yt_id": "http://tvple.com/198669",
+        "yt_id": "",
         "added_at": 1783832391.5263839,
         "is_viewable": false,
-        "archive_id": "xQNiMNUIVEQ"
+        "archive_id": "xQNiMNUIVEQ",
+        "archive_nico_id": "",
+        "tvple_id": "198669"
     },
     {
         "id": "IeotRx2V8Rs",
@@ -6094,11 +6096,11 @@
     },
     {
         "id": "SkQHaCHHWCI",
-        "nico_id": null,
+        "nico_id": "",
         "title": "[데스노트] 알브헤임 온라인 【2014/07/26~2014/08/05】",
         "creator": "Tale",
         "upload_date": "2014/08/05",
-        "original_link": "http://tvple.com/ani/178670",
+        "original_link": "https://www.youtube.com/watch?v=SkQHaCHHWCI",
         "description": "티비플:http://tvple.com/ani/178670",
         "is_archive": false,
         "tags": [
@@ -6113,9 +6115,11 @@
         ],
         "thumbnail": "https://i.ytimg.com/vi/SkQHaCHHWCI/sddefault.jpg",
         "creator_thumbnail": null,
-        "yt_id": "http://tvple.com/178670",
+        "yt_id": "",
         "added_at": 1784075385.2644653,
         "is_viewable": false,
-        "archive_id": "SkQHaCHHWCI"
+        "archive_id": "SkQHaCHHWCI",
+        "archive_nico_id": "",
+        "tvple_id": "178670"
     }
 ]
