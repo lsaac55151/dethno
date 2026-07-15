@@ -220,6 +220,74 @@
         return false;
       };
 
+      const videoMatchesQuery = (v, query) => {
+        if (!query) return true;
+        
+        if (matchSearch(v.title, query) || matchSearch(v.mappedCreator, query)) {
+          return true;
+        }
+
+        const trimmed = query.trim();
+
+        // 1. YouTube link parsing
+        const ytMatch = trimmed.match(/(?:youtu\.be\/|youtube\.com\/(?:v\/|u\/\w\/|embed\/|watch\?v=|watch\?.+&v=))([^#\&\?]{11})/i);
+        if (ytMatch) {
+          const targetYtId = ytMatch[1];
+          const ytId = (v.yt_id && v.yt_id.length === 11) ? v.yt_id : extractYtId(v.original_link);
+          const arcId = v.archive_id || v.id;
+          const isYtArc = arcId && arcId.length === 11;
+          if (ytId === targetYtId || (isYtArc && arcId === targetYtId) || v.id === targetYtId) {
+            return true;
+          }
+        }
+
+        // 2. Niconico link/ID parsing
+        const nicoMatch = trimmed.match(/(?:nicovideo\.jp\/watch\/)?((?:sm|nm|so|am)\d+)/i);
+        if (nicoMatch) {
+          const targetNicoId = nicoMatch[1].toLowerCase();
+          const nicoId = v.nico_id ? String(v.nico_id).toLowerCase() : null;
+          const arcNicoMatch = (v.archive_id || v.id) ? String(v.archive_id || v.id).match(/(sm|nm|so|am)\d+/) : null;
+          const arcNicoId = arcNicoMatch ? arcNicoMatch[0].toLowerCase() : null;
+          const archiveNicoId = v.archive_nico_id ? String(v.archive_nico_id).toLowerCase() : null;
+          
+          if (nicoId === targetNicoId || arcNicoId === targetNicoId || archiveNicoId === targetNicoId || String(v.id).toLowerCase() === targetNicoId) {
+            return true;
+          }
+        }
+
+        // 3. Tvple link parsing
+        const tvpleMatch = trimmed.match(/tvple\.com\/(?:[^\/]+\/)*(\d+)/i);
+        if (tvpleMatch) {
+          const targetTvpleId = tvpleMatch[1];
+          if (v.tvple_id === targetTvpleId) {
+            return true;
+          }
+        }
+
+        // 4. Fallback search inside exact ID / link fields
+        const searchInFields = [
+          v.id,
+          v.yt_id,
+          v.nico_id,
+          v.archive_id,
+          v.archive_nico_id,
+          v.tvple_id,
+          v.original_link
+        ];
+
+        for (const field of searchInFields) {
+          if (field) {
+            const fieldStr = String(field).toLowerCase();
+            const queryLower = trimmed.toLowerCase();
+            if (fieldStr.includes(queryLower)) {
+              return true;
+            }
+          }
+        }
+
+        return false;
+      };
+
       const getRandomWeight = (key) => {
         if (!state.randomWeights) state.randomWeights = {};
         if (state.randomWeights[key] === undefined) {
@@ -703,6 +771,9 @@
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
           searchInput.placeholder = currentI18n.searchPlaceholder;
+          if (searchInput.value !== state.searchQuery) {
+            searchInput.value = state.searchQuery;
+          }
         }
 
         const sortSelect = document.getElementById('sort-select');
@@ -749,7 +820,7 @@
 
           if (state.viewMode === 'all' && state.searchQuery) {
             const q = state.searchQuery;
-            videos = videos.filter(v => matchSearch(v.title, q) || matchSearch(v.mappedCreator, q));
+            videos = videos.filter(v => videoMatchesQuery(v, q));
           }
 
           if (state.sortOrder === 'latest') videos.sort((a, b) => b.refinedDate.localeCompare(a.refinedDate));
@@ -803,7 +874,7 @@
           const filteredData = q
             ? data.filter(p =>
               matchSearch(p.playlist_title, q) ||
-              p.videos.some(v => matchSearch(v.title, q) || matchSearch(v.mappedCreator, q))
+              p.videos.some(v => videoMatchesQuery(v, q))
             )
             : data;
 
