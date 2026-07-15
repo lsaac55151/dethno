@@ -5321,7 +5321,7 @@
     {
         "id": null,
         "nico_id": "sm27087163",
-        "title": "お願い粉バナナ",
+        "title": "お願い粉バナナ  /【2015/09/05】",
         "creator": "MASTERS",
         "upload_date": "2015/09/05",
         "original_link": "https://www.nicovideo.jp/watch/sm27087163",
@@ -5344,8 +5344,8 @@
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/3642/36428233.jpg",
         "added_at": 1773858414.5941074,
         "is_viewable": true,
-        "archive_id": null,
-        "yt_id": null
+        "archive_id": "s4MKruJyprQ",
+        "yt_id": "JHe6HQbmAxA"
     },
     {
         "id": null,
@@ -6046,5 +6046,76 @@
         "added_at": 1783910315.3408918,
         "is_viewable": true,
         "archive_id": null
+    },
+    {
+        "id": "NBcrL3PzF0U",
+        "nico_id": null,
+        "title": "ハッピー新セカイザ",
+        "creator": "TB",
+        "upload_date": "2026/02/13",
+        "original_link": "https://www.youtube.com/watch?v=NBcrL3PzF0U",
+        "description": "# 月からやってきたかぐやだよ～！\n???: おい月、これお前の事か！\n\nデスノート×ハッピーシンセサイザ(超かぐや姫! ver)\nhttps://youtu.be/kcsWkLgOU74\n\n #夜神月聖誕祭26 #超かぐや姫 #バカヤロイド #音mad",
+        "is_archive": false,
+        "tags": [
+            "ハッピーシンセカイザ",
+            "バカヤロイド",
+            "デスノート",
+            "超かぐや姫",
+            "かぐや姫"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/NBcrL3PzF0U/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "NBcrL3PzF0U",
+        "added_at": 1784074395.127928,
+        "is_viewable": true
+    },
+    {
+        "id": "JN9LprHcSYE",
+        "nico_id": null,
+        "title": "【최애의 노트】 - 다이돌(바카야로이드)",
+        "creator": "C. Real",
+        "upload_date": "2023/07/04",
+        "original_link": "https://www.youtube.com/watch?v=JN9LprHcSYE",
+        "description": "Original\nYOASOBI 「アイドル」\nhttps://youtu.be/PgBvV9ofjmA",
+        "is_archive": false,
+        "tags": [
+            "최애의 아이",
+            "데스노트",
+            "Idol",
+            "아이돌",
+            "推しの子",
+            "アイドル"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/JN9LprHcSYE/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "JN9LprHcSYE",
+        "added_at": 1784074588.0352466,
+        "is_viewable": true
+    },
+    {
+        "id": "SkQHaCHHWCI",
+        "nico_id": null,
+        "title": "[데스노트] 알브헤임 온라인 【2014/07/26~2014/08/05】",
+        "creator": "Tale",
+        "upload_date": "2014/08/05",
+        "original_link": "https://www.youtube.com/watch?v=SkQHaCHHWCI",
+        "description": "티비플:http://tvple.com/ani/178670",
+        "is_archive": false,
+        "tags": [
+            "티비플",
+            "데스노트",
+            "마츠다",
+            "라이토",
+            "가루바나나",
+            "바카야로이드",
+            "소드 아트 온라인",
+            "16.5"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/SkQHaCHHWCI/sddefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "http://tvple.com/178670",
+        "added_at": 1784075385.2644653,
+        "is_viewable": false,
+        "archive_id": "SkQHaCHHWCI"
     }
 ]
