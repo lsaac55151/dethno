@@ -4832,14 +4832,18 @@
             {
                 "id": "cLQuxunYu48",
                 "title": "ベノート  /【2021/03/03】",
-                "upload_date": "20210303",
+                "upload_date": "2021/03/03",
                 "description": "https://www.nicovideo.jp/watch/sm38363159\n状態：視聴可能 ( 2025/05/02 )\n投稿日時：2021/03/03 22:57\n投稿者：002パン",
                 "original_link": "https://www.nicovideo.jp/watch/sm38363159",
                 "nico_id": "sm38363159",
                 "is_viewable": true,
                 "creator": "002パン",
                 "is_archive": true,
-                "added_at": 1777550239.952875
+                "added_at": 1777550239.952875,
+                "archive_id": "cLQuxunYu48",
+                "archive_nico_id": "",
+                "yt_id": "G1DKvyebxm0",
+                "tvple_id": ""
             },
             {
                 "id": "jhRO0ggK68Q",
@@ -4920,14 +4924,18 @@
             {
                 "id": "ME62xCbo6I4",
                 "title": "マツダーリンダンス  /【2021/02/20】",
-                "upload_date": "20210220",
+                "upload_date": "2021/02/20",
                 "description": "https://www.nicovideo.jp/watch/sm38303223\n状態：視聴可能 ( 2025/05/02 )\n投稿日時：2021/02/20 15:55\n投稿者：002パン",
                 "original_link": "https://www.nicovideo.jp/watch/sm38303223",
                 "nico_id": "sm38303223",
                 "is_viewable": true,
                 "creator": "002パン",
                 "is_archive": true,
-                "added_at": 1777595762.4728792
+                "added_at": 1777595762.4728792,
+                "archive_id": "ME62xCbo6I4",
+                "archive_nico_id": "",
+                "yt_id": "AfQJVl2YbwQ",
+                "tvple_id": ""
             }
         ]
     },
@@ -4973,14 +4981,18 @@
             {
                 "id": "1SVvkFsHhPc",
                 "title": "新世界に駆ける  /【2020/11/02】",
-                "upload_date": "20201102",
+                "upload_date": "2020/11/02",
                 "description": "https://www.youtube.com/watch?v=ATK_Ph35IGE\n状態：視聴可能 ( 2025/04/03 )\n投稿日時：2020/11/02 01:38\n投稿者：봉식",
                 "original_link": "https://www.youtube.com/watch?v=ATK_Ph35IGE",
-                "nico_id": null,
+                "nico_id": "sm38303076",
                 "is_viewable": true,
                 "creator": "봉식",
                 "is_archive": true,
-                "added_at": 1777550202.298367
+                "added_at": 1777550202.298367,
+                "archive_id": "1SVvkFsHhPc",
+                "archive_nico_id": "",
+                "yt_id": "ATK_Ph35IGE",
+                "tvple_id": ""
             },
             {
                 "id": "vQt4IX82Azg",
