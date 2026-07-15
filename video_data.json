@@ -8263,7 +8263,9 @@
                 "is_archive": true,
                 "added_at": 1783520605.881636,
                 "archive_id": "s4MKruJyprQ",
-                "yt_id": "JHe6HQbmAxA"
+                "yt_id": "JHe6HQbmAxA",
+                "archive_nico_id": "",
+                "tvple_id": "345226"
             },
             {
                 "id": "N8bdZTn5Azs",
@@ -8715,15 +8717,19 @@
             },
             {
                 "id": "noivyzJxcnA",
-                "title": "デス物語.avi  /【2015/02/14】",
-                "upload_date": "20150214",
+                "title": "[데스노트] 네가모르는이야기 (자작)",
+                "upload_date": "2014/10/11",
                 "description": "https://www.nicovideo.jp/watch/sm25574326\n状態：視聴可能 ( 2026/06/10 )\n投稿日時：2015/02/14 17:28\n投稿者：ERU / (ID:41427512)\n-\n出典：オリジナルより保存 _ ( DL - 2026/06/10 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm25574326",
-                "nico_id": "sm25574326",
-                "is_viewable": true,
-                "creator": "ERU",
+                "nico_id": "",
+                "is_viewable": false,
+                "creator": "Tale",
                 "is_archive": true,
-                "added_at": 1783520640.3060918
+                "added_at": 1783520640.3060918,
+                "archive_id": "noivyzJxcnA",
+                "archive_nico_id": "sm25574326",
+                "yt_id": "",
+                "tvple_id": "215083"
             },
             {
                 "id": "1DzcqP0iFzc",
