@@ -492,8 +492,9 @@
 
         const sortGroups = (groups, type) => {
           let result = Object.keys(groups).map(k => {
-            const videos = (type === 'creator' ? groups[k].videos : [...groups[k]]);
-            const latestDate = videos.reduce((max, v) => (v.refinedDate > max ? v.refinedDate : max), "0000/00/00");
+            const videos = (type === 'creator' ? [...groups[k].videos] : [...groups[k]]);
+            videos.sort((a, b) => b.refinedDate.localeCompare(a.refinedDate));
+            const latestDate = videos.length > 0 ? videos[0].refinedDate : "0000/00/00";
             return {
               playlist_title: k,
               videos: videos,
