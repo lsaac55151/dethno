@@ -304,35 +304,53 @@
 
       const getThumbnail = (video) => {
         if (!video) return '';
-        const arcId = video.archive_id || video.id;
 
-        // 1. 아카이브 ID가 존재하고, 니코동 ID 패턴(sm, nm, so, am 등)일 때 (숫자ID만 추출)
-        const arcNicoMatch = arcId ? String(arcId).match(/(sm|nm|so|am)\d+/) : null;
-        if (arcNicoMatch) {
-          const numId = arcNicoMatch[0].replace(/\D/g, ''); // 숫자(Digits)가 아닌 것(\D)을 제거
-          return `https://nicovideo.cdn.nimg.jp/thumbnails/${numId}/${numId}`;
-        }
-
-        // 2. 아카이브 ID가 유튜브 ID 형식(11자리)인 경우
-        if (arcId && arcId.length === 11) return `https://i.ytimg.com/vi/${arcId}/hqdefault.jpg`;
-
-        // 3. 유튜브 오리지널 ID(yt_id 또는 오리지널 링크 내 유튜브 ID)가 존재하는 경우
-        const ytOriginalId = video.yt_id || extractYtId(video.original_link);
-        if (ytOriginalId) return `https://i.ytimg.com/vi/${ytOriginalId}/hqdefault.jpg`;
-
-        // 4. [추가 수정] 유튜브 ID가 없고, 니코동 정보(nico_id 또는 original_link)만 있는 경우
+        // Extract Nico ID from various possible fields
         const nicoIdMatch = video.nico_id ? String(video.nico_id).match(/(sm|nm|so|am)?\d+/) : null;
         const originalNicoMatch = video.original_link ? video.original_link.match(/(sm|nm|so|am)\d+/) : null;
+        const archiveNicoId = video.archive_nico_id ? String(video.archive_nico_id).match(/(sm|nm|so|am)\d+/) : null;
         
-        // nico_id를 우선 확인하고, 없으면 original_link에서 추출합니다.
-        const targetNicoId = (nicoIdMatch ? nicoIdMatch[0] : null) || (originalNicoMatch ? originalNicoMatch[0] : null);
+        const arcId = video.archive_id || video.id;
+        const arcNicoMatch = arcId ? String(arcId).match(/(sm|nm|so|am)\d+/) : null;
 
-        if (targetNicoId) {
-          const numId = targetNicoId.replace(/\D/g, ''); // 'sm123456' -> '123456'으로 변환
+        const targetNicoId = (nicoIdMatch ? nicoIdMatch[0] : null) || 
+                             (originalNicoMatch ? originalNicoMatch[0] : null) || 
+                             (archiveNicoId ? archiveNicoId[0] : null) || 
+                             (arcNicoMatch ? arcNicoMatch[0] : null);
+
+        // Check if Youtube ID/link is present
+        const ytOriginalId = video.yt_id || extractYtId(video.original_link);
+        const hasYt = !!(ytOriginalId || (arcId && String(arcId).length === 11));
+
+        // Check viewable flags (defaulting to true if not false)
+        const isNicoViewable = video.is_nico_viewable !== false;
+        const isYtViewable = video.is_yt_viewable !== false;
+
+        // 1. 니코동 영상 주소만 기록되어있거나 혹은 니코동 영상 주소만 viewable이 YES일 경우
+        if (targetNicoId && (!hasYt || (isNicoViewable && !isYtViewable))) {
+          const numId = targetNicoId.replace(/\D/g, '');
           return `https://nicovideo.cdn.nimg.jp/thumbnails/${numId}/${numId}`;
         }
 
-        // 5. 그 외의 경우 기본 대체 이미지 노출
+        // 2. 아카이브 ID가 존재하고, 니코동 ID 패턴(sm, nm, so, am 등)일 때 (숫자ID만 추출)
+        if (arcNicoMatch) {
+          const numId = arcNicoMatch[0].replace(/\D/g, '');
+          return `https://nicovideo.cdn.nimg.jp/thumbnails/${numId}/${numId}`;
+        }
+
+        // 3. 아카이브 ID가 유튜브 ID 형식(11자리)인 경우
+        if (arcId && String(arcId).length === 11) return `https://i.ytimg.com/vi/${arcId}/hqdefault.jpg`;
+
+        // 4. 유튜브 오리지널 ID(yt_id 또는 오리지널 링크 내 유튜브 ID)가 존재하는 경우
+        if (ytOriginalId) return `https://i.ytimg.com/vi/${ytOriginalId}/hqdefault.jpg`;
+
+        // 5. 유튜브 ID가 없고, 니코동 정보가 있는 경우
+        if (targetNicoId) {
+          const numId = targetNicoId.replace(/\D/g, '');
+          return `https://nicovideo.cdn.nimg.jp/thumbnails/${numId}/${numId}`;
+        }
+
+        // 6. 그 외의 경우 기본 대체 이미지 노출
         return 'https://via.placeholder.com/300x170?text=NO+IMAGE';
       };
 
@@ -429,7 +447,8 @@
                 : v.description;
             }
 
-            if (v.is_viewable !== undefined) matchedVideo.is_viewable = v.is_viewable;
+            if (v.is_nico_viewable !== undefined) matchedVideo.is_nico_viewable = v.is_nico_viewable;
+            if (v.is_yt_viewable !== undefined) matchedVideo.is_yt_viewable = v.is_yt_viewable;
 
             if (refinedDate !== "0000/00/00") {
               matchedVideo.refinedDate = refinedDate;
@@ -535,16 +554,26 @@
         const arcNicoId = arcNicoMatch ? arcNicoMatch[0] : null;
         const arcYtId = (!arcNicoId && arcId) ? arcId : null;
 
-        const isViewable = v.is_viewable !== false;
-        const isYtOriginalViewable = isViewable || (v.description || "").includes("視聴可能");
+        const isNicoViewable = v.is_nico_viewable !== false;
+        const isYtViewable = v.is_yt_viewable !== false;
 
         let defaultSource = null;
-        if (isViewable && nicoId) defaultSource = { type: 'nico', id: nicoId };
-        else if (ytId && isYtOriginalViewable) defaultSource = { type: 'yt', id: ytId };
+        if (isNicoViewable && nicoId) defaultSource = { type: 'nico', id: nicoId };
+        else if (isYtViewable && ytId) defaultSource = { type: 'yt', id: ytId };
         else if (arcNicoId) defaultSource = { type: 'nico', id: arcNicoId };
         else if (arcYtId) defaultSource = { type: 'yt', id: arcYtId };
         else if (v.archive_nico_id && v.archive_nico_id !== "") defaultSource = { type: 'nico', id: v.archive_nico_id };
         else if (ytId) defaultSource = { type: 'yt', id: ytId };
+        else if (nicoId) defaultSource = { type: 'nico', id: nicoId };
+
+        let isViewable = false;
+        if (defaultSource) {
+          if (defaultSource.type === 'nico') {
+            isViewable = (defaultSource.id === nicoId) ? isNicoViewable : true;
+          } else if (defaultSource.type === 'yt') {
+            isViewable = (defaultSource.id === ytId) ? isYtViewable : true;
+          }
+        }
 
         const thumb = getThumbnail(v);
         const videoKey = `${v.title}-${v.nico_id || index}`;
@@ -626,9 +655,12 @@
 
         let buttonsHTML = '';
         if (nicoId) {
-          const btnClass = playerState?.type === 'nico' && playerState?.id === nicoId
+          const isActive = playerState?.type === 'nico' && playerState?.id === nicoId;
+          const btnClass = isActive
             ? 'bg-[#9b0000] border-[#9b0000] text-white'
-            : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
+            : (isNicoViewable
+              ? 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]'
+              : 'bg-[#1a1a1a] border-[#9b0000]/30 text-[#555] line-through');
           buttonsHTML += `
             <button 
               data-videokey="${escapeHTML(videoKey)}"
@@ -638,7 +670,7 @@
               id="btn-nico-${safeDOMId}"
               class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
             >
-              NICO ${isViewable ? '✔' : '✖'}
+              NICO ${isNicoViewable ? '✔' : '✖'}
             </button>
           `;
         }
@@ -646,7 +678,7 @@
           const isActive = playerState?.type === 'yt' && playerState?.id === ytId;
           const btnClass = isActive
             ? 'bg-[#9b0000] border-[#9b0000] text-white'
-            : (isYtOriginalViewable
+            : (isYtViewable
               ? 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]'
               : 'bg-[#1a1a1a] border-[#9b0000]/30 text-[#555] line-through');
           buttonsHTML += `
@@ -658,7 +690,7 @@
               id="btn-yt-${safeDOMId}"
               class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
             >
-              YT ${isYtOriginalViewable ? '✔' : '✖'}
+              YT ${isYtViewable ? '✔' : '✖'}
             </button>
           `;
         }

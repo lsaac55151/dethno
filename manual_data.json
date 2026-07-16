@@ -22,7 +22,9 @@
             "新世界ダンス"
         ],
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/22989686/22989686",
-        "added_at": 1772443290.1314256
+        "added_at": 1772443290.1314256,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Dk7uyMdj9VA",
@@ -62,8 +64,9 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686222.0883312,
         "yt_id": "Dk7uyMdj9VA",
-        "is_viewable": true,
-        "archive_id": null
+        "archive_id": null,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "GDQOabN8ICs",
@@ -86,8 +89,9 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686222.0941405,
         "yt_id": "GDQOabN8ICs",
-        "is_viewable": true,
-        "archive_id": null
+        "archive_id": null,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "T_Sv3TfK0hE",
@@ -110,10 +114,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686222.0996134,
         "yt_id": "T_Sv3TfK0hE",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "449256"
+        "tvple_id": "449256",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "x7Ucv-5ift0",
@@ -136,10 +141,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686222.1058323,
         "yt_id": "x7Ucv-5ift0",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "414970"
+        "tvple_id": "414970",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "zAr4xjcZQgk",
@@ -162,10 +168,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686222.111539,
         "yt_id": "zAr4xjcZQgk",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "413509"
+        "tvple_id": "413509",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "cWROwfkHtr4",
@@ -188,10 +195,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686224.1878598,
         "yt_id": "cWROwfkHtr4",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "399004"
+        "tvple_id": "399004",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "vqj2sPlI4Rg",
@@ -214,10 +222,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686224.1929092,
         "yt_id": "vqj2sPlI4Rg",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "387948"
+        "tvple_id": "387948",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "qSltx10iDvc",
@@ -240,10 +249,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686224.274666,
         "yt_id": "qSltx10iDvc",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "383056"
+        "tvple_id": "383056",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "JJ8CjK_bdHQ",
@@ -266,10 +276,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686224.3542893,
         "yt_id": "JJ8CjK_bdHQ",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "378939"
+        "tvple_id": "378939",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "FOICuCgodPo",
@@ -292,10 +303,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686224.360249,
         "yt_id": "FOICuCgodPo",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "376371"
+        "tvple_id": "376371",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "0bzW5VuwSz0",
@@ -318,10 +330,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686226.272488,
         "yt_id": "0bzW5VuwSz0",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "373704"
+        "tvple_id": "373704",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ujmJI6FfXC0",
@@ -344,10 +357,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686226.2762108,
         "yt_id": "ujmJI6FfXC0",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "369915"
+        "tvple_id": "369915",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "P8K0hkV8DWk",
@@ -370,10 +384,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686226.5901566,
         "yt_id": "P8K0hkV8DWk",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "368811"
+        "tvple_id": "368811",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "V0YmenmpC7o",
@@ -395,11 +410,12 @@
         "thumbnail": "https://i.ytimg.com/vi/V0YmenmpC7o/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686226.6061552,
-        "is_viewable": true,
         "archive_id": "",
         "yt_id": "V0YmenmpC7o",
         "archive_nico_id": "",
-        "tvple_id": "362074"
+        "tvple_id": "362074",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "tEjNefxIKSA",
@@ -414,11 +430,12 @@
         "thumbnail": "https://i.ytimg.com/vi/tEjNefxIKSA/sddefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686226.6841404,
-        "is_viewable": true,
         "archive_id": "",
         "yt_id": "tEjNefxIKSA",
         "archive_nico_id": "",
-        "tvple_id": "358826"
+        "tvple_id": "358826",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "CgAHuif1WZg",
@@ -441,11 +458,12 @@
         "thumbnail": "https://i.ytimg.com/vi/CgAHuif1WZg/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_nPCALzkIXmXEQFprinj_a6cKA6yepR2ciYv5a6aTVYkg=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772686228.4872293,
-        "is_viewable": true,
         "archive_id": "",
         "yt_id": "CgAHuif1WZg",
         "archive_nico_id": "",
-        "tvple_id": "446327"
+        "tvple_id": "446327",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "u0L-gRTuC3I",
@@ -459,7 +477,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/u0L-gRTuC3I/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776252.0350006
+        "added_at": 1772776252.0350006,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "kw4zYifcJow",
@@ -473,7 +493,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/kw4zYifcJow/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776257.0773277
+        "added_at": 1772776257.0773277,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "BMjjM6kGK20",
@@ -487,7 +509,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/BMjjM6kGK20/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776257.3136375
+        "added_at": 1772776257.3136375,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "y79TZoPZNU4",
@@ -501,7 +525,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/y79TZoPZNU4/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776257.400129
+        "added_at": 1772776257.400129,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "9RII_UXYiWM",
@@ -515,7 +541,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/9RII_UXYiWM/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776259.430901
+        "added_at": 1772776259.430901,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "CN70ieHR4sY",
@@ -529,7 +557,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/CN70ieHR4sY/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776261.8290815
+        "added_at": 1772776261.8290815,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "gbjseN7NFDA",
@@ -543,7 +573,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/gbjseN7NFDA/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776271.638767
+        "added_at": 1772776271.638767,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "G3U7OV7oYWA",
@@ -557,7 +589,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/G3U7OV7oYWA/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776273.3775425
+        "added_at": 1772776273.3775425,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "TJou6yriDLM",
@@ -571,7 +605,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/TJou6yriDLM/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776278.2092946
+        "added_at": 1772776278.2092946,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Z_cI7tkuIOM",
@@ -585,7 +621,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/Z_cI7tkuIOM/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776278.8941696
+        "added_at": 1772776278.8941696,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "BcU0TQ8_xD0",
@@ -599,7 +637,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/BcU0TQ8_xD0/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776280.736487
+        "added_at": 1772776280.736487,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "8PiWRjxPpNs",
@@ -613,7 +653,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/8PiWRjxPpNs/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776282.2186117
+        "added_at": 1772776282.2186117,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "WlKniHJ8QRA",
@@ -627,7 +669,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/WlKniHJ8QRA/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776283.7364738
+        "added_at": 1772776283.7364738,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "oT-CLkxY5aE",
@@ -641,7 +685,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/oT-CLkxY5aE/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776284.501434
+        "added_at": 1772776284.501434,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "j73N2UexvHw",
@@ -655,7 +701,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/j73N2UexvHw/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776285.876402
+        "added_at": 1772776285.876402,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "CY_tXUGCWxE",
@@ -669,7 +717,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/CY_tXUGCWxE/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776287.2860117
+        "added_at": 1772776287.2860117,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3eICiEvAX9U",
@@ -683,7 +733,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/3eICiEvAX9U/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776290.76488
+        "added_at": 1772776290.76488,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "bKYcgL4cYm8",
@@ -697,7 +749,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/bKYcgL4cYm8/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgXihFMA8=&rs=AOn4CLATPtR9unKKbrHoTblqG1W3WYeoyg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776290.8686857
+        "added_at": 1772776290.8686857,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3C9K14cSn_Y",
@@ -711,7 +765,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/3C9K14cSn_Y/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776292.4497995
+        "added_at": 1772776292.4497995,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "66-INfy1oGI",
@@ -725,7 +781,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/66-INfy1oGI/sddefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776292.8686378
+        "added_at": 1772776292.8686378,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "53wBJ1_h2J0",
@@ -739,7 +797,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/53wBJ1_h2J0/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776294.1503546
+        "added_at": 1772776294.1503546,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "rAyjqApOOoE",
@@ -753,7 +813,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/rAyjqApOOoE/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776295.6293612
+        "added_at": 1772776295.6293612,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "685OXMlE0Ao",
@@ -767,7 +829,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/685OXMlE0Ao/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776296.877598
+        "added_at": 1772776296.877598,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "xS_PqqaLYgA",
@@ -781,7 +845,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/xS_PqqaLYgA/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776298.3569877
+        "added_at": 1772776298.3569877,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "TH39ia0iyNI",
@@ -795,7 +861,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/TH39ia0iyNI/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776301.6627584
+        "added_at": 1772776301.6627584,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "FJNCJmrWOiI",
@@ -809,7 +877,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/FJNCJmrWOiI/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776302.7191253
+        "added_at": 1772776302.7191253,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "rNl7VHHWJBc",
@@ -823,7 +893,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/rNl7VHHWJBc/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776304.7088494
+        "added_at": 1772776304.7088494,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3KUaXvMniqE",
@@ -837,7 +909,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/3KUaXvMniqE/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776304.871324
+        "added_at": 1772776304.871324,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3ZwGXUV4h5A",
@@ -851,7 +925,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/3ZwGXUV4h5A/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776305.9042978
+        "added_at": 1772776305.9042978,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "fVufvpbkbFU",
@@ -865,7 +941,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/fVufvpbkbFU/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776307.2782874
+        "added_at": 1772776307.2782874,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "HUO_XSlqdcY",
@@ -879,7 +957,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/HUO_XSlqdcY/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776309.4634466
+        "added_at": 1772776309.4634466,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "wYa30scjGyU",
@@ -893,7 +973,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/wYa30scjGyU/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776310.5199988
+        "added_at": 1772776310.5199988,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "GcLI14M9ruc",
@@ -907,7 +989,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/GcLI14M9ruc/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776312.2591906
+        "added_at": 1772776312.2591906,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "KcfRep_L4P8",
@@ -921,7 +1005,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/KcfRep_L4P8/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776312.564463
+        "added_at": 1772776312.564463,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Q24sNK4jOXs",
@@ -935,7 +1021,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/Q24sNK4jOXs/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776313.636415
+        "added_at": 1772776313.636415,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "T-9nVvN6t1A",
@@ -949,7 +1037,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/T-9nVvN6t1A/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776313.7702425
+        "added_at": 1772776313.7702425,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "sX91EFWXs-g",
@@ -963,7 +1053,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/sX91EFWXs-g/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776314.225519
+        "added_at": 1772776314.225519,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "a0c8pgywkRQ",
@@ -977,7 +1069,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi/a0c8pgywkRQ/sddefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776314.929659
+        "added_at": 1772776314.929659,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "-sCqtJyyZ4g",
@@ -991,7 +1085,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/-sCqtJyyZ4g/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776315.8566096
+        "added_at": 1772776315.8566096,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "IdcWD8diQZw",
@@ -1005,7 +1101,9 @@
         "tags": [],
         "thumbnail": "https://i.ytimg.com/vi_webp/IdcWD8diQZw/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
-        "added_at": 1772776318.2420044
+        "added_at": 1772776318.2420044,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "qXPCCUnip74",
@@ -1032,8 +1130,9 @@
         "creator_thumbnail": null,
         "added_at": 1772798022.515804,
         "yt_id": "qXPCCUnip74",
-        "is_viewable": true,
-        "archive_id": null
+        "archive_id": null,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "0VFZLhNzZ-Y",
@@ -1048,7 +1147,9 @@
         "thumbnail": "https://i.ytimg.com/vi/0VFZLhNzZ-Y/hqdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836378.0942607,
-        "yt_id": "0VFZLhNzZ-Y"
+        "yt_id": "0VFZLhNzZ-Y",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "eeEnmcRZBrU",
@@ -1063,7 +1164,9 @@
         "thumbnail": "https://i.ytimg.com/vi/eeEnmcRZBrU/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836378.1417134,
-        "yt_id": "eeEnmcRZBrU"
+        "yt_id": "eeEnmcRZBrU",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "bovemz9pZs0",
@@ -1078,7 +1181,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/bovemz9pZs0/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836378.243847,
-        "yt_id": "bovemz9pZs0"
+        "yt_id": "bovemz9pZs0",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "_hR36d7i0Is",
@@ -1093,7 +1198,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/_hR36d7i0Is/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836378.3539436,
-        "yt_id": "_hR36d7i0Is"
+        "yt_id": "_hR36d7i0Is",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "BWGDxo9Bz8M",
@@ -1115,7 +1222,9 @@
         "thumbnail": "https://i.ytimg.com/vi/BWGDxo9Bz8M/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836378.4456148,
-        "yt_id": "BWGDxo9Bz8M"
+        "yt_id": "BWGDxo9Bz8M",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "-F_hEZehrqE",
@@ -1136,7 +1245,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/-F_hEZehrqE/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836380.3787973,
-        "yt_id": "-F_hEZehrqE"
+        "yt_id": "-F_hEZehrqE",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "7A2pGG_ecWc",
@@ -1151,7 +1262,9 @@
         "thumbnail": "https://i.ytimg.com/vi/7A2pGG_ecWc/sddefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836380.6732862,
-        "yt_id": "7A2pGG_ecWc"
+        "yt_id": "7A2pGG_ecWc",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "w-jgI0dvMKw",
@@ -1168,7 +1281,9 @@
         "thumbnail": "https://i.ytimg.com/vi/w-jgI0dvMKw/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836382.5204306,
-        "yt_id": "w-jgI0dvMKw"
+        "yt_id": "w-jgI0dvMKw",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "7u0FL43chnw",
@@ -1183,7 +1298,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/7u0FL43chnw/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836382.6533656,
-        "yt_id": "7u0FL43chnw"
+        "yt_id": "7u0FL43chnw",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "LIZpuAXWEYQ",
@@ -1198,7 +1315,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/LIZpuAXWEYQ/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836382.7713938,
-        "yt_id": "LIZpuAXWEYQ"
+        "yt_id": "LIZpuAXWEYQ",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "_ppubr7wZ5E",
@@ -1213,7 +1332,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/_ppubr7wZ5E/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836382.9065976,
-        "yt_id": "_ppubr7wZ5E"
+        "yt_id": "_ppubr7wZ5E",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "KupHo7X8umk",
@@ -1228,7 +1349,9 @@
         "thumbnail": "https://i.ytimg.com/vi/KupHo7X8umk/hqdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836384.6805341,
-        "yt_id": "KupHo7X8umk"
+        "yt_id": "KupHo7X8umk",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "HGesyZpwQTk",
@@ -1248,7 +1371,9 @@
         "thumbnail": "https://i.ytimg.com/vi/HGesyZpwQTk/sddefault.jpg?v=5e5f9007",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836384.7945554,
-        "yt_id": "HGesyZpwQTk"
+        "yt_id": "HGesyZpwQTk",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "MaqNmP6otZ0",
@@ -1269,7 +1394,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/MaqNmP6otZ0/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836387.0192811,
-        "yt_id": "MaqNmP6otZ0"
+        "yt_id": "MaqNmP6otZ0",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "88XyCX8aOfQ",
@@ -1284,7 +1411,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/88XyCX8aOfQ/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836387.1338577,
-        "yt_id": "88XyCX8aOfQ"
+        "yt_id": "88XyCX8aOfQ",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "he_aGI6L9VE",
@@ -1304,7 +1433,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/he_aGI6L9VE/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836387.455353,
-        "yt_id": "he_aGI6L9VE"
+        "yt_id": "he_aGI6L9VE",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "gBXw65jl1cI",
@@ -1324,7 +1455,9 @@
         "thumbnail": "https://i.ytimg.com/vi/gBXw65jl1cI/sddefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836389.1265588,
-        "yt_id": "gBXw65jl1cI"
+        "yt_id": "gBXw65jl1cI",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Qf5Pdm0YLTM",
@@ -1341,7 +1474,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/Qf5Pdm0YLTM/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836389.3419971,
-        "yt_id": "Qf5Pdm0YLTM"
+        "yt_id": "Qf5Pdm0YLTM",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "BQMXGdfD9g0",
@@ -1361,7 +1496,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/BQMXGdfD9g0/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836391.3613098,
-        "yt_id": "BQMXGdfD9g0"
+        "yt_id": "BQMXGdfD9g0",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "MIfB_Rd48kI",
@@ -1380,7 +1517,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/MIfB_Rd48kI/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836393.3666666,
-        "yt_id": "MIfB_Rd48kI"
+        "yt_id": "MIfB_Rd48kI",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "MZxhTlrT_P8",
@@ -1395,7 +1534,9 @@
         "thumbnail": "https://i.ytimg.com/vi/MZxhTlrT_P8/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836393.6597018,
-        "yt_id": "MZxhTlrT_P8"
+        "yt_id": "MZxhTlrT_P8",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "RS_AxM10u1s",
@@ -1410,7 +1551,9 @@
         "thumbnail": "https://i.ytimg.com/vi/RS_AxM10u1s/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836395.3098102,
-        "yt_id": "RS_AxM10u1s"
+        "yt_id": "RS_AxM10u1s",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Ln5EgzoFw4o",
@@ -1425,7 +1568,9 @@
         "thumbnail": "https://i.ytimg.com/vi/Ln5EgzoFw4o/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836395.4302893,
-        "yt_id": "Ln5EgzoFw4o"
+        "yt_id": "Ln5EgzoFw4o",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Sb2gQbeGNjk",
@@ -1440,7 +1585,9 @@
         "thumbnail": "https://i.ytimg.com/vi/Sb2gQbeGNjk/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836395.6363878,
-        "yt_id": "Sb2gQbeGNjk"
+        "yt_id": "Sb2gQbeGNjk",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "PgaHKw1U9ic",
@@ -1461,7 +1608,9 @@
         "thumbnail": "https://i.ytimg.com/vi/PgaHKw1U9ic/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFkgWShZMA8=&rs=AOn4CLCZvyOiVv5IcMhmFj6MnGrQSfKD6Q",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836395.7319913,
-        "yt_id": "PgaHKw1U9ic"
+        "yt_id": "PgaHKw1U9ic",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "xZq1CgHLEZ8",
@@ -1483,7 +1632,9 @@
         "thumbnail": "https://i.ytimg.com/vi/xZq1CgHLEZ8/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836397.621328,
-        "yt_id": "xZq1CgHLEZ8"
+        "yt_id": "xZq1CgHLEZ8",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "VEo7bZnAGkM",
@@ -1498,7 +1649,9 @@
         "thumbnail": "https://i.ytimg.com/vi/VEo7bZnAGkM/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836397.7339308,
-        "yt_id": "VEo7bZnAGkM"
+        "yt_id": "VEo7bZnAGkM",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "5TVr3Kh05YM",
@@ -1518,7 +1671,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/5TVr3Kh05YM/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836397.8375452,
-        "yt_id": "5TVr3Kh05YM"
+        "yt_id": "5TVr3Kh05YM",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "vg-mJco_mp8",
@@ -1542,7 +1697,9 @@
         "thumbnail": "https://i.ytimg.com/vi/vg-mJco_mp8/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836399.751633,
-        "yt_id": "vg-mJco_mp8"
+        "yt_id": "vg-mJco_mp8",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "SVpczoevWw0",
@@ -1565,7 +1722,9 @@
         "thumbnail": "https://i.ytimg.com/vi/SVpczoevWw0/hqdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836399.8479114,
-        "yt_id": "SVpczoevWw0"
+        "yt_id": "SVpczoevWw0",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "K60d9M_HK6E",
@@ -1589,7 +1748,9 @@
         "thumbnail": "https://i.ytimg.com/vi/K60d9M_HK6E/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836401.5340724,
-        "yt_id": "K60d9M_HK6E"
+        "yt_id": "K60d9M_HK6E",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "lVsNx5-wk-A",
@@ -1607,7 +1768,9 @@
         "thumbnail": "https://i.ytimg.com/vi/lVsNx5-wk-A/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836401.6229541,
-        "yt_id": "lVsNx5-wk-A"
+        "yt_id": "lVsNx5-wk-A",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ubItVREaXjg",
@@ -1622,7 +1785,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/ubItVREaXjg/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836401.8225787,
-        "yt_id": "ubItVREaXjg"
+        "yt_id": "ubItVREaXjg",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "T8oPotCxpLo",
@@ -1637,7 +1802,9 @@
         "thumbnail": "https://i.ytimg.com/vi/T8oPotCxpLo/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836404.1033626,
-        "yt_id": "T8oPotCxpLo"
+        "yt_id": "T8oPotCxpLo",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "uo2EJ-0x50Q",
@@ -1652,7 +1819,9 @@
         "thumbnail": "https://i.ytimg.com/vi/uo2EJ-0x50Q/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836405.8645918,
-        "yt_id": "uo2EJ-0x50Q"
+        "yt_id": "uo2EJ-0x50Q",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "gpb0Kgk4B0Y",
@@ -1673,7 +1842,9 @@
         "thumbnail": "https://i.ytimg.com/vi/gpb0Kgk4B0Y/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836406.5696812,
-        "yt_id": "gpb0Kgk4B0Y"
+        "yt_id": "gpb0Kgk4B0Y",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Nyv4KYhFVOo",
@@ -1693,7 +1864,9 @@
         "thumbnail": "https://i.ytimg.com/vi/Nyv4KYhFVOo/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836406.6786015,
-        "yt_id": "Nyv4KYhFVOo"
+        "yt_id": "Nyv4KYhFVOo",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "sQ3-sA3-shg",
@@ -1708,9 +1881,10 @@
         "thumbnail": "https://i.ytimg.com/vi/sQ3-sA3-shg/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836408.5629613,
-        "is_viewable": true,
         "archive_id": null,
-        "yt_id": "sQ3-sA3-shg"
+        "yt_id": "sQ3-sA3-shg",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "pzDHb4J2jxc",
@@ -1725,7 +1899,9 @@
         "thumbnail": "https://i.ytimg.com/vi/pzDHb4J2jxc/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-BIAC6AKKAgwIABABGHIgaigqMA8=&rs=AOn4CLC74OUFVqM4O8pB-Ya_DPijG-VB1w",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836408.7004082,
-        "yt_id": "pzDHb4J2jxc"
+        "yt_id": "pzDHb4J2jxc",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "PKIKovkOlzE",
@@ -1740,7 +1916,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/PKIKovkOlzE/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836408.9631698,
-        "yt_id": "PKIKovkOlzE"
+        "yt_id": "PKIKovkOlzE",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "m-VCFHsvAQs",
@@ -1755,7 +1933,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/m-VCFHsvAQs/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836410.33771,
-        "yt_id": "m-VCFHsvAQs"
+        "yt_id": "m-VCFHsvAQs",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "S5hKbAju1x4",
@@ -1770,7 +1950,9 @@
         "thumbnail": "https://i.ytimg.com/vi/S5hKbAju1x4/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836411.10068,
-        "yt_id": "S5hKbAju1x4"
+        "yt_id": "S5hKbAju1x4",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "8jIa7plYxeg",
@@ -1785,7 +1967,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/8jIa7plYxeg/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836411.1935856,
-        "yt_id": "8jIa7plYxeg"
+        "yt_id": "8jIa7plYxeg",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "HzZA9echbKQ",
@@ -1800,7 +1984,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/HzZA9echbKQ/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836412.3967242,
-        "yt_id": "HzZA9echbKQ"
+        "yt_id": "HzZA9echbKQ",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "10evldfYWhI",
@@ -1815,7 +2001,9 @@
         "thumbnail": "https://i.ytimg.com/vi/10evldfYWhI/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836413.0583227,
-        "yt_id": "10evldfYWhI"
+        "yt_id": "10evldfYWhI",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "JTEybPk4_yE",
@@ -1830,7 +2018,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/JTEybPk4_yE/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836413.2889552,
-        "yt_id": "JTEybPk4_yE"
+        "yt_id": "JTEybPk4_yE",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "XNUhcbd-dJE",
@@ -1852,7 +2042,9 @@
         "thumbnail": "https://i.ytimg.com/vi/XNUhcbd-dJE/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836413.3899002,
-        "yt_id": "XNUhcbd-dJE"
+        "yt_id": "XNUhcbd-dJE",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "0GwY0O-gt3s",
@@ -1868,10 +2060,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836414.4989371,
         "yt_id": "0GwY0O-gt3s",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "348346"
+        "tvple_id": "348346",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Ja4XRwxOkr8",
@@ -1895,10 +2088,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836415.140457,
         "yt_id": "Ja4XRwxOkr8",
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "348346"
+        "tvple_id": "348346",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "SAsfpbwSXsg",
@@ -1921,7 +2115,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/SAsfpbwSXsg/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836415.346845,
-        "yt_id": "SAsfpbwSXsg"
+        "yt_id": "SAsfpbwSXsg",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Ra7aWZqVOxY",
@@ -1943,7 +2139,9 @@
         "thumbnail": "https://i.ytimg.com/vi/Ra7aWZqVOxY/maxresdefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836415.445649,
-        "yt_id": "Ra7aWZqVOxY"
+        "yt_id": "Ra7aWZqVOxY",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "UqbryGEBAUo",
@@ -1958,7 +2156,9 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/UqbryGEBAUo/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836416.5548234,
-        "yt_id": "UqbryGEBAUo"
+        "yt_id": "UqbryGEBAUo",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "iUnB7T6ewvk",
@@ -1981,7 +2181,9 @@
         "thumbnail": "https://i.ytimg.com/vi/iUnB7T6ewvk/sddefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836417.3062952,
-        "yt_id": "iUnB7T6ewvk"
+        "yt_id": "iUnB7T6ewvk",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "qCQLw5HCYiU",
@@ -1996,7 +2198,9 @@
         "thumbnail": "https://i.ytimg.com/vi/qCQLw5HCYiU/sddefault.jpg",
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772836417.4095008,
-        "yt_id": "qCQLw5HCYiU"
+        "yt_id": "qCQLw5HCYiU",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "oobkk7Dk3eQ",
@@ -2011,11 +2215,12 @@
         "thumbnail": "https://i.ytimg.com/vi_webp/oobkk7Dk3eQ/maxresdefault.webp",
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_mM6gPCS21Va8dkV0LbDRVBIWkkQwEbEjIgc7DMUwuiGA=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772837434.0386748,
-        "is_viewable": true,
         "archive_id": "jxUCCP6OWmk",
         "yt_id": "oobkk7Dk3eQ",
         "archive_nico_id": "",
-        "tvple_id": ""
+        "tvple_id": "",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "SAY6JVHbrGM",
@@ -2031,7 +2236,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/Yku4hr3ky4Qcvgt2Mzhh04wAiaEBJRr6x_gomq3KiHRFqrS0xZ1JCOA8Xj8olz8NaStMBdCG=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "SAY6JVHbrGM",
         "added_at": 1772847669.2730863,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "dKQJQHro55w",
@@ -2055,7 +2261,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/Yku4hr3ky4Qcvgt2Mzhh04wAiaEBJRr6x_gomq3KiHRFqrS0xZ1JCOA8Xj8olz8NaStMBdCG=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "dKQJQHro55w",
         "added_at": 1772847671.6098933,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "OsJvRUiLYls",
@@ -2071,7 +2278,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/Yku4hr3ky4Qcvgt2Mzhh04wAiaEBJRr6x_gomq3KiHRFqrS0xZ1JCOA8Xj8olz8NaStMBdCG=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "OsJvRUiLYls",
         "added_at": 1772847671.764378,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "kfAWFM8CowY",
@@ -2087,7 +2295,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/Yku4hr3ky4Qcvgt2Mzhh04wAiaEBJRr6x_gomq3KiHRFqrS0xZ1JCOA8Xj8olz8NaStMBdCG=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "kfAWFM8CowY",
         "added_at": 1772847674.3963852,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "kGPvrlXB1Zk",
@@ -2107,7 +2316,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/Yku4hr3ky4Qcvgt2Mzhh04wAiaEBJRr6x_gomq3KiHRFqrS0xZ1JCOA8Xj8olz8NaStMBdCG=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "kGPvrlXB1Zk",
         "added_at": 1772847674.962416,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "AaT7iZuugFE",
@@ -2135,7 +2345,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/FsqisUJ7t2qS0gJ2dNFhpn_ujC4HFaQSvtqsAYpfu5qjK5hXHeeHQrbnY_dMeU-Pbn3x7H1h=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "AaT7iZuugFE",
         "added_at": 1772848230.3075473,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "0CJNXzKoepI",
@@ -2161,7 +2372,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/FsqisUJ7t2qS0gJ2dNFhpn_ujC4HFaQSvtqsAYpfu5qjK5hXHeeHQrbnY_dMeU-Pbn3x7H1h=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "0CJNXzKoepI",
         "added_at": 1772848230.3638837,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": null,
@@ -2178,7 +2390,8 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/27121571/27121571",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/4568/45684514.jpg",
         "added_at": 1772851079.7152107,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": null,
@@ -2198,7 +2411,8 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/26216526/26216526",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/4568/45684514.jpg",
         "added_at": 1772851079.7579541,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": null,
@@ -2215,7 +2429,8 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/25831030/25831030",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/4568/45684514.jpg",
         "added_at": 1772851079.7987359,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "8yB8sROorIY",
@@ -2237,7 +2452,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "8yB8sROorIY",
         "added_at": 1772852638.055489,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "q-2qR3GiN5s",
@@ -2259,7 +2475,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "q-2qR3GiN5s",
         "added_at": 1772852638.1034224,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "N_KloJ28z7k",
@@ -2277,7 +2494,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "N_KloJ28z7k",
         "added_at": 1772852638.203116,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "oSIvKaemkfw",
@@ -2300,7 +2518,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "oSIvKaemkfw",
         "added_at": 1772852638.2792563,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "eVGQEbvpPYs",
@@ -2323,7 +2542,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "eVGQEbvpPYs",
         "added_at": 1772852640.727071,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "QHeVGAcNDKg",
@@ -2344,7 +2564,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "QHeVGAcNDKg",
         "added_at": 1772852640.7823207,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "czK5SBdlO_A",
@@ -2366,7 +2587,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "czK5SBdlO_A",
         "added_at": 1772852640.8324306,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "qOgDFmYbgvA",
@@ -2390,7 +2612,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "qOgDFmYbgvA",
         "added_at": 1772852640.8891206,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Pls1w7BF1Z4",
@@ -2412,7 +2635,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Pls1w7BF1Z4",
         "added_at": 1772852642.879038,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "cf2FcC_bwp8",
@@ -2434,7 +2658,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "cf2FcC_bwp8",
         "added_at": 1772852643.157288,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "9Vw3KifCp9g",
@@ -2455,8 +2680,9 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "YbhJfDZEc3E",
         "added_at": 1772852643.2128925,
-        "is_viewable": false,
-        "archive_id": "9Vw3KifCp9g"
+        "archive_id": "9Vw3KifCp9g",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": "Y3pgkB7FEoo",
@@ -2479,7 +2705,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Y3pgkB7FEoo",
         "added_at": 1772852643.3222592,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "y-C8RHioxkk",
@@ -2502,7 +2729,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "y-C8RHioxkk",
         "added_at": 1772852645.4738152,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "d0B3cu5ET5g",
@@ -2525,7 +2753,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "d0B3cu5ET5g",
         "added_at": 1772852647.520277,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "k4HiHoLFR5k",
@@ -2545,7 +2774,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "k4HiHoLFR5k",
         "added_at": 1772852648.0372016,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "tYCjlK3crxI",
@@ -2570,7 +2800,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "tYCjlK3crxI",
         "added_at": 1772852648.1253107,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "s4_1eeotUPc",
@@ -2591,7 +2822,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "s4_1eeotUPc",
         "added_at": 1772852648.193311,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ilks7e1tvAs",
@@ -2607,7 +2839,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "ilks7e1tvAs",
         "added_at": 1772852653.711438,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "An54XKMpZgc",
@@ -2636,7 +2869,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "An54XKMpZgc",
         "added_at": 1772852653.774651,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "tk7iVUWwT8U",
@@ -2667,7 +2901,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "tk7iVUWwT8U",
         "added_at": 1772852653.8374012,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3Sc-ZlIWV64",
@@ -2692,7 +2927,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "3Sc-ZlIWV64",
         "added_at": 1772852655.3918505,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "aAKa1QGu1jU",
@@ -2717,7 +2953,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "aAKa1QGu1jU",
         "added_at": 1772852656.1191967,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3jD7kjAYnJM",
@@ -2744,7 +2981,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "3jD7kjAYnJM",
         "added_at": 1772852656.2096453,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "VxaBEuvm7Ns",
@@ -2767,7 +3005,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "VxaBEuvm7Ns",
         "added_at": 1772852657.6975849,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "AkaRECaZs28",
@@ -2783,7 +3022,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "AkaRECaZs28",
         "added_at": 1772852658.3708045,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3HZ4A-Ihpnk",
@@ -2815,7 +3055,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "3HZ4A-Ihpnk",
         "added_at": 1772852658.547308,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "bMIjGg31T3E",
@@ -2838,7 +3079,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "bMIjGg31T3E",
         "added_at": 1772852661.1233723,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ZZHDrFbtElo",
@@ -2863,7 +3105,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "ZZHDrFbtElo",
         "added_at": 1772852661.1875339,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "yIA8uVQyM8k",
@@ -2889,7 +3132,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "yIA8uVQyM8k",
         "added_at": 1772852663.7599347,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "zA3Sc9xxtYY",
@@ -2913,7 +3157,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "zA3Sc9xxtYY",
         "added_at": 1772852665.8487337,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "qm5JPJ9DvXk",
@@ -2938,7 +3183,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "qm5JPJ9DvXk",
         "added_at": 1772852665.927174,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3jg4xFdwQRs",
@@ -2969,7 +3215,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "3jg4xFdwQRs",
         "added_at": 1772852665.9802568,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "alFSyrjH5as",
@@ -2996,7 +3243,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "alFSyrjH5as",
         "added_at": 1772852666.1422825,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "I0LQ3Kv7U8w",
@@ -3019,7 +3267,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "I0LQ3Kv7U8w",
         "added_at": 1772852668.2700083,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ysVEgwuedVY",
@@ -3046,7 +3295,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "ysVEgwuedVY",
         "added_at": 1772852668.333311,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "TglD2PF3h5U",
@@ -3067,7 +3317,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "TglD2PF3h5U",
         "added_at": 1772852670.6152017,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "tnxNQQTYORY",
@@ -3101,7 +3352,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "tnxNQQTYORY",
         "added_at": 1772852670.8494334,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "auWf5xWV0SE",
@@ -3117,7 +3369,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "auWf5xWV0SE",
         "added_at": 1772852673.023256,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "f0In3IcNmEY",
@@ -3144,7 +3397,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "f0In3IcNmEY",
         "added_at": 1772852673.0979774,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3kmp4y-1r4g",
@@ -3160,7 +3414,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "3kmp4y-1r4g",
         "added_at": 1772852673.3573368,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "-J09hizywf8",
@@ -3186,7 +3441,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "-J09hizywf8",
         "added_at": 1772852675.4265485,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "n_O_-6jWjdY",
@@ -3219,7 +3475,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "n_O_-6jWjdY",
         "added_at": 1772852675.752808,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "eWjveq0jR_c",
@@ -3241,7 +3498,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "eWjveq0jR_c",
         "added_at": 1772852675.825176,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "F7zy27S98Rs",
@@ -3265,7 +3523,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "F7zy27S98Rs",
         "added_at": 1772852678.1965468,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "8Cc5dsFXwT8",
@@ -3291,7 +3550,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "8Cc5dsFXwT8",
         "added_at": 1772852680.042948,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "zSBKG6gww04",
@@ -3317,7 +3577,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "zSBKG6gww04",
         "added_at": 1772852680.6521049,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "VMV43IYBUx4",
@@ -3338,7 +3599,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "VMV43IYBUx4",
         "added_at": 1772852680.7283852,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "iKvXjsKwXcw",
@@ -3366,7 +3628,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "iKvXjsKwXcw",
         "added_at": 1772852680.8131487,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "xyfo05a8Ims",
@@ -3390,7 +3653,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "xyfo05a8Ims",
         "added_at": 1772852680.8714387,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "UWboT7A-15c",
@@ -3415,7 +3679,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "UWboT7A-15c",
         "added_at": 1772852682.4993968,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "1GJ1bUWzWas",
@@ -3441,7 +3706,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "1GJ1bUWzWas",
         "added_at": 1772852682.9842715,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "dBmlqXgU3HU",
@@ -3464,7 +3730,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "dBmlqXgU3HU",
         "added_at": 1772852685.2635386,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "aC1zGsuUC3s",
@@ -3491,7 +3758,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "aC1zGsuUC3s",
         "added_at": 1772852685.5068436,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "r-BSNE5Gmyg",
@@ -3512,7 +3780,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "r-BSNE5Gmyg",
         "added_at": 1772852685.5668035,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "yquPkqN9G4g",
@@ -3538,7 +3807,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "yquPkqN9G4g",
         "added_at": 1772852687.5368323,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Xo0KyTc65bU",
@@ -3566,7 +3836,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Xo0KyTc65bU",
         "added_at": 1772852687.7823994,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "QMbFvme_jQU",
@@ -3590,7 +3861,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "QMbFvme_jQU",
         "added_at": 1772852687.8382745,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Wvb4XMcaA8g",
@@ -3614,7 +3886,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Wvb4XMcaA8g",
         "added_at": 1772852689.4567075,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "YnMfJDDBMPg",
@@ -3634,7 +3907,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "YnMfJDDBMPg",
         "added_at": 1772852689.912226,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "oZfMahFMmpU",
@@ -3660,7 +3934,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "oZfMahFMmpU",
         "added_at": 1772852689.9730077,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "eO8WyBRD0Sg",
@@ -3691,7 +3966,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "eO8WyBRD0Sg",
         "added_at": 1772852692.0362656,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "uKniZ3ZkBgI",
@@ -3723,7 +3999,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "uKniZ3ZkBgI",
         "added_at": 1772852692.109524,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "mAAUkJnl-rw",
@@ -3744,7 +4021,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "mAAUkJnl-rw",
         "added_at": 1772852695.56336,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "aWwrBqaO-bk",
@@ -3770,7 +4048,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "aWwrBqaO-bk",
         "added_at": 1772852698.8493314,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "GiQNjdt6Ojs",
@@ -3794,7 +4073,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "GiQNjdt6Ojs",
         "added_at": 1772852698.9082885,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "fr70xMTDs3k",
@@ -3814,7 +4094,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "fr70xMTDs3k",
         "added_at": 1772852698.9638512,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "_sv6azsZxdk",
@@ -3836,7 +4117,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "_sv6azsZxdk",
         "added_at": 1772852701.008609,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "fRhS4tYbriQ",
@@ -3856,7 +4138,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "fRhS4tYbriQ",
         "added_at": 1772852702.6098022,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ngFYfkCjbhA",
@@ -3876,7 +4159,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "ngFYfkCjbhA",
         "added_at": 1772852702.8134108,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "VD-nEnrFrb0",
@@ -3895,7 +4179,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "VD-nEnrFrb0",
         "added_at": 1772852702.9737291,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "WFZRnhpdJhI",
@@ -3914,7 +4199,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "WFZRnhpdJhI",
         "added_at": 1772852704.5456436,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "63Fa2I5byu8",
@@ -3933,7 +4219,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "63Fa2I5byu8",
         "added_at": 1772852704.7970123,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "VOFQe8zLWJY",
@@ -3958,7 +4245,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "VOFQe8zLWJY",
         "added_at": 1772852704.947011,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Ce9x14nRBrI",
@@ -3980,7 +4268,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Ce9x14nRBrI",
         "added_at": 1772852705.1108613,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "eI-XLLvO3Mk",
@@ -4001,7 +4290,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "eI-XLLvO3Mk",
         "added_at": 1772852707.3054142,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "sTZJ_qLc4go",
@@ -4021,7 +4311,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "sTZJ_qLc4go",
         "added_at": 1772852709.549561,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "oGH_ZDbY-4w",
@@ -4037,7 +4328,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "oGH_ZDbY-4w",
         "added_at": 1772852711.8134944,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "msArXDwhgLQ",
@@ -4060,7 +4352,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "msArXDwhgLQ",
         "added_at": 1772852714.2875874,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "JeEYiX0Mh_U",
@@ -4081,10 +4374,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "JeEYiX0Mh_U",
         "added_at": 1772852714.4794877,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "523312"
+        "tvple_id": "523312",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "mcGnekslpyc",
@@ -4105,10 +4399,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "mcGnekslpyc",
         "added_at": 1772852716.5720184,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "516825"
+        "tvple_id": "516825",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "W-7n52AnO30",
@@ -4128,7 +4423,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "W-7n52AnO30",
         "added_at": 1772852717.0123096,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3IFRkVOQ0L8",
@@ -4148,10 +4444,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "3IFRkVOQ0L8",
         "added_at": 1772852718.5267544,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "508618"
+        "tvple_id": "508618",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "p16JG6FVGUw",
@@ -4170,10 +4467,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "p16JG6FVGUw",
         "added_at": 1772852719.000633,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "506063"
+        "tvple_id": "506063",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "n7BS7uJANcc",
@@ -4192,10 +4490,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "n7BS7uJANcc",
         "added_at": 1772852719.1907423,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "504859"
+        "tvple_id": "504859",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "NgKcTY05pz0",
@@ -4215,10 +4514,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "NgKcTY05pz0",
         "added_at": 1772852719.2902102,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "502512"
+        "tvple_id": "502512",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "UbyNy0Z8Lgw",
@@ -4236,10 +4536,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "UbyNy0Z8Lgw",
         "added_at": 1772852721.3781571,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "496328"
+        "tvple_id": "496328",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "VHVWMgVe6x4",
@@ -4261,10 +4562,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "VHVWMgVe6x4",
         "added_at": 1772852721.8663075,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "492015"
+        "tvple_id": "492015",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "GSU_cuk0ldo",
@@ -4284,10 +4586,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "GSU_cuk0ldo",
         "added_at": 1772852721.9598045,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "491493"
+        "tvple_id": "491493",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "YkZ9UVDst5w",
@@ -4308,7 +4611,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "YkZ9UVDst5w",
         "added_at": 1772852722.9553924,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "L9XPLYeQw14",
@@ -4328,10 +4632,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "L9XPLYeQw14",
         "added_at": 1772852723.4433475,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "488418"
+        "tvple_id": "488418",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "HtCnz4rWnE8",
@@ -4352,7 +4657,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "HtCnz4rWnE8",
         "added_at": 1772852723.999563,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Km3ATZEK8-w",
@@ -4373,7 +4679,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Km3ATZEK8-w",
         "added_at": 1772852724.1181052,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "lzPFzd5-25Q",
@@ -4392,7 +4699,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "lzPFzd5-25Q",
         "added_at": 1772852725.8466334,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "qKcVgwFxMfU",
@@ -4413,10 +4721,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "qKcVgwFxMfU",
         "added_at": 1772852726.1734598,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "474595"
+        "tvple_id": "474595",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "7zMHeNDK1pc",
@@ -4436,10 +4745,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/6WzClEsIbTLR1HByuMSgtZso5MyN7xHSS8ETB2iL8cZoftXAxG77gGddPTGDNlHdFLNODH3BPQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "7zMHeNDK1pc",
         "added_at": 1772852727.1038074,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "440356"
+        "tvple_id": "440356",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Vvt8FlT8YRU",
@@ -4468,10 +4778,11 @@
         "creator_thumbnail": null,
         "yt_id": "Vvt8FlT8YRU",
         "added_at": 1772852886.1475403,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "364140"
+        "tvple_id": "364140",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "jkAjFhombXM",
@@ -4494,7 +4805,8 @@
         "creator_thumbnail": null,
         "yt_id": "jkAjFhombXM",
         "added_at": 1772852896.2237365,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "8d1ZBBkJ4Os",
@@ -4514,7 +4826,8 @@
         "creator_thumbnail": null,
         "yt_id": "8d1ZBBkJ4Os",
         "added_at": 1772853503.44969,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "dgBJ_IIUbQU",
@@ -4530,7 +4843,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_l41uz7MQsQ7JWTcflczhsQFXiy1_EQR8odyrPiymZYTIk=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "dgBJ_IIUbQU",
         "added_at": 1772853582.924303,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "-5RJ8H6PRRk",
@@ -4546,7 +4860,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/lXZIYWRZxwOX3sxr_LLljkcytup5ljq9F8hD2ygLbdQfDIqdczPIBERK3OoCmz9xz5OJWfIilQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "-5RJ8H6PRRk",
         "added_at": 1772855215.8611205,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "RtcnMCbNWCk",
@@ -4564,7 +4879,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/wPMWWeqeOzdt2rFe0Mk7SxXZdYE5CtrKk4VrtBq30pgKKlfTlmXDZjhnJa9yrrK1DgpvA-ng2Cc=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "RtcnMCbNWCk",
         "added_at": 1772893241.9019303,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "W4VIVsymg7o",
@@ -4582,7 +4898,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/wPMWWeqeOzdt2rFe0Mk7SxXZdYE5CtrKk4VrtBq30pgKKlfTlmXDZjhnJa9yrrK1DgpvA-ng2Cc=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "W4VIVsymg7o",
         "added_at": 1772893244.9366057,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "hbTPFe2sHuM",
@@ -4692,7 +5009,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "hbTPFe2sHuM",
         "added_at": 1772893294.4322076,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "PD1ANH9Qcgc",
@@ -4802,7 +5120,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "PD1ANH9Qcgc",
         "added_at": 1772893295.9319117,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "yGWYtxWUG1E",
@@ -4852,7 +5171,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "yGWYtxWUG1E",
         "added_at": 1772893325.9842925,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "uBYyANsGBWo",
@@ -4880,7 +5200,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "uBYyANsGBWo",
         "added_at": 1772893326.252822,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "loDh0_ZR4OQ",
@@ -4903,7 +5224,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "loDh0_ZR4OQ",
         "added_at": 1772893337.5931547,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "5gOnXu-ag90",
@@ -4927,7 +5249,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "5gOnXu-ag90",
         "added_at": 1772893338.06888,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "4j5OLnnMj4I",
@@ -4953,7 +5276,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "4j5OLnnMj4I",
         "added_at": 1772893339.8267827,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "PRnwPYnHgRc",
@@ -4979,7 +5303,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "PRnwPYnHgRc",
         "added_at": 1772893340.6533184,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "szu1_1YpOkM",
@@ -5005,7 +5330,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "szu1_1YpOkM",
         "added_at": 1772893342.8037767,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "2wvVyWS7S_8",
@@ -5029,7 +5355,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "2wvVyWS7S_8",
         "added_at": 1772893342.9509819,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "eti0a5oWYkg",
@@ -5053,7 +5380,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "eti0a5oWYkg",
         "added_at": 1772893343.2523556,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Ks2AhrVNEpc",
@@ -5075,7 +5403,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Ks2AhrVNEpc",
         "added_at": 1772893344.0923402,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "N7K-9nNHFFk",
@@ -5098,7 +5427,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "N7K-9nNHFFk",
         "added_at": 1772893345.9208205,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "iivXlasd_yY",
@@ -5121,7 +5451,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "iivXlasd_yY",
         "added_at": 1772893346.8880112,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Jem-UhNP3k8",
@@ -5147,7 +5478,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Jem-UhNP3k8",
         "added_at": 1772893347.40184,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "jX4I9E2PO8M",
@@ -5169,7 +5501,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "jX4I9E2PO8M",
         "added_at": 1772893347.5804324,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "28p-C9cpXKI",
@@ -5190,7 +5523,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "28p-C9cpXKI",
         "added_at": 1772893348.2377,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "aC1Taq2Nmag",
@@ -5211,7 +5545,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/ytc/AIdro_kybvkpGGAi_rZUZ9B4U7QygSLfqrqpsCRAKNLQwm_BiA=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "aC1Taq2Nmag",
         "added_at": 1772893349.0695033,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "RpfxY4rYO5c",
@@ -5227,10 +5562,11 @@
         "creator_thumbnail": null,
         "yt_id": "za0jhkvBvtI",
         "added_at": 1773258725.295387,
-        "is_viewable": false,
         "archive_id": "RpfxY4rYO5c",
         "archive_nico_id": "",
-        "tvple_id": "401749"
+        "tvple_id": "401749",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": "sIEbbM_4rSk",
@@ -5246,7 +5582,8 @@
         "creator_thumbnail": null,
         "yt_id": "sIEbbM_4rSk",
         "added_at": 1773258814.9335666,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "BCNMaCggghU",
@@ -5262,7 +5599,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/1AECv2X29E20PGw9Ytc3aZ6MbTVQ2B5psqxsjLPjKL3oFwGq6OMs3wvL15gOX5_gNGuVaqCMSQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "BCNMaCggghU",
         "added_at": 1773374547.349814,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "jyCHJZFFR3k",
@@ -5278,7 +5616,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/1AECv2X29E20PGw9Ytc3aZ6MbTVQ2B5psqxsjLPjKL3oFwGq6OMs3wvL15gOX5_gNGuVaqCMSQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "jyCHJZFFR3k",
         "added_at": 1773374549.668647,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "mAU32HDUpHo",
@@ -5294,7 +5633,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/1AECv2X29E20PGw9Ytc3aZ6MbTVQ2B5psqxsjLPjKL3oFwGq6OMs3wvL15gOX5_gNGuVaqCMSQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "mAU32HDUpHo",
         "added_at": 1773374556.7823374,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ErNGqww9kJ0",
@@ -5310,7 +5650,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/1AECv2X29E20PGw9Ytc3aZ6MbTVQ2B5psqxsjLPjKL3oFwGq6OMs3wvL15gOX5_gNGuVaqCMSQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "ErNGqww9kJ0",
         "added_at": 1773374561.1767266,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ukhIPC2MBJI",
@@ -5326,7 +5667,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/1AECv2X29E20PGw9Ytc3aZ6MbTVQ2B5psqxsjLPjKL3oFwGq6OMs3wvL15gOX5_gNGuVaqCMSQ=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "ukhIPC2MBJI",
         "added_at": 1773374562.7422128,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": null,
@@ -5343,7 +5685,8 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/26219838/26219838",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/3642/36428233.jpg",
         "added_at": 1773858224.3113563,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": null,
@@ -5370,11 +5713,12 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/27087163/27087163",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/3642/36428233.jpg",
         "added_at": 1773858414.5941074,
-        "is_viewable": true,
         "archive_id": "s4MKruJyprQ",
         "yt_id": "JHe6HQbmAxA",
         "archive_nico_id": "",
-        "tvple_id": "345226"
+        "tvple_id": "345226",
+        "is_nico_viewable": true,
+        "is_yt_viewable": false
     },
     {
         "id": null,
@@ -5397,11 +5741,12 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/27553223/27553223",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/3642/36428233.jpg",
         "added_at": 1773858437.084131,
-        "is_viewable": true,
         "archive_id": "",
         "yt_id": "eG6x8NFNawc",
         "archive_nico_id": "",
-        "tvple_id": "362487"
+        "tvple_id": "362487",
+        "is_nico_viewable": true,
+        "is_yt_viewable": false
     },
     {
         "id": null,
@@ -5426,11 +5771,12 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/28261959/28261959",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/4696/46963113.jpg",
         "added_at": 1773858656.8756685,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
         "yt_id": "R8FO6qlSgOs",
-        "tvple_id": "367237"
+        "tvple_id": "367237",
+        "is_nico_viewable": true,
+        "is_yt_viewable": false
     },
     {
         "id": null,
@@ -5455,9 +5801,10 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46507152/46507152.68070553",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/14068/140681846.jpg",
         "added_at": 1783802855.598513,
-        "is_viewable": false,
         "archive_id": "https://www.nicovideo.jp/watch/sm46507152",
-        "yt_id": null
+        "yt_id": null,
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": "Wo0enhb42Tg",
@@ -5482,8 +5829,9 @@
         "creator_thumbnail": null,
         "yt_id": "Wo0enhb42Tg",
         "added_at": 1783831384.7760324,
-        "is_viewable": false,
-        "archive_id": "Wo0enhb42Tg"
+        "archive_id": "Wo0enhb42Tg",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": "rjKtliUa7lc",
@@ -5506,8 +5854,9 @@
         "creator_thumbnail": null,
         "yt_id": "http://tvple.com/409855",
         "added_at": 1783831690.2268054,
-        "is_viewable": false,
-        "archive_id": "rjKtliUa7lc"
+        "archive_id": "rjKtliUa7lc",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": "DOTZUc2SVh0",
@@ -5523,7 +5872,8 @@
         "creator_thumbnail": null,
         "yt_id": "DOTZUc2SVh0",
         "added_at": 1783831875.9751427,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ZX5Nt8X-sPw",
@@ -5548,7 +5898,8 @@
         "creator_thumbnail": null,
         "yt_id": "ZX5Nt8X-sPw",
         "added_at": 1783831941.2754557,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "UtCrvat8iIQ",
@@ -5574,7 +5925,8 @@
         "creator_thumbnail": null,
         "yt_id": "UtCrvat8iIQ",
         "added_at": 1783831976.1576955,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Ib3je-jyggk",
@@ -5601,7 +5953,8 @@
         "creator_thumbnail": null,
         "yt_id": "Ib3je-jyggk",
         "added_at": 1783831985.3857832,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "FxadlsI6zRM",
@@ -5630,7 +5983,8 @@
         "creator_thumbnail": null,
         "yt_id": "FxadlsI6zRM",
         "added_at": 1783832029.4011757,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "rnr1m62B8b0",
@@ -5655,7 +6009,8 @@
         "creator_thumbnail": null,
         "yt_id": "rnr1m62B8b0",
         "added_at": 1783832038.2426445,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "AQhnFKbC8B8",
@@ -5682,7 +6037,8 @@
         "creator_thumbnail": null,
         "yt_id": "AQhnFKbC8B8",
         "added_at": 1783832043.769077,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "vFFPCl0TmpU",
@@ -5712,7 +6068,8 @@
         "creator_thumbnail": null,
         "yt_id": "vFFPCl0TmpU",
         "added_at": 1783832048.908401,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "dI22OTi-aCs",
@@ -5737,7 +6094,8 @@
         "creator_thumbnail": null,
         "yt_id": "dI22OTi-aCs",
         "added_at": 1783832093.7953627,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "P4DujxBgfR0",
@@ -5763,7 +6121,8 @@
         "creator_thumbnail": null,
         "yt_id": "P4DujxBgfR0",
         "added_at": 1783832102.5503128,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "fMfHRsOX0sI",
@@ -5788,7 +6147,8 @@
         "creator_thumbnail": null,
         "yt_id": "fMfHRsOX0sI",
         "added_at": 1783832111.3085952,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "FF1SQSP1h8Y",
@@ -5819,7 +6179,8 @@
         "creator_thumbnail": null,
         "yt_id": "FF1SQSP1h8Y",
         "added_at": 1783832121.0753965,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "hjTJnrLSiwA",
@@ -5846,7 +6207,8 @@
         "creator_thumbnail": null,
         "yt_id": "hjTJnrLSiwA",
         "added_at": 1783832131.0312877,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "6duXWMgygf0",
@@ -5865,7 +6227,8 @@
         "creator_thumbnail": null,
         "yt_id": "6duXWMgygf0",
         "added_at": 1783832135.9854565,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Rkvy3XOZa4A",
@@ -5881,8 +6244,9 @@
         "creator_thumbnail": null,
         "yt_id": "NtQqBxcPI5I",
         "added_at": 1783832257.9365876,
-        "is_viewable": false,
-        "archive_id": "Rkvy3XOZa4A"
+        "archive_id": "Rkvy3XOZa4A",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": "xQNiMNUIVEQ",
@@ -5898,10 +6262,11 @@
         "creator_thumbnail": null,
         "yt_id": "",
         "added_at": 1783832391.5263839,
-        "is_viewable": false,
         "archive_id": "xQNiMNUIVEQ",
         "archive_nico_id": "",
-        "tvple_id": "198669"
+        "tvple_id": "198669",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": "IeotRx2V8Rs",
@@ -5920,10 +6285,11 @@
         "creator_thumbnail": null,
         "yt_id": "IeotRx2V8Rs",
         "added_at": 1783832545.282584,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "398759"
+        "tvple_id": "398759",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "pfQPDHv_bPE",
@@ -5942,7 +6308,8 @@
         "creator_thumbnail": null,
         "yt_id": "pfQPDHv_bPE",
         "added_at": 1783850987.3199584,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "lUE0iCYLY4E",
@@ -5958,7 +6325,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "lUE0iCYLY4E",
         "added_at": 1783908893.0296814,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "nKOd-JYGW9w",
@@ -5979,7 +6347,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "nKOd-JYGW9w",
         "added_at": 1783908909.7151325,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3zM4dxkz0is",
@@ -6003,7 +6372,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "3zM4dxkz0is",
         "added_at": 1783908910.0817962,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "UtrjCrAMosY",
@@ -6019,7 +6389,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "UtrjCrAMosY",
         "added_at": 1783908917.3153076,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "lpzKOH0l2vw",
@@ -6035,7 +6406,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "lpzKOH0l2vw",
         "added_at": 1783908918.256213,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "SbL7yurpLig",
@@ -6051,7 +6423,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/h4btG_Yigz0G4t_ODllkdcGQ4_qDE_sB24naxwArLeKZU3hs0ANWjzVF0LaHg6LB_7Bz6oVc=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "SbL7yurpLig",
         "added_at": 1783908925.1495621,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "t8ukRsU6QKg",
@@ -6067,10 +6440,11 @@
         "creator_thumbnail": null,
         "yt_id": "",
         "added_at": 1783909949.8265388,
-        "is_viewable": false,
         "archive_id": "t8ukRsU6QKg",
         "archive_nico_id": "",
-        "tvple_id": "409893"
+        "tvple_id": "409893",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": "oRTw_-YZODo",
@@ -6086,10 +6460,11 @@
         "creator_thumbnail": null,
         "yt_id": "oRTw_-YZODo",
         "added_at": 1783910315.3408918,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
-        "tvple_id": "428486"
+        "tvple_id": "428486",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "NBcrL3PzF0U",
@@ -6111,7 +6486,8 @@
         "creator_thumbnail": null,
         "yt_id": "NBcrL3PzF0U",
         "added_at": 1784074395.127928,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "JN9LprHcSYE",
@@ -6134,7 +6510,8 @@
         "creator_thumbnail": null,
         "yt_id": "JN9LprHcSYE",
         "added_at": 1784074588.0352466,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "SkQHaCHHWCI",
@@ -6159,10 +6536,11 @@
         "creator_thumbnail": null,
         "yt_id": "",
         "added_at": 1784075385.2644653,
-        "is_viewable": false,
         "archive_id": "SkQHaCHHWCI",
         "archive_nico_id": "",
-        "tvple_id": "178670"
+        "tvple_id": "178670",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     },
     {
         "id": null,
@@ -6189,11 +6567,12 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/26951629/26951629",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/4217/42174050.jpg",
         "added_at": 1784113572.938934,
-        "is_viewable": true,
         "archive_id": "",
         "archive_nico_id": "",
         "yt_id": "",
-        "tvple_id": "339482"
+        "tvple_id": "339482",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "5IgRW3D7yt8",
@@ -6209,10 +6588,11 @@
         "creator_thumbnail": null,
         "yt_id": "",
         "added_at": 1784125785.6467776,
-        "is_viewable": true,
         "archive_id": "5IgRW3D7yt8",
         "archive_nico_id": "",
-        "tvple_id": "400680"
+        "tvple_id": "400680",
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "O-XtAUnaunk",
@@ -6234,7 +6614,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "O-XtAUnaunk",
         "added_at": 1784126802.9122353,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "ZRbT8QGW2f8",
@@ -6256,7 +6637,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "ZRbT8QGW2f8",
         "added_at": 1784126802.9738522,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "oZ_YReuDbN0",
@@ -6280,7 +6662,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "oZ_YReuDbN0",
         "added_at": 1784126803.051725,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "zyguFrUGJfM",
@@ -6296,7 +6679,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "zyguFrUGJfM",
         "added_at": 1784126803.173596,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "6xwfgp1bAuE",
@@ -6318,7 +6702,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "6xwfgp1bAuE",
         "added_at": 1784126803.2265453,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "D66YR9tSVF8",
@@ -6343,7 +6728,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "D66YR9tSVF8",
         "added_at": 1784126805.2284944,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Y_qoWhqWeHs",
@@ -6359,7 +6745,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Y_qoWhqWeHs",
         "added_at": 1784126805.290307,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "7V7soUGGFLc",
@@ -6389,7 +6776,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "7V7soUGGFLc",
         "added_at": 1784126805.3696525,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "p_jLUS6H2TY",
@@ -6411,7 +6799,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "p_jLUS6H2TY",
         "added_at": 1784126805.4570403,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "gvluUDReSgk",
@@ -6440,7 +6829,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "gvluUDReSgk",
         "added_at": 1784126805.547147,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "bZ7PtlR5hYQ",
@@ -6468,7 +6858,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "bZ7PtlR5hYQ",
         "added_at": 1784126807.2210674,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "uoxlFZdF1Qw",
@@ -6492,7 +6883,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "uoxlFZdF1Qw",
         "added_at": 1784126807.3107042,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "jtaWRsrYu70",
@@ -6517,7 +6909,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "jtaWRsrYu70",
         "added_at": 1784126807.654519,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "sD3KtZ00cA0",
@@ -6540,7 +6933,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "sD3KtZ00cA0",
         "added_at": 1784126807.7161703,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "eVtP2dNJPdY",
@@ -6563,7 +6957,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "eVtP2dNJPdY",
         "added_at": 1784126807.776523,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "JCxneK8eK-g",
@@ -6588,7 +6983,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "JCxneK8eK-g",
         "added_at": 1784126809.52967,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "h2u9pRenbig",
@@ -6612,7 +7008,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "h2u9pRenbig",
         "added_at": 1784126809.6000273,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "OZiLzmWxjtQ",
@@ -6638,7 +7035,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "OZiLzmWxjtQ",
         "added_at": 1784126809.667642,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "TzEpttQ7nqc",
@@ -6661,7 +7059,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "TzEpttQ7nqc",
         "added_at": 1784126809.8119657,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Rvf6vpS3D-4",
@@ -6685,11 +7084,12 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Rvf6vpS3D-4",
         "added_at": 1784126811.6405895,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "SieSQTVxItU",
-        "nico_id": null,
+        "nico_id": "",
         "title": "라이토 - 설화요란",
         "creator": "플뤼겔",
         "upload_date": "2017/12/26",
@@ -6708,7 +7108,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "SieSQTVxItU",
         "added_at": 1784126811.7240725,
-        "is_viewable": true
+        "is_nico_viewable": false,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": "aSwNQ_2rV2I",
@@ -6731,7 +7135,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "aSwNQ_2rV2I",
         "added_at": 1784126811.7991102,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "dLMBssKSQN4",
@@ -6759,7 +7164,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "dLMBssKSQN4",
         "added_at": 1784126811.8694668,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "1Z0YNFPqEek",
@@ -6783,7 +7189,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "1Z0YNFPqEek",
         "added_at": 1784126813.1542532,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "qS0LriPcTog",
@@ -6808,7 +7215,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "qS0LriPcTog",
         "added_at": 1784126813.251467,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "pKwh1l4kTNE",
@@ -6833,7 +7241,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "pKwh1l4kTNE",
         "added_at": 1784126813.351262,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "kG1oojK0lYM",
@@ -6856,7 +7265,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "kG1oojK0lYM",
         "added_at": 1784126813.6224365,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "gem7CUz1GxI",
@@ -6881,7 +7291,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "gem7CUz1GxI",
         "added_at": 1784126813.6951914,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "_e4HZx76M1I",
@@ -6905,7 +7316,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "_e4HZx76M1I",
         "added_at": 1784126815.1766877,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "3OGxdE35flA",
@@ -6928,7 +7340,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "3OGxdE35flA",
         "added_at": 1784126815.2667227,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "wyZuLH_uAAQ",
@@ -6953,7 +7366,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "wyZuLH_uAAQ",
         "added_at": 1784126815.3423703,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "1U-iHO0HHoY",
@@ -6977,7 +7391,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "1U-iHO0HHoY",
         "added_at": 1784126815.5602317,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "Xtvg29_cy1Y",
@@ -7002,7 +7417,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "Xtvg29_cy1Y",
         "added_at": 1784126815.6292694,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "enHRFaAIFo0",
@@ -7029,7 +7445,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "enHRFaAIFo0",
         "added_at": 1784126817.3007653,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "2kpGZltmvmg",
@@ -7054,7 +7471,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "2kpGZltmvmg",
         "added_at": 1784126817.3997316,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "sKupm5U9VCE",
@@ -7077,7 +7495,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "sKupm5U9VCE",
         "added_at": 1784126817.4976146,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "-zGlG-ne0Gk",
@@ -7102,7 +7521,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "-zGlG-ne0Gk",
         "added_at": 1784126817.6991231,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "aXhchtdshKg",
@@ -7132,7 +7552,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "aXhchtdshKg",
         "added_at": 1784126817.746283,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "A4TUBdTOw28",
@@ -7155,7 +7576,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "A4TUBdTOw28",
         "added_at": 1784126819.5368242,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "MjRqfNA3GU8",
@@ -7178,7 +7600,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "MjRqfNA3GU8",
         "added_at": 1784126819.6216238,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "pV7kavzWaUs",
@@ -7200,7 +7623,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "pV7kavzWaUs",
         "added_at": 1784126819.6949134,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "chv86SJjRwI",
@@ -7222,7 +7646,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "chv86SJjRwI",
         "added_at": 1784126821.611974,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "9Su-HilFP6w",
@@ -7248,7 +7673,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "9Su-HilFP6w",
         "added_at": 1784126821.7013378,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "onkP6pdi7S0",
@@ -7275,7 +7701,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "onkP6pdi7S0",
         "added_at": 1784126821.7942288,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "jl2JjpC2Aiw",
@@ -7297,7 +7724,8 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/qiQ5_FIR7dBLzur83v61HnlJEq1Y3qR-t0x2vipA2_IeY32OPholnnpZbseg24QjKiSgzTI7uw=s800-c-k-c0x00ffffff-no-rj",
         "yt_id": "jl2JjpC2Aiw",
         "added_at": 1784126821.8892813,
-        "is_viewable": true
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     },
     {
         "id": "2nzlR1V0asQ",
@@ -7313,9 +7741,10 @@
         "creator_thumbnail": null,
         "yt_id": "",
         "added_at": 1784126948.6395612,
-        "is_viewable": false,
         "archive_id": "2nzlR1V0asQ",
         "archive_nico_id": "",
-        "tvple_id": "205832"
+        "tvple_id": "205832",
+        "is_nico_viewable": false,
+        "is_yt_viewable": false
     }
 ]
