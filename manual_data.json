@@ -6074,7 +6074,7 @@
     },
     {
         "id": "oRTw_-YZODo",
-        "nico_id": null,
+        "nico_id": "",
         "title": "[티비플][주랭]라이토 - 슈퍼맨",
         "creator": "대삼원",
         "upload_date": "2016/05/21",
@@ -6087,7 +6087,9 @@
         "yt_id": "oRTw_-YZODo",
         "added_at": 1783910315.3408918,
         "is_viewable": true,
-        "archive_id": null
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": "428486"
     },
     {
         "id": "NBcrL3PzF0U",
