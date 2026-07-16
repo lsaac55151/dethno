@@ -223,7 +223,7 @@
       const videoMatchesQuery = (v, query) => {
         if (!query) return true;
         
-        if (matchSearch(v.title, query) || matchSearch(v.mappedCreator, query)) {
+        if (matchSearch(v.title, query) || matchSearch(v.originalTitle, query) || matchSearch(v.mappedCreator, query)) {
           return true;
         }
 
@@ -484,6 +484,12 @@
         });
 
         const allVideos = [...archiveVideos, ...manualVideos];
+
+        allVideos.forEach(video => {
+          if (video.title) {
+            video.originalTitle = video.title;
+          }
+        });
 
         if (state.lang === 'ko' && state.rawData.translationMap) {
           const sortedTranslations = Object.entries(state.rawData.translationMap)
