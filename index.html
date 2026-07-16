@@ -301,9 +301,12 @@
         const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:v\/|u\/\w\/|embed\/|watch\?v=))([^#\&\?]*)/);
         return (match && match[1].length === 11) ? match[1] : null;
       };
-
       const getThumbnail = (video) => {
         if (!video) return '';
+
+        // 만약 데이터베이스에 직접 저장된 썸네일 URL이 있다면 우선적으로 사용
+        if (video.nico_thumbnail) return video.nico_thumbnail;
+        if (video.thumbnail_url) return video.thumbnail_url;
 
         // Extract Nico ID from various possible fields
         const nicoIdMatch = video.nico_id ? String(video.nico_id).match(/(sm|nm|so|am)?\d+/) : null;
@@ -325,6 +328,15 @@
         // Check viewable flags (defaulting to true if not false)
         const isNicoViewable = video.is_nico_viewable !== false;
         const isYtViewable = video.is_yt_viewable !== false;
+
+        // 원본을 볼 수 없고 니코동 아카이브 링크가 남아있는 경우 아카이브의 썸네일 사용
+        if (!isNicoViewable && !isYtViewable && video.archive_nico_id) {
+          const match = String(video.archive_nico_id).match(/(sm|nm|so|am)?\d+/);
+          if (match) {
+            const numId = match[0].replace(/\D/g, '');
+            return `https://nicovideo.cdn.nimg.jp/thumbnails/${numId}/${numId}`;
+          }
+        }
 
         // 1. 니코동 영상 주소만 기록되어있거나 혹은 니코동 영상 주소만 viewable이 YES일 경우
         if (targetNicoId && (!hasYt || (isNicoViewable && !isYtViewable))) {
@@ -561,17 +573,20 @@
         if (isNicoViewable && nicoId) defaultSource = { type: 'nico', id: nicoId };
         else if (isYtViewable && ytId) defaultSource = { type: 'yt', id: ytId };
         else if (arcNicoId) defaultSource = { type: 'nico', id: arcNicoId };
-        else if (arcYtId) defaultSource = { type: 'yt', id: arcYtId };
+        else if (isYtViewable && arcYtId) defaultSource = { type: 'yt', id: arcYtId };
         else if (v.archive_nico_id && v.archive_nico_id !== "") defaultSource = { type: 'nico', id: v.archive_nico_id };
+        else if (arcYtId) defaultSource = { type: 'yt', id: arcYtId };
         else if (ytId) defaultSource = { type: 'yt', id: ytId };
         else if (nicoId) defaultSource = { type: 'nico', id: nicoId };
+
+        const originalNicoId = nicoId || (v.original_link ? (v.original_link.match(/(sm|nm|so|am)\d+/) || [])[0] : null);
 
         let isViewable = false;
         if (defaultSource) {
           if (defaultSource.type === 'nico') {
-            isViewable = (defaultSource.id === nicoId) ? isNicoViewable : true;
+            isViewable = (defaultSource.id === originalNicoId) ? isNicoViewable : true;
           } else if (defaultSource.type === 'yt') {
-            isViewable = (defaultSource.id === ytId) ? isYtViewable : true;
+            isViewable = isYtViewable;
           }
         }
 
@@ -590,12 +605,15 @@
         const indicatorTitle = isViewable ? currentI18n.viewable : currentI18n.notViewable;
 
         let mediaAreaHTML = '';
-        if (playerState) {
-          if (playerState.type === 'nico') {
+        const shouldEmbedDirectly = defaultSource && defaultSource.type === 'nico' && thumb.includes('nicovideo.cdn.nimg.jp');
+
+        if (playerState || shouldEmbedDirectly) {
+          const activeSource = playerState || defaultSource;
+          if (activeSource.type === 'nico') {
             mediaAreaHTML = `
               <div class="w-full h-full relative">
                 <iframe 
-                  src="https://embed.nicovideo.jp/watch/${playerState.id}"
+                  src="https://embed.nicovideo.jp/watch/${activeSource.id}"
                   class="w-full h-full border-none"
                   allowfullscreen
                   allow="autoplay; encrypted-media"
@@ -603,7 +621,7 @@
                 ></iframe>
                 <div class="absolute top-2 right-2 flex gap-1">
                   <button 
-                    onclick="app.openLink('https://www.nicovideo.jp/watch/${playerState.id}')"
+                    onclick="app.openLink('https://www.nicovideo.jp/watch/${activeSource.id}')"
                     class="bg-black/80 hover:bg-[#9b0000] text-white p-1.5 rounded-md text-[10px] flex items-center gap-1 transition-colors border border-white/20"
                   >
                     <i data-lucide="external-link" class="w-3 h-3"></i>
@@ -612,11 +630,11 @@
                 </div>
               </div>
             `;
-          } else if (playerState.type === 'yt') {
+          } else if (activeSource.type === 'yt') {
             mediaAreaHTML = `
               <div class="w-full h-full relative">
                 <iframe 
-                  src="https://www.youtube.com/embed/${playerState.id}"
+                  src="https://www.youtube.com/embed/${activeSource.id}"
                   class="w-full h-full border-none"
                   allowfullscreen
                   allow="autoplay; encrypted-media"
@@ -624,7 +642,7 @@
                 ></iframe>
                 <div class="absolute top-2 right-2 flex gap-1">
                   <button 
-                    onclick="app.openLink('https://www.youtube.com/watch?v=${playerState.id}')"
+                    onclick="app.openLink('https://www.youtube.com/watch?v=${activeSource.id}')"
                     class="bg-black/80 hover:bg-[#9b0000] text-white p-1.5 rounded-md text-[10px] flex items-center gap-1 transition-colors border border-white/20"
                   >
                     <i data-lucide="external-link" class="w-3 h-3"></i>
