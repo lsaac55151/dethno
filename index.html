@@ -180,7 +180,7 @@
 
       let state = {
         loading: true,
-        rawData: { videoData: [], creatorMap: {}, profileMap: {}, translationMap: {} },
+        rawData: { videoData: [], creatorMap: {}, profileMap: {}, translationMap: {}, translationJaMap: {} },
         viewMode: 'year',
         searchQuery: '',
         selectedPlaylist: null,
@@ -493,6 +493,19 @@
 
         if (state.lang === 'ko' && state.rawData.translationMap) {
           const sortedTranslations = Object.entries(state.rawData.translationMap)
+            .sort((a, b) => b[0].length - a[0].length);
+
+          allVideos.forEach(video => {
+            if (video.title) {
+              sortedTranslations.forEach(([original, translated]) => {
+                if (video.title.includes(original)) {
+                  video.title = video.title.split(original).join(translated);
+                }
+              });
+            }
+          });
+        } else if (state.lang === 'ja' && state.rawData.translationJaMap) {
+          const sortedTranslations = Object.entries(state.rawData.translationJaMap)
             .sort((a, b) => b[0].length - a[0].length);
 
           allVideos.forEach(video => {
@@ -1005,17 +1018,19 @@
           const creatorMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/creator_map.json";
           const profileMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/profile_map.json";
           const translationUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EB%B2%88%EC%97%AD%EC%9A%A9.txt";
+          const translationJaUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EC%9D%BC%EB%B3%B8%EC%96%B4%20%EB%B2%88%EC%97%AD%EC%9A%A9.txt";
 
           try {
-            const [resVideo, resManual, resCreator, resProfile, resTranslation] = await Promise.all([
+            const [resVideo, resManual, resCreator, resProfile, resTranslation, resTranslationJa] = await Promise.all([
               fetch(videoDataUrl),
               fetch(manualDataUrl),
               fetch(creatorMapUrl),
               fetch(profileMapUrl),
-              fetch(translationUrl)
+              fetch(translationUrl),
+              fetch(translationJaUrl)
             ]);
 
-            if (!resVideo.ok || !resManual.ok || !resCreator.ok || !resProfile.ok || !resTranslation.ok) {
+            if (!resVideo.ok || !resManual.ok || !resCreator.ok || !resProfile.ok || !resTranslation.ok || !resTranslationJa.ok) {
               throw new Error("GitHub에서 데이터를 가져오는 중 오류가 발생했습니다.");
             }
 
@@ -1035,12 +1050,29 @@
               }
             });
 
+            const translationJaText = await resTranslationJa.text();
+            const translationJaMap = {};
+            translationJaText.split('\n').forEach(line => {
+              const trimmed = line.trim();
+              if (!trimmed || trimmed.startsWith('#')) return;
+
+              const delimiterIndex = trimmed.lastIndexOf('==');
+
+              if (delimiterIndex !== -1) {
+                const jaTitle = trimmed.substring(0, delimiterIndex).trim();
+                const koTitle = trimmed.substring(delimiterIndex + 2).trim();
+
+                if (koTitle) translationJaMap[koTitle] = jaTitle;
+              }
+            });
+
             state.rawData = {
               videoData: await resVideo.json(),
               manualData: await resManual.json(),
               creatorMap: await resCreator.json(),
               profileMap: await resProfile.json(),
-              translationMap: translationMap
+              translationMap: translationMap,
+              translationJaMap: translationJaMap
             };
           } catch (error) {
             console.error("데이터 로드 실패:", error);
