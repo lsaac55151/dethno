@@ -893,6 +893,11 @@
 
         const processedData = getProcessedData();
 
+        if (state.selectedPlaylist) {
+          const data = processedData[state.viewMode] || [];
+          state.selectedPlaylist = data.find(p => p.playlist_title === state.selectedPlaylist.playlist_title) || null;
+        }
+
         if (state.selectedPlaylist || state.viewMode === 'all') {
           let videos = state.selectedPlaylist ? [...state.selectedPlaylist.videos] : [...processedData.all];
 
