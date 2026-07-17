@@ -1059,8 +1059,10 @@
               const delimiterIndex = trimmed.lastIndexOf('==');
 
               if (delimiterIndex !== -1) {
-                const jaTitle = trimmed.substring(0, delimiterIndex).trim();
-                const koTitle = trimmed.substring(delimiterIndex + 2).trim();
+                // 일본어 번역용.txt는 "한국어 == 일본어" 형식입니다.
+                // 따라서 왼쪽(koTitle)이 한국어 원문이고 오른쪽(jaTitle)이 일본어 번역문입니다.
+                const koTitle = trimmed.substring(0, delimiterIndex).trim();
+                const jaTitle = trimmed.substring(delimiterIndex + 2).trim();
 
                 if (koTitle) translationJaMap[koTitle] = jaTitle;
               }
