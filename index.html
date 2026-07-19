@@ -578,12 +578,35 @@
         const nicoId = v.nico_id;
         const ytId = (v.yt_id && v.yt_id.length === 11) ? v.yt_id : extractYtId(v.original_link);
 
-        let arcId = (v.archive_id && v.archive_id !== "") ? v.archive_id : (v.id || null);
-        if (arcId === ytId) arcId = null;
+        // Extract Nicovideo Archive ID
+        let resolvedArcNicoId = null;
+        if (v.archive_nico_id && v.archive_nico_id !== "") {
+          const match = String(v.archive_nico_id).match(/(sm|nm|so|am)\d+/);
+          if (match) resolvedArcNicoId = match[0];
+        }
+        if (!resolvedArcNicoId && v.archive_id && v.archive_id !== "") {
+          const match = String(v.archive_id).match(/(sm|nm|so|am)\d+/);
+          if (match) resolvedArcNicoId = match[0];
+        }
+        if (!resolvedArcNicoId && v.id && v.id !== "") {
+          const match = String(v.id).match(/(sm|nm|so|am)\d+/);
+          if (match) resolvedArcNicoId = match[0];
+        }
 
-        const arcNicoMatch = arcId ? String(arcId).match(/(sm|nm|so|am)\d+/) : null;
-        const arcNicoId = arcNicoMatch ? arcNicoMatch[0] : null;
-        const arcYtId = (!arcNicoId && arcId) ? arcId : null;
+        // Extract YouTube Archive ID
+        let resolvedArcYtId = null;
+        if (v.archive_id && v.archive_id !== "") {
+          const extracted = extractYtId(v.archive_id) || (v.archive_id.length === 11 ? v.archive_id : null);
+          if (extracted && extracted !== ytId) {
+            resolvedArcYtId = extracted;
+          }
+        }
+        if (!resolvedArcYtId && v.id && v.id !== "") {
+          const extracted = extractYtId(v.id) || (v.id.length === 11 ? v.id : null);
+          if (extracted && extracted !== ytId) {
+            resolvedArcYtId = extracted;
+          }
+        }
 
         const isNicoViewable = v.is_nico_viewable !== false;
         const isYtViewable = v.is_yt_viewable !== false;
@@ -591,10 +614,9 @@
         let defaultSource = null;
         if (isNicoViewable && nicoId) defaultSource = { type: 'nico', id: nicoId };
         else if (isYtViewable && ytId) defaultSource = { type: 'yt', id: ytId };
-        else if (arcNicoId) defaultSource = { type: 'nico', id: arcNicoId };
-        else if (isYtViewable && arcYtId) defaultSource = { type: 'yt', id: arcYtId };
-        else if (v.archive_nico_id && v.archive_nico_id !== "") defaultSource = { type: 'nico', id: v.archive_nico_id };
-        else if (arcYtId) defaultSource = { type: 'yt', id: arcYtId };
+        else if (resolvedArcNicoId) defaultSource = { type: 'nico', id: resolvedArcNicoId };
+        else if (isYtViewable && resolvedArcYtId) defaultSource = { type: 'yt', id: resolvedArcYtId };
+        else if (resolvedArcYtId) defaultSource = { type: 'yt', id: resolvedArcYtId };
         else if (ytId) defaultSource = { type: 'yt', id: ytId };
         else if (nicoId) defaultSource = { type: 'nico', id: nicoId };
 
@@ -731,41 +753,41 @@
             </button>
           `;
         }
-        if (arcId) {
-          if (arcNicoId) {
-            const btnClass = playerState?.type === 'nico' && playerState?.id === arcNicoId
-              ? 'bg-[#9b0000] border-[#9b0000] text-white'
-              : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
-            buttonsHTML += `
-              <button 
-                data-videokey="${escapeHTML(videoKey)}"
-                data-nicoid="${arcNicoId}"
-                data-domid="${safeDOMId}"
-                onclick="app.playVideo(this.dataset.videokey, 'nico', this.dataset.nicoid, this.dataset.domid)"
-                id="btn-arc-${safeDOMId}"
-                class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
-              >
-                ARCHIVE (NICO)
-              </button>
-            `;
-          } else {
-            const isActive = playerState?.type === 'yt' && playerState?.id === arcYtId;
-            const btnClass = isActive
-              ? 'bg-[#9b0000] border-[#9b0000] text-white'
-              : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
-            buttonsHTML += `
-              <button 
-                data-videokey="${escapeHTML(videoKey)}"
-                data-ytid="${arcYtId}"
-                data-domid="${safeDOMId}"
-                onclick="app.playVideo(this.dataset.videokey, 'yt', this.dataset.ytid, this.dataset.domid)"
-                id="btn-arc-${safeDOMId}"
-                class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
-              >
-                ARCHIVE
-              </button>
-            `;
-          }
+        if (resolvedArcNicoId) {
+          const btnClass = playerState?.type === 'nico' && playerState?.id === resolvedArcNicoId
+            ? 'bg-[#9b0000] border-[#9b0000] text-white'
+            : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
+          buttonsHTML += `
+            <button 
+              data-videokey="${escapeHTML(videoKey)}"
+              data-nicoid="${resolvedArcNicoId}"
+              data-domid="${safeDOMId}"
+              onclick="app.playVideo(this.dataset.videokey, 'nico', this.dataset.nicoid, this.dataset.domid)"
+              id="btn-arc-nico-${safeDOMId}"
+              class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
+            >
+              ARCHIVE (NICO)
+            </button>
+          `;
+        }
+
+        if (resolvedArcYtId) {
+          const isActive = playerState?.type === 'yt' && playerState?.id === resolvedArcYtId;
+          const btnClass = isActive
+            ? 'bg-[#9b0000] border-[#9b0000] text-white'
+            : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
+          buttonsHTML += `
+            <button 
+              data-videokey="${escapeHTML(videoKey)}"
+              data-ytid="${resolvedArcYtId}"
+              data-domid="${safeDOMId}"
+              onclick="app.playVideo(this.dataset.videokey, 'yt', this.dataset.ytid, this.dataset.domid)"
+              id="btn-arc-yt-${safeDOMId}"
+              class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
+            >
+              ARCHIVE
+            </button>
+          `;
         }
 
         if (v.tvple_id && v.tvple_id !== "") {
@@ -775,24 +797,6 @@
               class="px-3 py-1 text-[10px] font-bold border transition-colors bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]"
             >
               TVPLE
-            </button>
-          `;
-        }
-
-        if (v.archive_nico_id && v.archive_nico_id !== "") {
-          const btnClass = playerState?.type === 'nico' && playerState?.id === v.archive_nico_id
-            ? 'bg-[#9b0000] border-[#9b0000] text-white'
-            : 'bg-[#1a1a1a] border-[#333] text-[#888] hover:border-[#9b0000]';
-          buttonsHTML += `
-            <button 
-              data-videokey="${escapeHTML(videoKey)}"
-              data-nicoid="${v.archive_nico_id}"
-              data-domid="${safeDOMId}"
-              onclick="app.playVideo(this.dataset.videokey, 'nico', this.dataset.nicoid, this.dataset.domid)"
-              id="btn-arc-nico-${safeDOMId}"
-              class="px-3 py-1 text-[10px] font-bold border transition-colors ${btnClass}"
-            >
-              ARCHIVE (NICO)
             </button>
           `;
         }
