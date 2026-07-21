@@ -5696,12 +5696,12 @@
         "archive_nico_id": "",
         "tvple_id": "345226",
         "is_nico_viewable": true,
-        "is_yt_viewable": false
+        "is_yt_viewable": true
     },
     {
         "id": null,
         "nico_id": "sm27553223",
-        "title": "天元突破キララガン !",
+        "title": "天元突破キララガン !  /【2015/11/09】",
         "creator": "MASTERS",
         "upload_date": "2015/11/09",
         "original_link": "https://www.nicovideo.jp/watch/sm27553223",
@@ -5719,12 +5719,12 @@
         "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/27553223/27553223",
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/3642/36428233.jpg",
         "added_at": 1773858437.084131,
-        "archive_id": "",
-        "yt_id": "eG6x8NFNawc",
+        "archive_id": "Wwp2Wd84Q68",
+        "yt_id": "",
         "archive_nico_id": "",
-        "tvple_id": "362487",
+        "tvple_id": "",
         "is_nico_viewable": true,
-        "is_yt_viewable": false
+        "is_yt_viewable": true
     },
     {
         "id": null,
