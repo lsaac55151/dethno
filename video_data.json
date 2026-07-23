@@ -3174,7 +3174,7 @@
             {
                 "id": "eUedzbOhTBU",
                 "title": "ヤガミィ【音MAD】/【2024/03/26】",
-                "upload_date": "2024/03/26",
+                "upload_date": "20240326",
                 "description": "https://www.nicovideo.jp/watch/sm43578185\n状態：視聴可能 ( 2025/09/27 )\n投稿日時：2024/03/26 13:40\n投稿者：たこもち (ID:128194290)",
                 "original_link": "https://www.nicovideo.jp/watch/sm43578185",
                 "nico_id": "sm43578185",
@@ -3547,7 +3547,7 @@
             {
                 "id": "OO97AqBtZY0",
                 "title": "かみになる  /【2023/12/21】",
-                "upload_date": "2023/12/21",
+                "upload_date": "20231221",
                 "description": "https://www.nicovideo.jp/watch/sm43171171\n状態：視聴可能 ( 2025/09/27 )\n投稿日時：2023/12/21 02:32\n投稿者：さときび (ID:77311296)",
                 "original_link": "https://www.nicovideo.jp/watch/sm43171171",
                 "nico_id": "sm43171171",
@@ -4569,7 +4569,7 @@
             {
                 "id": "31zwcn_lQxQ",
                 "title": "バグノート / 夜神月  /【2023/02/28】",
-                "upload_date": "2023/02/28",
+                "upload_date": "20230228",
                 "description": "https://www.nicovideo.jp/watch/sm41860428\n状態：視聴可能 ( 2025/08/31 )\n投稿日時：2023/02/28 00:00\n投稿者：Sl (ID:120742361)",
                 "original_link": "https://www.nicovideo.jp/watch/sm41860428",
                 "nico_id": "sm41860428",
@@ -5439,7 +5439,7 @@
             {
                 "id": "FguWwulcbLU",
                 "title": "【夜神月聖誕祭'22】夜神っぽいな  /【2022/02/28】",
-                "upload_date": "2022/02/28",
+                "upload_date": "20220228",
                 "description": "https://www.nicovideo.jp/watch/sm40105497\n状態：視聴可能 ( 2025/08/28 )\n投稿日時：2022/02/28 00:00\n投稿者：nkaoobt (ID:30742884)",
                 "original_link": "https://www.nicovideo.jp/watch/sm40105497",
                 "nico_id": "sm40105497",
@@ -6626,7 +6626,7 @@
             {
                 "id": "8Wjt1TEGgGA",
                 "title": "新世解剖  /【2020/04/12】",
-                "upload_date": "2020/04/12",
+                "upload_date": "20200412",
                 "description": "https://www.nicovideo.jp/watch/sm36648979\n状態：視聴可能 ( 2025/03/31 )\n投稿日時：2020/04/12 00:00\n投稿者：nkaoobt",
                 "original_link": "https://www.nicovideo.jp/watch/sm36648979",
                 "nico_id": "sm36648979",
@@ -7214,7 +7214,7 @@
             {
                 "id": "L9mOjMiFaIs",
                 "title": "キラのおしごと!  /【2019/02/28】",
-                "upload_date": "2019/02/28",
+                "upload_date": "20190228",
                 "description": "https://www.nicovideo.jp/watch/sm34707348\n状態：視聴可能 ( 2025/03/26 )\n投稿日時：2019/02/28 23:58\n投稿者：SilverHT",
                 "original_link": "https://www.nicovideo.jp/watch/sm34707348",
                 "nico_id": "sm34707348",
@@ -8353,7 +8353,7 @@
             {
                 "id": "lefTzkSGs8w",
                 "title": "新新新世界【キラの名は。】/【2017/03/01】",
-                "upload_date": "2017/03/01",
+                "upload_date": "20170301",
                 "description": "https://www.nicovideo.jp/watch/sm30739182\n状態：視聴可能 ( 2024/11/16 )\n投稿日時：2017/03/01 23:49\n投稿者：絶望",
                 "original_link": "https://www.nicovideo.jp/watch/sm30739182",
                 "nico_id": "sm30739182",
@@ -8527,7 +8527,7 @@
             {
                 "id": "erzQgFn64Mw",
                 "title": "キラメミカミ  /【2017/02/28】",
-                "upload_date": "2017/02/28",
+                "upload_date": "20170228",
                 "description": "https://www.nicovideo.jp/watch/sm30727451\n状態：視聴可能 ( 2024/11/16 )\n投稿日時：2017/02/28 05:00\n投稿者：ドラちゃん",
                 "original_link": "https://www.nicovideo.jp/watch/sm30727451",
                 "nico_id": "sm30727451",
@@ -8690,6 +8690,20 @@
                 "yt_id": null
             },
             {
+                "id": "EvxMlbkNd3w",
+                "title": "8話の馬鹿野郎さん  /【2016/11/26】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20161126",
+                "description": "https://www.nicovideo.jp/watch/sm30115623\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/11/26 09:18\n投稿者：くーろふ / (ID:285647)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm30115623",
+                "nico_id": "sm30115623",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "くーろふ",
+                "is_archive": true,
+                "added_at": 1784805909.828271
+            },
+            {
                 "id": "ZOgdJWJoBzM",
                 "title": "ドラマ夜神月 vs ヒカキン ボイパ対決 Bad Apple！！ /【2016/11/24】",
                 "upload_date": "20161124",
@@ -8735,6 +8749,34 @@
                 "yt_id": null
             },
             {
+                "id": "rx8Q_T7yxrg",
+                "title": "【松田】1番と2番【神デレラ】/【2016/11/13】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20161113",
+                "description": "https://www.nicovideo.jp/watch/sm30039114\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/11/13 22:46\n投稿者：サバ缶 / (ID:34122254)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm30039114",
+                "nico_id": "sm30039114",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "サバ缶",
+                "is_archive": true,
+                "added_at": 1784805888.9521048
+            },
+            {
+                "id": "QEU-SjIPvAg",
+                "title": "NICO VIVACE - ニコビバーチェッ！＜比較＞  /【2016/11/06】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20161106",
+                "description": "https://www.nicovideo.jp/watch/sm29987717\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/11/06 21:16\n投稿者：ゆう / (ID:37005881)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm29987717",
+                "nico_id": "sm29987717",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "ゆう",
+                "is_archive": true,
+                "added_at": 1784805913.512185
+            },
+            {
                 "id": "mkJiRafRLlg",
                 "title": "Flip Flapだ馬鹿野朗！ /【2016/11/01】",
                 "upload_date": "20161101",
@@ -8775,6 +8817,20 @@
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
                 "yt_id": null
+            },
+            {
+                "id": "YK2fPzWKNGY",
+                "title": "ミツボシ☆☆★MAD比較  /【2016/10/12】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20161012",
+                "description": "https://www.nicovideo.jp/watch/sm29821790\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/10/12 16:14\n投稿者：クラフタ一電撃隊 / (ID:56098026)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm29821790",
+                "nico_id": "sm29821790",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "クラフタ一電撃隊",
+                "is_archive": true,
+                "added_at": 1784805891.1665568
             },
             {
                 "id": "-uiaLDmrwJw",
@@ -8990,6 +9046,34 @@
                 "yt_id": null
             },
             {
+                "id": "pwxNLKGiEtM",
+                "title": "ニコビバーチェッにキラビバーチェッとZビバーチェッを混ぜてみた！ /【2016/05/05】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20160505",
+                "description": "https://www.nicovideo.jp/watch/sm28780425\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/05/05 13:13\n投稿者：tjkt / (ID:44265948)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm28780425",
+                "nico_id": "sm28780425",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "tjkt",
+                "is_archive": true,
+                "added_at": 1784805892.8573103
+            },
+            {
+                "id": "PSmWIcMQnbo",
+                "title": "忍たま乱太郎　4作品比較  /【2016/04/08】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20160408",
+                "description": "https://www.nicovideo.jp/watch/sm28598111\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/04/08 23:02\n投稿者：いぶたん / (ID:31124889)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm28598111",
+                "nico_id": "sm28598111",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "いぶたん",
+                "is_archive": true,
+                "added_at": 1784805894.909016
+            },
+            {
                 "id": "UCfP-ShNIvg",
                 "title": "恋のキラモード  /【2016/04/03】",
                 "upload_date": "20160403",
@@ -9186,6 +9270,20 @@
                 "yt_id": null
             },
             {
+                "id": "bGADcO05AHs",
+                "title": "味噌煮込み窓か 比較(Z会×デスノート)  /【2016/02/29】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20160229",
+                "description": "https://www.nicovideo.jp/watch/sm28326269\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/02/29 22:11\n投稿者：ザザミ / (ID:47173040)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm28326269",
+                "nico_id": "sm28326269",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "ザザミ",
+                "is_archive": true,
+                "added_at": 1784805913.3980043
+            },
+            {
                 "id": "7wJs4VGhLR4",
                 "title": "千本松田【夜神月聖誕祭'16】/【2016/02/28】",
                 "upload_date": "20160228",
@@ -9315,6 +9413,20 @@
                 "yt_id": null
             },
             {
+                "id": "Wc9jNqovGzc",
+                "title": "味噌煮込み窓か　比較 (Z会×デスノート)  /【2016/02/24】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20160224",
+                "description": "https://www.nicovideo.jp/watch/sm28290936\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/02/24 21:40\n投稿者：MASTERS / (ID:46963113)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm28290936",
+                "nico_id": "sm28290936",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "MASTERS",
+                "is_archive": true,
+                "added_at": 1784805899.9086466
+            },
+            {
                 "id": "WqJXh8I_Ubg",
                 "title": "暗殺ノート[暗殺教室 x デスノート]  /【2016/02/20】",
                 "upload_date": "20160220",
@@ -9327,6 +9439,20 @@
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "yt_id": null
+            },
+            {
+                "id": "lgRPxM-QUno",
+                "title": "暗殺ノート[暗殺教室 x デスノート]  /【2016/02/20】/【現存未確認】",
+                "upload_date": "20160220",
+                "description": "https://www.nicovideo.jp/watch/sm28261273\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/02/20 18:00\n投稿者：MASTERS / (ID:46963113)\n-",
+                "original_link": "https://www.nicovideo.jp/watch/sm28261273",
+                "nico_id": "sm28261273",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "MASTERS",
+                "is_archive": true,
+                "added_at": 1784805906.0690148
             },
             {
                 "id": "KLw4wxgzvIk",
@@ -9416,18 +9542,18 @@
                 "yt_id": null
             },
             {
-                "id": "wmq14epkVDA",
-                "title": "冷やし月より2016  /【2016/01/20】/【現存未確認】",
+                "id": "zpf44nDVwso",
+                "title": "冷やし月より2016  /【2016/01/20】/【現存未確認(一部のみ現存)】",
                 "upload_date": "20160120",
-                "description": "https://www.nicovideo.jp/watch/sm28047498\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/01/20 22:55\n投稿者：ハータン / (ID:42120094)",
+                "description": "https://www.nicovideo.jp/watch/sm28047498\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/01/20 22:55\n投稿者：ハータン / (ID:42120094)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm28047498",
                 "nico_id": "sm28047498",
-                "creator": "ハータン",
-                "is_archive": true,
-                "added_at": 1777610514.444711,
+                "yt_id": null,
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
-                "yt_id": null
+                "creator": "ハータン",
+                "is_archive": true,
+                "added_at": 1784805897.5256503
             },
             {
                 "id": "o9-6Wosz-ek",
@@ -9458,6 +9584,34 @@
                 "yt_id": null
             },
             {
+                "id": "s9bgozRXNkg",
+                "title": "おそ松田ん　第二クール  /【2016/01/13】",
+                "upload_date": "20160113",
+                "description": "https://www.nicovideo.jp/watch/sm27997352\n状態：視聴可能 ( 2026/07/23 )\n投稿日時：2016/01/13 01:02\n投稿者：まんぼう / (ID:34965910)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm27997352",
+                "nico_id": "sm27997352",
+                "yt_id": null,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": "まんぼう",
+                "is_archive": true,
+                "added_at": 1784805892.9589927
+            },
+            {
+                "id": "qQjfW1RPGns",
+                "title": "夜神月の「自傷無色」/【2016/01/13】",
+                "upload_date": "20160113",
+                "description": "https://www.nicovideo.jp/watch/sm27999587\n状態：視聴可能 ( 2026/07/23 )\n投稿日時：2016/01/13 14:51\n投稿者：SizFryMeat / (ID:54319442)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm27999587",
+                "nico_id": "sm27999587",
+                "yt_id": null,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": "SizFryMeat",
+                "is_archive": true,
+                "added_at": 1784805906.8533404
+            },
+            {
                 "id": "thR1MwTCkE4",
                 "title": "おそ松田　OP　「全力バカヤロー！」/【2016/01/12】",
                 "upload_date": "20160112",
@@ -9472,6 +9626,34 @@
                 "yt_id": null
             },
             {
+                "id": "CpkXEpWQzXk",
+                "title": "月夜神の「アンハッピーリフレイン  /【2016/01/12】",
+                "upload_date": "20160112",
+                "description": "https://www.nicovideo.jp/watch/sm27995612\n状態：視聴可能 ( 2026/07/23 )\n投稿日時：2016/01/12 21:17\n投稿者：SizFryMeat / (ID:54319442)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm27995612",
+                "nico_id": "sm27995612",
+                "yt_id": null,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": "SizFryMeat",
+                "is_archive": true,
+                "added_at": 1784805900.686361
+            },
+            {
+                "id": "_Sl87ac_RG8",
+                "title": "おそ松田　OP　「全力バカヤロー！」/【2016/01/12】",
+                "upload_date": "20160112",
+                "description": "https://www.nicovideo.jp/watch/sm27996730\n状態：視聴可能 ( 2026/07/23 )\n投稿日時：2016/01/12 23:36\n投稿者：tokachi / (ID:52140129)\n-\n出典：オリジナルより保存 _ ( DL - 2016/03/30 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm27996730",
+                "nico_id": "sm27996730",
+                "yt_id": null,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": "tokachi",
+                "is_archive": true,
+                "added_at": 1784805888.7690654
+            },
+            {
                 "id": "_WNonmtKjec",
                 "title": "おそ松田  /【2016/01/07】",
                 "upload_date": "20160107",
@@ -9484,6 +9666,34 @@
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "yt_id": null
+            },
+            {
+                "id": "6CejWEj9hKs",
+                "title": "千本桜  /【2016/01/07】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20160107",
+                "description": "https://www.nicovideo.jp/watch/sm27957144\n状態：投稿者による自主削除、または非公開\n投稿日時：2016/01/07 03:18\n投稿者：dio / (ID:34245735)\n-\n出典：Web-Archiveより保存 _ ( DL - 2026/07/23 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm27957144",
+                "nico_id": "sm27957144",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "dio",
+                "is_archive": true,
+                "added_at": 1784805911.2606015
+            },
+            {
+                "id": "e5nR-S_ZqjE",
+                "title": "おそ松田  /【2016/01/07】",
+                "upload_date": "20160107",
+                "description": "https://www.nicovideo.jp/watch/sm27961424\n状態：視聴可能 ( 2026/07/23 )\n投稿日時：2016/01/07 21:48\n投稿者：tokachi / (ID:52140129)\n-\n出典：オリジナルより保存 _ ( DL - 2016/01/14 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm27961424",
+                "nico_id": "sm27961424",
+                "yt_id": null,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": "tokachi",
+                "is_archive": true,
+                "added_at": 1784805887.7300189
             },
             {
                 "id": "5WhCG1ddk6E",
@@ -9594,14 +9804,14 @@
             {
                 "id": "Wwp2Wd84Q68",
                 "title": "天元突破キララガン !  /【2015/11/09】",
-                "upload_date": "2015/11/09",
+                "upload_date": "20151109",
                 "description": "https://www.nicovideo.jp/watch/sm27553223\n状態：視聴可能 ( 2026/07/19 )\n投稿日時：2015/11/09 18:04\n投稿者：RaLa / (ID:36428233)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/19 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm27553223",
                 "nico_id": "sm27553223",
                 "yt_id": "",
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
-                "creator": "MASTERS",
+                "creator": "RaLa",
                 "is_archive": true,
                 "added_at": 1784416150.611913,
                 "archive_id": "Wwp2Wd84Q68",
@@ -10689,11 +10899,11 @@
             {
                 "id": "s4MKruJyprQ",
                 "title": "お願い粉バナナ  /【2015/09/05】",
-                "upload_date": "2015/09/05",
+                "upload_date": "20150905",
                 "description": "https://www.nicovideo.jp/watch/sm27087163\n状態：視聴可能 ( 2026/06/21 )\n投稿日時：2015/09/05 01:25\n投稿者：RaLa / (ID:36428233)\n-\n出典：オリジナルより保存 _ ( DL - 2026/06/21 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm27087163",
                 "nico_id": "sm27087163",
-                "creator": "MASTERS",
+                "creator": "RaLa",
                 "is_archive": true,
                 "added_at": 1783520605.881636,
                 "archive_id": "s4MKruJyprQ",
@@ -11518,11 +11728,11 @@
             {
                 "id": "iM6KmLXVAxk",
                 "title": "[데스노트] GGO 온라인  /【2014/08/07】",
-                "upload_date": "2014/08/07",
+                "upload_date": "20140807",
                 "description": "https://www.nicovideo.jp/watch/sm24183808\n状態：視聴可能 ( 2026/06/01 )\n投稿日時：2014/08/07 23:46\n投稿者：RaLa / (ID:36428233)\n-\n出典：オリジナルより保存 _ ( DL - 2026/06/01 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm24183808",
                 "nico_id": "sm24183808",
-                "creator": "Tale",
+                "creator": "RaLa",
                 "is_archive": true,
                 "added_at": 1780323156.7020683,
                 "archive_id": "iM6KmLXVAxk",
@@ -22274,6 +22484,20 @@
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "yt_id": null
+            },
+            {
+                "id": "Eziuxt2-VH4",
+                "title": "デスノートＭＡＤ　創世のアクエリオン  /【2008/07/16】",
+                "upload_date": "20080716",
+                "description": "https://www.nicovideo.jp/watch/sm3977579\n状態：社団法人日本レコード協会による権利者削除\n投稿日時：2008/07/16 07:52\n投稿者：キャリア組 / (ID:7556268)\n-\n出典：オリジナルより保存 _ ( DL - 2008/08/20 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm3977579",
+                "nico_id": "sm3977579",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": "キャリア組",
+                "is_archive": true,
+                "added_at": 1784805896.240404
             },
             {
                 "id": "ZeuNQzaIyC4",
