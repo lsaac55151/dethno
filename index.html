@@ -407,11 +407,14 @@
               const mappedC = resolveName(v.creator);
               const refinedDate = getRefinedDate(v);
 
+              let yr = refinedDate.split('/')[0];
+              if (yr === "0000") yr = playlistYr;
+
               const videoWithMeta = {
                 ...v,
                 mappedCreator: mappedC,
                 refinedDate: refinedDate,
-                targetYear: playlistYr
+                targetYear: yr
               };
 
               archiveVideos.push(videoWithMeta);
@@ -1022,12 +1025,17 @@
           state.loading = true;
           updateUI();
 
-          const videoDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/video_data.json";
-          const manualDataUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/manual_data.json";
-          const creatorMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/creator_map.json";
-          const profileMapUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/profile_map.json";
-          const translationUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EB%B2%88%EC%97%AD%EC%9A%A9.txt";
-          const translationJaUrl = "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EC%9D%BC%EB%B3%B8%EC%96%B4%20%EB%B2%88%EC%97%AD%EC%9A%A9.txt";
+          const isFileProtocol = window.location.protocol === 'file:';
+          const getUrl = (filename, githubUrl) => {
+            return isFileProtocol ? githubUrl : `./${filename}`;
+          };
+
+          const videoDataUrl = getUrl("video_data.json", "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/video_data.json");
+          const manualDataUrl = getUrl("manual_data.json", "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/manual_data.json");
+          const creatorMapUrl = getUrl("creator_map.json", "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/creator_map.json");
+          const profileMapUrl = getUrl("profile_map.json", "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/profile_map.json");
+          const translationUrl = getUrl("번역용.txt", "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EB%B2%88%EC%97%AD%EC%9A%A9.txt");
+          const translationJaUrl = getUrl("일본어 번역용.txt", "https://raw.githubusercontent.com/lsaac55151/dethno/refs/heads/main/%EC%9D%BC%EB%B3%B8%EC%96%B4%20%EB%B2%88%EC%97%AD%EC%9A%A9.txt");
 
           try {
             const [resVideo, resManual, resCreator, resProfile, resTranslation, resTranslationJa] = await Promise.all([
@@ -1040,7 +1048,7 @@
             ]);
 
             if (!resVideo.ok || !resManual.ok || !resCreator.ok || !resProfile.ok || !resTranslation.ok || !resTranslationJa.ok) {
-              throw new Error("GitHub에서 데이터를 가져오는 중 오류가 발생했습니다.");
+              throw new Error("데이터를 가져오는 중 오류가 발생했습니다.");
             }
 
             const translationText = await resTranslation.text();
