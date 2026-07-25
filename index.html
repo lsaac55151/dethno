@@ -10,10 +10,10 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Metal+Mania&family=Kaisei+Tokumin:wght@400;700&family=Song+Myung&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Metal+Mania&family=Kaisei+Tokumin:wght@400;700&family=Song+Myung&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@400;700&display=swap');
 
     body {
-      font-family: 'Kaisei Tokumin', 'Song Myung', serif;
+      font-family: 'Song Myung', 'Nanum Myeongjo', 'Noto Serif KR', 'Kaisei Tokumin', serif;
       background-color: #0a0a0a;
       color: #f0f0f0;
     }
@@ -26,7 +26,7 @@
     /* 제작자 닉네임 붉은 글로우(빛남) 효과 및 명조체 스타일 */
     .creator-glow {
       color: #ef4444;
-      font-family: 'Kaisei Tokumin', 'Song Myung', serif;
+      font-family: 'Song Myung', 'Nanum Myeongjo', 'Noto Serif KR', 'Kaisei Tokumin', serif !important;
       text-shadow: 0 0 6px rgba(239, 68, 68, 0.75), 0 0 12px rgba(155, 0, 0, 0.85);
       transition: all 0.3s ease;
     }
@@ -867,7 +867,7 @@
               <div class="w-8 h-8 rounded-full overflow-hidden border border-[#9b0000]/60 shrink-0 bg-[#0a0a0a] group-hover/creator:scale-110 group-hover/creator:border-[#ff4d4d] group-hover/creator:shadow-[0_0_10px_rgba(239,68,68,0.7)] transition-all">
                 <img src="${profileUrl}" class="w-full h-full object-cover" onerror="this.src='${DEFAULT_PROFILE}'" />
               </div>
-              <span class="text-base md:text-lg creator-glow font-serif group-hover/creator:underline truncate max-w-[190px] md:max-w-[240px]">
+              <span class="text-base md:text-lg creator-glow group-hover/creator:underline truncate max-w-[190px] md:max-w-[240px]">
                 ${escapeHTML(mappedC)}
               </span>
             </div>
