@@ -222,8 +222,12 @@
 
       const videoMatchesQuery = (v, query) => {
         if (!query) return true;
-        
-        if (matchSearch(v.title, query) || matchSearch(v.originalTitle, query) || matchSearch(v.mappedCreator, query)) {
+
+        const creatorMatch = (v.mappedCreators && v.mappedCreators.some(c => matchSearch(c, query))) ||
+                             (v.rawCreators && v.rawCreators.some(c => matchSearch(c, query))) ||
+                             matchSearch(v.mappedCreator, query);
+
+        if (matchSearch(v.title, query) || matchSearch(v.originalTitle, query) || creatorMatch) {
           return true;
         }
 
@@ -375,13 +379,24 @@
 
         const resolveName = (n) => {
           if (!n) return "Unknown";
-          let curr = n.trim();
+          let curr = String(n).trim();
           let visited = new Set();
           while (cmap[curr] && !visited.has(curr)) {
             visited.add(curr);
             curr = cmap[curr].trim();
           }
           return curr;
+        };
+
+        const getCreatorsArray = (creatorField) => {
+          if (!creatorField) return ["Unknown"];
+          let list = [];
+          if (Array.isArray(creatorField)) {
+            list = creatorField.map(c => String(c).trim()).filter(Boolean);
+          } else if (typeof creatorField === 'string') {
+            list = [creatorField.trim()].filter(Boolean);
+          }
+          return list.length > 0 ? list : ["Unknown"];
         };
 
         const getRefinedDate = (v) => {
@@ -404,7 +419,8 @@
           if (Array.isArray(group.videos)) {
             group.videos.forEach(v => {
               if (!v) return;
-              const mappedC = resolveName(v.creator);
+              const rawCs = getCreatorsArray(v.creator);
+              const mappedCs = rawCs.map(c => resolveName(c));
               const refinedDate = getRefinedDate(v);
 
               let yr = refinedDate.split('/')[0];
@@ -412,7 +428,9 @@
 
               const videoWithMeta = {
                 ...v,
-                mappedCreator: mappedC,
+                rawCreators: rawCs,
+                mappedCreators: mappedCs,
+                mappedCreator: mappedCs.join(', '),
                 refinedDate: refinedDate,
                 targetYear: yr
               };
@@ -434,7 +452,8 @@
         manual.forEach(v => {
           if (!v) return;
 
-          const mappedC = resolveName(v.creator);
+          const rawCs = getCreatorsArray(v.creator);
+          const mappedCs = rawCs.map(c => resolveName(c));
           const refinedDate = getRefinedDate(v);
           let yr = refinedDate.split('/')[0];
           if (yr === "0000") yr = "UNKNOWN";
@@ -470,6 +489,12 @@
               if (yr !== "UNKNOWN") matchedVideo.targetYear = yr;
             }
 
+            if (v.creator) {
+              matchedVideo.rawCreators = rawCs;
+              matchedVideo.mappedCreators = mappedCs;
+              matchedVideo.mappedCreator = mappedCs.join(', ');
+            }
+
             Object.keys(v).forEach(key => {
               if (matchedVideo[key] === undefined) {
                 matchedVideo[key] = v[key];
@@ -478,7 +503,9 @@
           } else {
             const newVideo = {
               ...v,
-              mappedCreator: mappedC,
+              rawCreators: rawCs,
+              mappedCreators: mappedCs,
+              mappedCreator: mappedCs.join(', '),
               refinedDate: refinedDate,
               targetYear: yr
             };
@@ -527,20 +554,29 @@
 
         allVideos.forEach(videoWithMeta => {
           const yr = videoWithMeta.targetYear;
-          const mappedC = videoWithMeta.mappedCreator;
 
           if (!yearGroups[yr]) yearGroups[yr] = [];
           yearGroups[yr].push(videoWithMeta);
 
-          if (!creatorGroups[mappedC]) {
-            creatorGroups[mappedC] = {
-              videos: [],
-              profile: pmap[mappedC] || pmap[videoWithMeta.creator] || DEFAULT_PROFILE
-            };
-          } else if (creatorGroups[mappedC].profile === DEFAULT_PROFILE && pmap[videoWithMeta.creator]) {
-            creatorGroups[mappedC].profile = pmap[videoWithMeta.creator];
-          }
-          creatorGroups[mappedC].videos.push(videoWithMeta);
+          const rawCs = videoWithMeta.rawCreators || ["Unknown"];
+          const mappedCs = videoWithMeta.mappedCreators || ["Unknown"];
+
+          mappedCs.forEach((mappedC, idx) => {
+            const rawC = rawCs[idx] || mappedC;
+
+            if (!creatorGroups[mappedC]) {
+              creatorGroups[mappedC] = {
+                videos: [],
+                profile: pmap[mappedC] || pmap[rawC] || DEFAULT_PROFILE
+              };
+            } else if (creatorGroups[mappedC].profile === DEFAULT_PROFILE && (pmap[mappedC] || pmap[rawC])) {
+              creatorGroups[mappedC].profile = pmap[mappedC] || pmap[rawC];
+            }
+
+            if (!creatorGroups[mappedC].videos.includes(videoWithMeta)) {
+              creatorGroups[mappedC].videos.push(videoWithMeta);
+            }
+          });
         });
 
         const sortGroups = (groups, type) => {
@@ -804,7 +840,27 @@
           `;
         }
 
-        // [수정 적용] 프로필 썸네일 박스 및 닉네임 span 태그에 모달 트리거 바인딩 및 호버 효과 연동
+        const mappedCs = (v.mappedCreators && v.mappedCreators.length > 0) ? v.mappedCreators : [v.mappedCreator || "Unknown"];
+        const rawCs = v.rawCreators || [];
+
+        const creatorsHTML = mappedCs.map((mappedC, i) => {
+          const rawC = rawCs[i] || mappedC;
+          const profileUrl = pmap[mappedC] || pmap[rawC] || DEFAULT_PROFILE;
+          return `
+            <div class="flex items-center gap-1.5 cursor-pointer group/creator"
+                 title="${escapeHTML(mappedC)}"
+                 data-creator="${escapeHTML(mappedC)}"
+                 onclick="app.openCreatorModal(this.dataset.creator)">
+              <div class="w-7 h-7 rounded-full overflow-hidden border border-[#9b0000]/40 shrink-0 bg-[#0a0a0a] group-hover/creator:scale-110 group-hover/creator:border-[#9b0000] transition-all">
+                <img src="${profileUrl}" class="w-full h-full object-cover" onerror="this.src='${DEFAULT_PROFILE}'" />
+              </div>
+              <span class="text-[#9b0000] font-bold group-hover/creator:underline truncate max-w-[140px]">
+                ${escapeHTML(mappedC)}
+              </span>
+            </div>
+          `;
+        }).join('<span class="text-[#444] text-[10px] select-none font-sans">,</span>');
+
         return `
           <div class="bg-[#121212] border border-[#222] flex flex-col overflow-hidden shadow-lg transition-all hover:border-[#444] relative h-full fade-in">
             <div class="aspect-video bg-black relative group overflow-hidden" id="${safeDOMId}">
@@ -813,17 +869,14 @@
             <div class="p-4 flex-grow flex flex-col relative">
               <h5 class="text-lg font-bold text-[#f0f0f0] line-clamp-2 h-18 leading-snug">${escapeHTML(v.title)}</h5>
               
-              <div class="text-[11px] text-[#888] mt-2 flex items-center gap-2 font-sans">
-                <div class="w-10 h-10 rounded-full overflow-hidden border border-[#9b0000]/40 shrink-0 bg-[#0a0a0a] cursor-pointer hover:scale-105 transition-transform"
-                     data-creator="${escapeHTML(v.mappedCreator)}" onclick="app.openCreatorModal(this.dataset.creator)">
-                  <img src="${profileUrl}" class="w-full h-full object-cover" onerror="this.src='${DEFAULT_PROFILE}'" />
+              <div class="text-[11px] text-[#888] mt-2 flex flex-wrap items-center justify-between gap-2 font-sans">
+                <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5 min-w-0">
+                  ${creatorsHTML}
                 </div>
-                <span class="text-[#9b0000] font-bold cursor-pointer hover:underline"
-                      data-creator="${escapeHTML(v.mappedCreator)}" onclick="app.openCreatorModal(this.dataset.creator)">
-                  ${escapeHTML(v.mappedCreator)}
-                </span>
-                <span class="opacity-30">|</span>
-                <span>${escapeHTML(v.refinedDate)}</span>
+                <div class="flex items-center gap-1.5 shrink-0 text-[#777] ml-auto">
+                  <span class="opacity-30">|</span>
+                  <span>${escapeHTML(v.refinedDate)}</span>
+                </div>
               </div>
               
               <div class="flex flex-wrap gap-2 mt-auto pt-4">
