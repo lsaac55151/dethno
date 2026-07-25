@@ -23,6 +23,19 @@
       color: white;
     }
 
+    /* 제작자 닉네임 붉은 글로우(빛남) 효과 및 명조체 스타일 */
+    .creator-glow {
+      color: #ef4444;
+      font-family: 'Kaisei Tokumin', 'Song Myung', serif;
+      text-shadow: 0 0 6px rgba(239, 68, 68, 0.75), 0 0 12px rgba(155, 0, 0, 0.85);
+      transition: all 0.3s ease;
+    }
+
+    .group\/creator:hover .creator-glow {
+      color: #ff6666;
+      text-shadow: 0 0 10px rgba(255, 120, 120, 1), 0 0 18px rgba(239, 68, 68, 0.95), 0 0 26px rgba(185, 28, 28, 0.85);
+    }
+
     /* 로딩 애니메이션 및 전환 효과 */
     .fade-in {
       animation: fadeIn 0.5s ease-in-out;
@@ -118,7 +131,7 @@
             <img id="modal-creator-profile" src="" class="w-full h-full object-cover" />
           </div>
           <div>
-            <h3 id="modal-creator-name" class="text-xl font-bold text-[#9b0000] italic"></h3>
+            <h3 id="modal-creator-name" class="text-xl font-bold creator-glow italic"></h3>
             <p id="modal-creator-count" class="text-[10px] text-[#555] font-sans uppercase tracking-widest"></p>
           </div>
         </div>
@@ -851,15 +864,15 @@
                  title="${escapeHTML(mappedC)}"
                  data-creator="${escapeHTML(mappedC)}"
                  onclick="app.openCreatorModal(this.dataset.creator)">
-              <div class="w-7 h-7 rounded-full overflow-hidden border border-[#9b0000]/40 shrink-0 bg-[#0a0a0a] group-hover/creator:scale-110 group-hover/creator:border-[#9b0000] transition-all">
+              <div class="w-8 h-8 rounded-full overflow-hidden border border-[#9b0000]/60 shrink-0 bg-[#0a0a0a] group-hover/creator:scale-110 group-hover/creator:border-[#ff4d4d] group-hover/creator:shadow-[0_0_10px_rgba(239,68,68,0.7)] transition-all">
                 <img src="${profileUrl}" class="w-full h-full object-cover" onerror="this.src='${DEFAULT_PROFILE}'" />
               </div>
-              <span class="text-[#9b0000] font-bold group-hover/creator:underline truncate max-w-[140px]">
+              <span class="text-base md:text-lg creator-glow font-serif group-hover/creator:underline truncate max-w-[190px] md:max-w-[240px]">
                 ${escapeHTML(mappedC)}
               </span>
             </div>
           `;
-        }).join('<span class="text-[#444] text-[10px] select-none font-sans">,</span>');
+        }).join('<span class="text-[#444] text-xs select-none font-sans">,</span>');
 
         return `
           <div class="bg-[#121212] border border-[#222] flex flex-col overflow-hidden shadow-lg transition-all hover:border-[#444] relative h-full fade-in">
@@ -998,7 +1011,7 @@
                   </button>
                   ` : ''}
                   <div>
-                    <h2 class="text-2xl font-bold text-[#9b0000] uppercase italic tracking-tight">${escapeHTML(displayPlaylistTitle)}</h2>
+                    <h2 class="text-2xl font-bold creator-glow uppercase italic tracking-tight">${escapeHTML(displayPlaylistTitle)}</h2>
                     <p class="text-[10px] text-[#555] font-sans mt-0.5 uppercase tracking-widest">
                       ${sortLabel} ${currentI18n.sortedBy} (${videos.length}${currentI18n.works})
                     </p>
