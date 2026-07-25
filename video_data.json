@@ -10707,18 +10707,22 @@
             {
                 "id": "eagANjZRuUY",
                 "title": "千本バナナ  /【2016/03/06】",
-                "upload_date": "20160306",
+                "upload_date": "2016/03/06",
                 "description": "https://www.nicovideo.jp/watch/sm28363765\n状態：視聴可能 ( 2026/07/25 )\n投稿日時：2016/03/06 12:59\n投稿者：Kishinje / (ID:45684514)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/25 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm28363765",
                 "nico_id": "sm28363765",
-                "yt_id": null,
+                "yt_id": "",
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "creator": [
-                    "Kishinje"
+                    "Kishinje",
+                    "하후"
                 ],
                 "is_archive": true,
-                "added_at": 1785015695.4340484
+                "added_at": 1785015695.4340484,
+                "archive_id": "eagANjZRuUY",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "ZKbyxFR_va8",
