@@ -10705,22 +10705,6 @@
                 "added_at": 1785024148.8583343
             },
             {
-                "id": "ZKbyxFR_va8",
-                "title": "没・未完成・合作単品  /【2016/03/03】",
-                "upload_date": "20160303",
-                "description": "https://www.nicovideo.jp/watch/sm28341425\n状態：視聴可能 ( 2026/07/25 )\n投稿日時：2016/03/03 18:03\n投稿者：tokachi / (ID:21523375)\n-\n出典：オリジナルより保存 _ ( DL - 2016/03/30 )",
-                "original_link": "https://www.nicovideo.jp/watch/sm28341425",
-                "nico_id": "sm28341425",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "tokachi"
-                ],
-                "is_archive": true,
-                "added_at": 1785024194.4091122
-            },
-            {
                 "id": "IMaopfRn4_M",
                 "title": "KIRA SWEETS!  /【2016/02/29】",
                 "upload_date": "20160229",
@@ -10978,19 +10962,23 @@
             },
             {
                 "id": "jyqIDg6j47w",
-                "title": "Let It Go-夜神ライト  /【2016/02/18】",
-                "upload_date": "20160218",
+                "title": "라이토 - Let it go  /【2016/02/05】",
+                "upload_date": "2016/02/05",
                 "description": "https://www.nicovideo.jp/watch/sm28247218\n状態：視聴可能 ( 2026/07/24 )\n投稿日時：2016/02/18 17:46\n投稿者：ERU / (ID:41427512)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/24 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm28247218",
-                "nico_id": "sm28247218",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
+                "nico_id": "",
+                "yt_id": "",
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
                 "creator": [
-                    "ERU"
+                    "EvilServant 이블서번트",
+                    "知らない人"
                 ],
                 "is_archive": true,
-                "added_at": 1785024157.0304663
+                "added_at": 1785024157.0304663,
+                "archive_id": "jyqIDg6j47w",
+                "archive_nico_id": "sm28247218",
+                "tvple_id": ""
             },
             {
                 "id": "i3OkgWV4Xa8",
@@ -11106,19 +11094,23 @@
             },
             {
                 "id": "-rkTKO98FeQ",
-                "title": "銃撃ソングとキラステップ  /【2016/01/14】",
-                "upload_date": "20160114",
+                "title": "銃撃ソングとキラステップ  /【2015/12/23】",
+                "upload_date": "2015/12/23",
                 "description": "https://www.nicovideo.jp/watch/sm28005460\n状態：視聴可能 ( 2026/07/24 )\n投稿日時：2016/01/14 14:33\n投稿者：SizFryMeat / (ID:54319442)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/24 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm28005460",
-                "nico_id": "sm28005460",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
+                "nico_id": "",
+                "yt_id": "",
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
                 "creator": [
-                    "SizFryMeat"
+                    "EvilServant 이블서번트",
+                    "Bustge"
                 ],
                 "is_archive": true,
-                "added_at": 1785024162.8547962
+                "added_at": 1785024162.8547962,
+                "archive_id": "-rkTKO98FeQ",
+                "archive_nico_id": "sm28005460",
+                "tvple_id": "377102"
             },
             {
                 "id": "zCEZd8pr3fQ",
