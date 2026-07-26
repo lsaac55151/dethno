@@ -11672,18 +11672,22 @@
             {
                 "id": "rjryvt4GhVc",
                 "title": "きらゆり ざん☆パイ！【ゆるゆり×バカヤロイド】/【2015/10/11】",
-                "upload_date": "20151011",
+                "upload_date": "2015/10/11",
                 "description": "https://www.nicovideo.jp/watch/sm27348798\n状態：視聴可能 ( 2026/07/18 )\n投稿日時：2015/10/11 21:00\n投稿者：セーネ艦 / (ID:30082480)\n-\n出典：オリジナルより保存 _ ( DL - 2016/01/06 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm27348798",
                 "nico_id": "sm27348798",
-                "yt_id": null,
+                "yt_id": "",
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "creator": [
-                    "セーネ艦"
+                    "セーネ艦",
+                    "tokachi"
                 ],
                 "is_archive": true,
-                "added_at": 1784416125.2862957
+                "added_at": 1784416125.2862957,
+                "archive_id": "rjryvt4GhVc",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "ljS2-CERg10",
