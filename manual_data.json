@@ -6916,10 +6916,11 @@
     },
     {
         "id": "P4DujxBgfR0",
-        "nico_id": null,
+        "nico_id": "",
         "title": "[바카야로이드]자상무색",
         "creator": [
-            "Bustge"
+            "Bustge",
+            "EvilServant 이블서번트"
         ],
         "upload_date": "2016/01/12",
         "original_link": "https://www.youtube.com/watch?v=P4DujxBgfR0",
@@ -6941,7 +6942,10 @@
         "yt_id": "P4DujxBgfR0",
         "added_at": 1783832102.5503128,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": "fMfHRsOX0sI",
@@ -10121,33 +10125,6 @@
         "creator_thumbnail": null,
         "yt_id": "JzZhnznuiE8",
         "added_at": 1784710365.0967424,
-        "is_nico_viewable": true,
-        "is_yt_viewable": true
-    },
-    {
-        "id": null,
-        "nico_id": "sm28341425",
-        "title": "没・未完成・合作単品",
-        "creator": [
-            "tokachi"
-        ],
-        "upload_date": "2016/03/03",
-        "original_link": "https://www.nicovideo.jp/watch/sm28341425",
-        "description": "・没になったもの・未完成でまだ完成させる可能性があるもの・合作単品（音声のみ）をまとめました。",
-        "is_archive": false,
-        "tags": [
-            "<tag lock=\"1\">エンターテイメント",
-            "音MAD",
-            "183",
-            "バカヤロイド",
-            "勉強シロイド",
-            "合作単品",
-            "キルミーベイベー",
-            "z会"
-        ],
-        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/28341425/28341425",
-        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/2152/21523375.jpg",
-        "added_at": 1784984294.3749642,
         "is_nico_viewable": true,
         "is_yt_viewable": true
     },
