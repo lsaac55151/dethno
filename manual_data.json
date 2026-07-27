@@ -723,10 +723,11 @@
     },
     {
         "id": "Z_cI7tkuIOM",
-        "nico_id": null,
+        "nico_id": "",
         "title": "[프로듀서 연말합작 2024 단품] 라이토 - 봄망초",
         "creator": [
-            "본인심영"
+            "본인심영",
+            "두리안 김치"
         ],
         "upload_date": "2024/12/31",
         "original_link": "https://www.youtube.com/watch?v=Z_cI7tkuIOM",
@@ -737,7 +738,11 @@
         "creator_thumbnail": "https://yt3.googleusercontent.com/HuDos-5XJzIS1REFg42BBmilsu1aOCT6-EJKXeV9GaZuSE3ElX3oKYnQTO8E7HrPFGuQ7elq=s800-c-k-c0x00ffffff-no-rj",
         "added_at": 1772776278.8941696,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "yt_id": "Z_cI7tkuIOM",
+        "tvple_id": ""
     },
     {
         "id": "BcU0TQ8_xD0",
@@ -6377,10 +6382,11 @@
     },
     {
         "id": "jyCHJZFFR3k",
-        "nico_id": null,
+        "nico_id": "",
         "title": "라이토 잘못된 만남",
         "creator": [
-            "봉식"
+            "봉식",
+            "사이키라"
         ],
         "upload_date": "2022/02/28",
         "original_link": "https://www.youtube.com/watch?v=jyCHJZFFR3k",
@@ -6392,7 +6398,10 @@
         "yt_id": "jyCHJZFFR3k",
         "added_at": 1773374549.668647,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": "mAU32HDUpHo",
@@ -8942,10 +8951,11 @@
     },
     {
         "id": "NmBnP3rd3Ng",
-        "nico_id": null,
+        "nico_id": "",
         "title": "【単品】KIRA CANTABILE♪ pt. 70~74",
         "creator": [
-            "앰프"
+            "앰프",
+            "봉식"
         ],
         "upload_date": "2024/02/29",
         "original_link": "https://www.youtube.com/watch?v=NmBnP3rd3Ng",
@@ -8967,7 +8977,10 @@
         "yt_id": "NmBnP3rd3Ng",
         "added_at": 1784255845.7834945,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": "kSrNmCrEpEI",
@@ -10493,6 +10506,72 @@
         "creator_thumbnail": null,
         "yt_id": "XK4RqlP8be0",
         "added_at": 1785017334.0876606,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "1laxl2zcdAg",
+        "nico_id": "",
+        "title": "달밤의제창세기 절대특권주장합니다",
+        "creator": [
+            "m1n1",
+            "이삭",
+            "앰프"
+        ],
+        "upload_date": "2022/02/28",
+        "original_link": "https://www.youtube.com/watch?v=1laxl2zcdAg",
+        "description": "https://youtu.be/tYCjlK3crxI\n음성 이삭\n영상 ひな 앰프",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/1laxl2zcdAg/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "1laxl2zcdAg",
+        "added_at": 1785116990.8959844,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
+    },
+    {
+        "id": "ytBBLjfZY5Y",
+        "nico_id": "",
+        "title": "夜に駆ける合作単品",
+        "creator": [
+            "m1n1",
+            "세레노"
+        ],
+        "upload_date": "2021/08/14",
+        "original_link": "https://www.youtube.com/watch?v=ytBBLjfZY5Y",
+        "description": "audio : me\n0:00 ~ 0:15 visual : Serenoski (https://www.youtube.com/user/bowsermario1225)\n0:15 ~ 0:22 visual : me",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/ytBBLjfZY5Y/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "ytBBLjfZY5Y",
+        "added_at": 1785117148.707228,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
+    },
+    {
+        "id": "uLRTYNWBRoI",
+        "nico_id": null,
+        "title": "youTUBE-synthesis.collabの単品",
+        "creator": [
+            "m1n1"
+        ],
+        "upload_date": "2020/03/27",
+        "original_link": "https://www.youtube.com/watch?v=uLRTYNWBRoI",
+        "description": "参加しました！\nhttps://youtu.be/Dj1GhMs43Sk",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/uLRTYNWBRoI/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "uLRTYNWBRoI",
+        "added_at": 1785117233.9218676,
         "is_nico_viewable": true,
         "is_yt_viewable": true
     }

@@ -1918,12 +1918,13 @@
             {
                 "id": "JEV2cJpQQRM",
                 "title": "バカヤロイザー  /【2025/02/28】",
-                "upload_date": "20250228",
+                "upload_date": "2025/02/28",
                 "description": "https://www.nicovideo.jp/watch/sm44700525\n状態：視聴可能 ( 2025/10/01 )\n投稿日時：2025/02/28 02:28\n投稿者：めろーど (nico) (ID:69647279)",
                 "original_link": "https://www.nicovideo.jp/watch/sm44700525",
                 "nico_id": "sm44700525",
                 "creator": [
-                    "めろーど"
+                    "めろーど",
+                    "ルリパス"
                 ],
                 "is_archive": true,
                 "added_at": 1777614670.4843354,
@@ -3730,18 +3731,22 @@
             {
                 "id": "hs5nqZ06RD4",
                 "title": "バカ松田  /【2024/02/28】",
-                "upload_date": "20240228",
+                "upload_date": "2024/02/28",
                 "description": "https://www.nicovideo.jp/watch/sm43457819\n状態：視聴可能 ( 2025/09/27 )\n投稿日時：2024/02/28 00:00\n投稿者：鉄分 (ID:90678308)",
                 "original_link": "https://www.nicovideo.jp/watch/sm43457819",
                 "nico_id": "sm43457819",
                 "creator": [
-                    "鉄分"
+                    "鉄分",
+                    "カイリュー"
                 ],
                 "is_archive": true,
                 "added_at": 1777550206.3517642,
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
-                "yt_id": null
+                "yt_id": "",
+                "archive_id": "hs5nqZ06RD4",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "T61alYImLas",
@@ -6264,12 +6269,13 @@
             {
                 "id": "nwsX1jqoQ8M",
                 "title": "新世界の神っぽいな【夜神月聖誕祭'22】/【2022/02/28】",
-                "upload_date": "20220228",
+                "upload_date": "2022/02/28",
                 "description": "https://www.nicovideo.jp/watch/sm40106467\n状態：視聴可能 ( 2025/08/28 )\n投稿日時：2022/02/28 00:00\n投稿者：たっぴ (ID:84595913)",
                 "original_link": "https://www.nicovideo.jp/watch/sm40106467",
                 "nico_id": "sm40106467",
                 "creator": [
-                    "たっぴ"
+                    "たっぴ",
+                    "봉식"
                 ],
                 "is_archive": true,
                 "added_at": 1777614752.9022348,
@@ -6885,12 +6891,13 @@
             {
                 "id": "GJH9E-wiZVk",
                 "title": "バカヤロ宣言【デスノート × グッバイ宣言】/【2021/06/13】",
-                "upload_date": "20210613",
+                "upload_date": "2021/06/13",
                 "description": "https://www.nicovideo.jp/watch/sm38880714\n状態：視聴可能 ( 2025/08/27 )\n投稿日時：2021/06/13 20:00\n投稿者：たっぴ (ID:84595913)",
                 "original_link": "https://www.nicovideo.jp/watch/sm38880714",
                 "nico_id": "sm38880714",
                 "creator": [
-                    "たっぴ"
+                    "たっぴ",
+                    "봉식"
                 ],
                 "is_archive": true,
                 "added_at": 1777614575.2751553,
