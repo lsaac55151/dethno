@@ -14380,8 +14380,8 @@
                 "yt_id": "",
                 "archive_nico_id": "sm24438487",
                 "tvple_id": "184181",
-                "is_nico_viewable": true,
-                "is_yt_viewable": true
+                "is_nico_viewable": false,
+                "is_yt_viewable": false
             },
             {
                 "id": "iM6KmLXVAxk",
@@ -14399,8 +14399,8 @@
                 "yt_id": "",
                 "archive_nico_id": "",
                 "tvple_id": "177523",
-                "is_nico_viewable": true,
-                "is_yt_viewable": true
+                "is_nico_viewable": false,
+                "is_yt_viewable": false
             },
             {
                 "id": "FlWxNqG2Zvw",
