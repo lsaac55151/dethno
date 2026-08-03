@@ -1954,14 +1954,14 @@
                 "description": "https://www.nicovideo.jp/watch/sm44707458\n状態：視聴可能 ( 2025/10/01 )\n投稿日時：2025/02/28 09:18\n投稿者：ドラゴンのハンター (ID:125324285)",
                 "original_link": "https://www.nicovideo.jp/watch/sm44707458",
                 "nico_id": "sm44707458",
+                "yt_id": null,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
                 "creator": [
                     "ドラゴンのハンター"
                 ],
                 "is_archive": true,
-                "added_at": 1777279633.3427348,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "yt_id": null
+                "added_at": 1785746407.0120223
             },
             {
                 "id": "yzdT2L9TVRc",
@@ -1993,22 +1993,6 @@
                 "added_at": 1777614560.7890437,
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
-                "yt_id": null
-            },
-            {
-                "id": "4rpXuqpuNKI",
-                "title": "馬鹿な松田に僕の思想が通じない【夜神月聖誕祭'25】/【2025/02/28】",
-                "upload_date": "20250228",
-                "description": "https://www.nicovideo.jp/watch/sm44707458\n状態：投稿者による自主削除、または非公開\n投稿日時：2025/02/28 14:11\n投稿者：ひまたんめん (ID:132443381)",
-                "original_link": "https://www.nicovideo.jp/watch/sm44707458",
-                "nico_id": "sm44707458",
-                "creator": [
-                    "ひまたんめん"
-                ],
-                "is_archive": true,
-                "added_at": 1777550205.2847884,
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
                 "yt_id": null
             },
             {
@@ -8983,22 +8967,6 @@
                 "added_at": 1785741663.5777142
             },
             {
-                "id": "QKRbh6Y7TIY",
-                "title": "Yagami Sunrise【デスけ】/【2017/10/28】",
-                "upload_date": "20171028",
-                "description": "https://www.nicovideo.jp/watch/sm32172222\n状態：視聴可能 ( 2024/11/17 )\n投稿日時：2017/10/28 09:27\n投稿者：イジワール",
-                "original_link": "https://www.nicovideo.jp/watch/sm32172222",
-                "nico_id": "sm32172222",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "イジワール"
-                ],
-                "is_archive": true,
-                "added_at": 1785646883.9786363
-            },
-            {
                 "id": "4wQFZpRVj-s",
                 "title": "KONABANA_NANE  /【2017/10/08】/【現存未確認(一部のみ現存)】",
                 "upload_date": "20171008",
@@ -9031,22 +8999,6 @@
                 "added_at": 1785741680.50614
             },
             {
-                "id": "eRWbJoYe3xk",
-                "title": "Death by Note  /【2017/10/03】",
-                "upload_date": "20171003",
-                "description": "https://www.nicovideo.jp/watch/sm32034719\n状態：視聴可能 ( 2024/11/17 )\n投稿日時：2017/10/03 00:00\n投稿者：岩鉄ハガネール",
-                "original_link": "https://www.nicovideo.jp/watch/sm32034719",
-                "nico_id": "sm32034719",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "岩鉄ハガネール"
-                ],
-                "is_archive": true,
-                "added_at": 1785646874.1782784
-            },
-            {
                 "id": "0qfuzej47Ss",
                 "title": "Death note ride [デスノートx星のカービィ]  /【2017/09/29】",
                 "upload_date": "20170929",
@@ -9061,22 +9013,6 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785741664.0176985
-            },
-            {
-                "id": "OEhRjUa3LyY",
-                "title": "Death note ride [デスノートx星のカービィ]  /【2017/09/29】",
-                "upload_date": "20170929",
-                "description": "https://www.nicovideo.jp/watch/sm32012963\n状態：視聴可能 ( 2024/11/17 )\n投稿日時：2017/09/29 21:41\n投稿者：TB",
-                "original_link": "https://www.nicovideo.jp/watch/sm32012963",
-                "nico_id": "sm32012963",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "TB"
-                ],
-                "is_archive": true,
-                "added_at": 1785646844.1625187
             },
             {
                 "id": "qUAgKBO2UIs",
@@ -9095,22 +9031,6 @@
                 "added_at": 1785741674.2331827
             },
             {
-                "id": "-6f0FSSAjP0",
-                "title": "バナナボイ  /【2017/08/20】",
-                "upload_date": "20170820",
-                "description": "https://www.nicovideo.jp/watch/sm31779659\n状態：視聴可能 ( 2024/11/17 )\n投稿日時：2017/08/20 12:26\n投稿者：TB",
-                "original_link": "https://www.nicovideo.jp/watch/sm31779659",
-                "nico_id": "sm31779659",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "TB"
-                ],
-                "is_archive": true,
-                "added_at": 1785646794.728821
-            },
-            {
                 "id": "Jw1xM-pV_3g",
                 "title": "Yes! 抹殺Party Time!!  /【2017/08/19】",
                 "upload_date": "20170819",
@@ -9125,22 +9045,6 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785741676.7075367
-            },
-            {
-                "id": "6Ll0tilmfrM",
-                "title": "Yes! 抹殺Party Time!!  /【2017/08/19】",
-                "upload_date": "20170819",
-                "description": "https://www.nicovideo.jp/watch/sm31771116\n状態：視聴可能 ( 2024/11/17 )\n投稿日時：2017/08/19 00:00\n投稿者：nkaoobt",
-                "original_link": "https://www.nicovideo.jp/watch/sm31771116",
-                "nico_id": "sm31771116",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "nkaoobt"
-                ],
-                "is_archive": true,
-                "added_at": 1785646841.1319425
             },
             {
                 "id": "Byozt1pX52o",
@@ -9159,22 +9063,6 @@
                 "added_at": 1785741677.5858471
             },
             {
-                "id": "Z12j2jlwLGU",
-                "title": "バジリスクライト  /【2017/08/11】",
-                "upload_date": "20170811",
-                "description": "https://www.nicovideo.jp/watch/sm31726258\n状態：視聴可能 ( 2024/11/17 )\n投稿日時：2017/08/11 08:00\n投稿者：歹刂",
-                "original_link": "https://www.nicovideo.jp/watch/sm31726258",
-                "nico_id": "sm31726258",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "歹刂"
-                ],
-                "is_archive": true,
-                "added_at": 1785646795.2759097
-            },
-            {
                 "id": "BfPci5x1bdM",
                 "title": "【アホガール】デス☆Summer!  /【2017/08/05】",
                 "upload_date": "20170805",
@@ -9189,22 +9077,6 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785741673.0272927
-            },
-            {
-                "id": "lBa2F8ILvvo",
-                "title": "【アホガール】デス☆Summer!  /【2017/08/05】",
-                "upload_date": "20170805",
-                "description": "https://www.nicovideo.jp/watch/sm31691034\n状態：視聴可能 ( 2024/11/17 )\n投稿日時：2017/08/05 01:13\n投稿者：賦笠",
-                "original_link": "https://www.nicovideo.jp/watch/sm31691034",
-                "nico_id": "sm31691034",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "賦笠"
-                ],
-                "is_archive": true,
-                "added_at": 1785646827.0246644
             },
             {
                 "id": "_XxnaTSYMso",
@@ -9239,22 +9111,6 @@
                 "added_at": 1785741674.5277011
             },
             {
-                "id": "3sbXouyOqB4",
-                "title": "エレクトロメロ  /【2017/07/30】",
-                "upload_date": "20170730",
-                "description": "https://www.nicovideo.jp/watch/sm31660911\n状態：視聴可能 ( 2024/11/21 )\n投稿日時：2017/07/30 18:45\n投稿者：サバ缶",
-                "original_link": "https://www.nicovideo.jp/watch/sm31660911",
-                "nico_id": "sm31660911",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "サバ缶"
-                ],
-                "is_archive": true,
-                "added_at": 1785646859.7074373
-            },
-            {
                 "id": "Eqj3O2ueSCM",
                 "title": "エレクトロライト  /【2017/07/29】",
                 "upload_date": "20170729",
@@ -9269,22 +9125,6 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785741663.3896065
-            },
-            {
-                "id": "6niq8O1Oyuo",
-                "title": "エレクトロライト  /【2017/07/29】",
-                "upload_date": "20170729",
-                "description": "https://www.nicovideo.jp/watch/sm31653943\n状態：投稿者による自主削除、または非公開\n投稿日時：2017/07/29 17:04\n投稿者：鈴音 / (ID:68120953)\n-\n出典：転載動画\"(制作者本人)\"より保存 _ ( DL - 2026/03/07 )\nhttps://www.youtube.com/watch?v=TyiHEjHAoGI",
-                "original_link": "https://www.nicovideo.jp/watch/sm31653943",
-                "nico_id": "sm31653943",
-                "yt_id": null,
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "creator": [
-                    "鈴音"
-                ],
-                "is_archive": true,
-                "added_at": 1785646848.5718436
             },
             {
                 "id": "OUR_t1KlR-4",
@@ -9749,22 +9589,6 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785646836.9636097
-            },
-            {
-                "id": "x1T_Bsk6llk",
-                "title": "【比較できない】256画面で見るですのフレンズ  /【2017/03/30】",
-                "upload_date": "20170330",
-                "description": "https://www.nicovideo.jp/watch/sm30927522\n状態：視聴可能 ( 2024/11/17 )\n投稿日時：2017/03/30 18:03\n投稿者：SRM",
-                "original_link": "https://www.nicovideo.jp/watch/sm30927522",
-                "nico_id": "sm30927522",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "SRM"
-                ],
-                "is_archive": true,
-                "added_at": 1785646799.7469904
             },
             {
                 "id": "heRJrgwvIiA",
@@ -22507,22 +22331,6 @@
                 "added_at": 1784275433.3282678
             },
             {
-                "id": "bAk3R1bNGo8",
-                "title": "Kirans  /【2009/12/06】/【現存未確認】",
-                "upload_date": "20091206",
-                "description": "https://www.nicovideo.jp/watch/sm9016014\n状態：株式会社バップによる権利者削除\n投稿日時：2009/12/06 14:22\n投稿者：ネロ / (ID:14666489)",
-                "original_link": "https://www.nicovideo.jp/watch/sm9016014",
-                "nico_id": "sm9016014",
-                "yt_id": null,
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "creator": [
-                    "ネロ"
-                ],
-                "is_archive": true,
-                "added_at": 1784275108.76025
-            },
-            {
                 "id": "i2-IGc83cjg",
                 "title": "【バナナロイド】神は創世  /【2009/12/03】/【現存未確認】",
                 "upload_date": "20091203",
@@ -23777,14 +23585,14 @@
                 "description": "https://www.nicovideo.jp/watch/sm9016014\n状態：株式会社バップによる権利者削除\n投稿日時：2009/07/20 15:43\n投稿者：taka-to / (ID:???????)",
                 "original_link": "https://www.nicovideo.jp/watch/sm9016014",
                 "nico_id": "sm9016014",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
                 "creator": [
                     "taka-to"
                 ],
                 "is_archive": true,
-                "added_at": 1777613661.662775,
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "yt_id": null
+                "added_at": 1785746408.5189326
             },
             {
                 "id": "O0xuUb-Cpqc",
@@ -24928,22 +24736,6 @@
                 "added_at": 1784275378.7189054
             },
             {
-                "id": "6bRFZSa1Mzo",
-                "title": "【新世界の神が】くるっとまわってふざけるな！【恐らく歌ってくれた】/【2008/12/13】",
-                "upload_date": "20081213",
-                "description": "https://www.nicovideo.jp/watch/sm5531519\n状態：株式会社バップによる権利者削除\n投稿日時：2008/12/13 12:10\n投稿者：芝EX / (ID:???????)\n-\n出典：オリジナルより保存 _ ( DL - 2009/02/21 )",
-                "original_link": "https://www.nicovideo.jp/watch/sm5531519",
-                "nico_id": "sm5531519",
-                "yt_id": null,
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "creator": [
-                    "芝EX"
-                ],
-                "is_archive": true,
-                "added_at": 1784275115.4012578
-            },
-            {
                 "id": "DFecLGCIM6A",
                 "title": "【そいつらを】Shoot,Them,MAZDAAAAAA!!【撃て】/【2008/12/06】/【現存未確認(一部のみ現存)】",
                 "upload_date": "20081206",
@@ -25784,17 +25576,17 @@
                 "id": "1QUGdBd-91M",
                 "title": "神のヤガミ伝説【デスノートMAD】/【2008/09/21】",
                 "upload_date": "20080921",
-                "description": "https://www.nicovideo.jp/watch/sm5531519\n状態：株式会社バップによる権利者削除\n投稿日時：2008/09/21 00:45\n投稿者：taka-to / (ID:???????)\n-\n出典：転載動画より保存 _ ( DL - 2026/03/09 )\nhttps://www.nicovideo.jp/watch/sm4937238",
+                "description": "https://www.nicovideo.jp/watch/sm5531519\n状態：株式会社バップによる権利者削除\n投稿日時：2008/09/21 00:45\n投稿者：taka-to / (ID:???????)\n-\n出典：歌ってみた動画より引用 _ ( DL - 2026/03/09 )\nhttps://www.nicovideo.jp/watch/sm4937238",
                 "original_link": "https://www.nicovideo.jp/watch/sm5531519",
                 "nico_id": "sm5531519",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
                 "creator": [
                     "taka-to"
                 ],
                 "is_archive": true,
-                "added_at": 1777595761.3925083,
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "yt_id": null
+                "added_at": 1785746412.3328276
             },
             {
                 "id": "IbdhKOWXL4E",
