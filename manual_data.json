@@ -2624,10 +2624,11 @@
     },
     {
         "id": "kfAWFM8CowY",
-        "nico_id": null,
+        "nico_id": "",
         "title": "デスノートのアニメ10周年記念合作 Teaser",
         "creator": [
-            "라라P"
+            "라라P",
+            "신세계"
         ],
         "upload_date": "2016/03/16",
         "original_link": "https://www.youtube.com/watch?v=kfAWFM8CowY",
@@ -2639,7 +2640,10 @@
         "yt_id": "kfAWFM8CowY",
         "added_at": 1772847674.3963852,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": "kGPvrlXB1Zk",
@@ -10144,7 +10148,7 @@
     {
         "id": null,
         "nico_id": "sm28311317",
-        "title": "千本松田【夜神月聖誕祭'16】",
+        "title": "千本松田【夜神月聖誕祭'16】/【2016/02/28】",
         "creator": [
             "tokachi",
             "おこじょ"
@@ -10169,9 +10173,9 @@
         "added_at": 1784984294.5701923,
         "is_nico_viewable": true,
         "is_yt_viewable": true,
-        "archive_id": "",
+        "archive_id": "7R4x7FRBxJE",
         "archive_nico_id": "",
-        "yt_id": "Vn3pWIq-h6E",
+        "yt_id": "",
         "tvple_id": ""
     },
     {
@@ -10263,7 +10267,7 @@
         "title": "[데스노트 자작 MAD] 라이토의 행복이론",
         "creator": [
             "신세계",
-            "김엔더"
+            "김앤더"
         ],
         "upload_date": "2019/05/23",
         "original_link": "https://www.youtube.com/watch?v=L4HE0EJ4CqU",
@@ -10342,10 +10346,11 @@
     },
     {
         "id": "wTkQVQ_fyvw",
-        "nico_id": null,
+        "nico_id": "",
         "title": "[데스노트 자작 MAD] 사과",
         "creator": [
-            "신세계"
+            "신세계",
+            "김앤더"
         ],
         "upload_date": "2017/02/28",
         "original_link": "https://www.youtube.com/watch?v=wTkQVQ_fyvw",
@@ -10362,7 +10367,10 @@
         "yt_id": "wTkQVQ_fyvw",
         "added_at": 1785017305.8052819,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": "jS6Zx5Oa4Ec",
@@ -10572,6 +10580,70 @@
         "creator_thumbnail": null,
         "yt_id": "uLRTYNWBRoI",
         "added_at": 1785117233.9218676,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "FFQSZWbmhz4",
+        "nico_id": null,
+        "title": "スーパーﾔｶﾞﾐワールド",
+        "creator": [
+            "鈴柴田。"
+        ],
+        "upload_date": "2018/08/05",
+        "original_link": "https://www.youtube.com/watch?v=FFQSZWbmhz4",
+        "description": "ｱｯ!",
+        "is_archive": false,
+        "tags": [
+            "音MAD",
+            "スーパーマリオワールド",
+            "デスノート",
+            "夜神月"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/FFQSZWbmhz4/sddefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "FFQSZWbmhz4",
+        "added_at": 1785139908.5399046,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "sAI1ItwotFs",
+        "nico_id": null,
+        "title": "馬鹿ばっかり",
+        "creator": [
+            "てゐき"
+        ],
+        "upload_date": "2026/08/04",
+        "original_link": "https://www.youtube.com/watch?v=sAI1ItwotFs",
+        "description": "どいつもこいつも",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/sAI1ItwotFs/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "sAI1ItwotFs",
+        "added_at": 1786158773.8965642,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": null,
+        "nico_id": "sm46380265",
+        "title": "粉バナナおいしい",
+        "creator": [
+            "ゲスト"
+        ],
+        "upload_date": "2026/05/31",
+        "original_link": "https://www.nicovideo.jp/watch/sm46380265",
+        "description": "#デスノート　#バカヤロイド　#夜神月　#mad",
+        "is_archive": false,
+        "tags": [
+            "<tag>バカヤロイド",
+            "ガソリンおいしい"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46380265/46380265.26055435",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/14265/142653510.jpg",
+        "added_at": 1786158854.9546783,
         "is_nico_viewable": true,
         "is_yt_viewable": true
     }

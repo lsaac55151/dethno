@@ -5529,7 +5529,10 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm41854742",
                 "nico_id": "sm41854742",
                 "creator": [
-                    "tokachi"
+                    "tokachi",
+                    "たっぴ",
+                    "おこじょ",
+                    "TB"
                 ],
                 "is_archive": true,
                 "added_at": 1777614427.2086186,
@@ -5549,7 +5552,10 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm41857765",
                 "nico_id": "sm41857765",
                 "creator": [
-                    "たっぴ"
+                    "たっぴ",
+                    "tokachi",
+                    "おこじょ",
+                    "TB"
                 ],
                 "is_archive": true,
                 "added_at": 1777550230.3346837,
@@ -6448,7 +6454,8 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm40106467",
                 "nico_id": "sm40106467",
                 "creator": [
-                    "たっぴ"
+                    "たっぴ",
+                    "봉식"
                 ],
                 "is_archive": true,
                 "added_at": 1777614752.9022348,
@@ -7169,7 +7176,8 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm38880714",
                 "nico_id": "sm38880714",
                 "creator": [
-                    "たっぴ"
+                    "たっぴ",
+                    "봉식"
                 ],
                 "is_archive": true,
                 "added_at": 1777614575.2751553,
@@ -7188,7 +7196,8 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm38334750",
                 "nico_id": "sm38334750",
                 "creator": [
-                    "tokachi"
+                    "tokachi",
+                    "おこじょ"
                 ],
                 "is_archive": true,
                 "added_at": 1777610491.788639,
@@ -8730,7 +8739,7 @@
             {
                 "id": "Dq-Aev4MTPc",
                 "title": "【合作】kirakira(く)みきょく  /【2018/02/28】",
-                "upload_date": "20180228",
+                "upload_date": "2018/02/28",
                 "description": "https://www.nicovideo.jp/watch/sm32804945\n状態：視聴可能 ( 2024/12/06 )\n投稿日時：2018/02/28 00:00\n投稿者：tokachi (ID:21523375)",
                 "original_link": "https://www.nicovideo.jp/watch/sm32804945",
                 "nico_id": "sm32804945",
@@ -8741,8 +8750,11 @@
                 "added_at": 1777610518.2375453,
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
-                "yt_id": null,
-                "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/2152/21523375.jpg"
+                "yt_id": "",
+                "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/2152/21523375.jpg",
+                "archive_id": "Dq-Aev4MTPc",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "QofAn9apmF8",
@@ -9750,22 +9762,6 @@
                 "added_at": 1785646867.2828233
             },
             {
-                "id": "NF3OysVNh80",
-                "title": "新新新世界【キラの名は。】/【2017/03/01】",
-                "upload_date": "20170301",
-                "description": "https://www.nicovideo.jp/watch/sm30739182\n状態：視聴可能 ( 2026/08/02 )\n投稿日時：2017/03/01 23:49\n投稿者：絶望 / (ID:38929409)\n-\n出典：オリジナルより保存 _ ( DL - 2017/11/27 )",
-                "original_link": "https://www.nicovideo.jp/watch/sm30739182",
-                "nico_id": "sm30739182",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "絶望"
-                ],
-                "is_archive": true,
-                "added_at": 1785646817.8328717
-            },
-            {
                 "id": "0s059XW8rYg",
                 "title": "月でわっしょい  /【2017/02/28】",
                 "upload_date": "20170228",
@@ -9845,29 +9841,6 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785646875.984332
-            },
-            {
-                "id": "6_5ukhnPxG4",
-                "title": "ですのフレンズ【デスノート×けものフレンズ】/【2017/02/28】",
-                "upload_date": "2017/02/28",
-                "description": "https://www.nicovideo.jp/watch/sm30726054\n状態：視聴可能 ( 2026/08/02 )\n投稿日時：2017/02/28 00:00\n投稿者：めがっちP / (ID:32781937)\n-\n出典：オリジナルより保存 _ ( DL - 2017/11/27 )",
-                "original_link": "https://www.nicovideo.jp/watch/sm30726054",
-                "nico_id": "sm30726054",
-                "yt_id": "",
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "めがっちP",
-                    "絶望",
-                    "月裏",
-                    "おこじょ",
-                    "kaikityou"
-                ],
-                "is_archive": true,
-                "added_at": 1785646885.2650204,
-                "archive_id": "6_5ukhnPxG4",
-                "archive_nico_id": "",
-                "tvple_id": ""
             },
             {
                 "id": "eSXyBUTPC8c",
@@ -10124,6 +10097,49 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785646803.3085074
+            },
+            {
+                "id": "NF3OysVNh80",
+                "title": "新新新世界【キラの名は。】/【2017/03/01】",
+                "upload_date": "2017/03/01",
+                "description": "https://www.nicovideo.jp/watch/sm30739182\n状態：視聴可能 ( 2026/08/02 )\n投稿日時：2017/03/01 23:49\n投稿者：絶望 / (ID:38929409)\n-\n出典：オリジナルより保存 _ ( DL - 2017/11/27 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm30739182",
+                "nico_id": "sm30739182",
+                "yt_id": "",
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": [
+                    "絶望",
+                    "おこじょ"
+                ],
+                "is_archive": true,
+                "added_at": 1785646817.8328717,
+                "archive_id": "NF3OysVNh80",
+                "archive_nico_id": "",
+                "tvple_id": ""
+            },
+            {
+                "id": "6_5ukhnPxG4",
+                "title": "ですのフレンズ【デスノート×けものフレンズ】/【2017/02/28】",
+                "upload_date": "2017/02/28",
+                "description": "https://www.nicovideo.jp/watch/sm30726054\n状態：視聴可能 ( 2026/08/02 )\n投稿日時：2017/02/28 00:00\n投稿者：めがっちP / (ID:32781937)\n-\n出典：オリジナルより保存 _ ( DL - 2017/11/27 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm30726054",
+                "nico_id": "sm30726054",
+                "yt_id": "",
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": [
+                    "めがっちP",
+                    "絶望",
+                    "月裏",
+                    "miyota",
+                    "kaikityou"
+                ],
+                "is_archive": true,
+                "added_at": 1785646885.2650204,
+                "archive_id": "6_5ukhnPxG4",
+                "archive_nico_id": "",
+                "tvple_id": ""
             }
         ]
     },
@@ -11011,22 +11027,6 @@
                 "added_at": 1785024188.1913278
             },
             {
-                "id": "7R4x7FRBxJE",
-                "title": "千本松田【夜神月聖誕祭'16】/【2016/02/28】",
-                "upload_date": "20160228",
-                "description": "https://www.nicovideo.jp/watch/sm28311317\n状態：視聴可能 ( 2026/07/24 )\n投稿日時：2016/02/28 00:00\n投稿者：tokachi / (ID:21523375)\n-\n出典：オリジナルより保存 _ ( DL - 2016/03/30 )",
-                "original_link": "https://www.nicovideo.jp/watch/sm28311317",
-                "nico_id": "sm28311317",
-                "yt_id": null,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "creator": [
-                    "tokachi"
-                ],
-                "is_archive": true,
-                "added_at": 1785024144.7601156
-            },
-            {
                 "id": "4BXegDzdI8M",
                 "title": "忍たま馬鹿野郎  /【2016/02/28】",
                 "upload_date": "20160228",
@@ -11473,6 +11473,26 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785024243.2294416
+            },
+            {
+                "id": "7R4x7FRBxJE",
+                "title": "千本松田【夜神月聖誕祭'16】/【2016/02/28】",
+                "upload_date": "2016/02/28",
+                "description": "https://www.nicovideo.jp/watch/sm28311317\n状態：視聴可能 ( 2026/07/24 )\n投稿日時：2016/02/28 00:00\n投稿者：tokachi / (ID:21523375)\n-\n出典：オリジナルより保存 _ ( DL - 2016/03/30 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm28311317",
+                "nico_id": "sm28311317",
+                "yt_id": "",
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": [
+                    "tokachi",
+                    "おこじょ"
+                ],
+                "is_archive": true,
+                "added_at": 1785024144.7601156,
+                "archive_id": "7R4x7FRBxJE",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "jyqIDg6j47w",
@@ -13648,7 +13668,7 @@
             {
                 "id": "rggETtB_N20",
                 "title": "KIRA VIVACE - キラビバーチェッ！【デスノート降誕10周年記念合作】/【2014/11/28】",
-                "upload_date": "20141128",
+                "upload_date": "2014/11/28",
                 "description": "https://www.nicovideo.jp/watch/sm25010811\n状態：視聴可能 ( 2026/06/01 )\n投稿日時：2014/11/28 22:00\n投稿者：tokachi / (ID:21523375)\n-\n出典：オリジナルより保存 _ ( DL - 2015/04/05 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm25010811",
                 "nico_id": "sm25010811",
@@ -13659,8 +13679,11 @@
                 "added_at": 1780323148.2925003,
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
-                "yt_id": null,
-                "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/2152/21523375.jpg"
+                "yt_id": "",
+                "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/2152/21523375.jpg",
+                "archive_id": "rggETtB_N20",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "O4-ZLzkMkHI",
@@ -14690,7 +14713,11 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm23920014",
                 "nico_id": "sm23920014",
                 "creator": [
-                    "芝EX"
+                    "芝EX",
+                    "じすみっく",
+                    "ぴろぴー",
+                    "のし",
+                    "ヘッドb"
                 ],
                 "is_archive": true,
                 "added_at": 1780226304.5581431,
@@ -17039,7 +17066,8 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm19638901",
                 "nico_id": "sm19638901",
                 "creator": [
-                    "tokachi"
+                    "tokachi",
+                    "taka-to"
                 ],
                 "is_archive": true,
                 "added_at": 1779746406.3250556,
@@ -17059,7 +17087,8 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm19444930",
                 "nico_id": "sm19444930",
                 "creator": [
-                    "tokachi"
+                    "tokachi",
+                    "芝EX"
                 ],
                 "is_archive": true,
                 "added_at": 1779746243.302279,
@@ -17078,7 +17107,10 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm18233679",
                 "nico_id": "sm18233679",
                 "creator": [
-                    "芝EX"
+                    "芝EX",
+                    "tokachi",
+                    "のし",
+                    "ぴろぴー"
                 ],
                 "is_archive": true,
                 "added_at": 1779746265.4255445,
@@ -17097,7 +17129,8 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm17484188",
                 "nico_id": "sm17484188",
                 "creator": [
-                    "tokachi"
+                    "tokachi",
+                    "taka-to"
                 ],
                 "is_archive": true,
                 "added_at": 1779746344.2659254,
@@ -17117,7 +17150,8 @@
                 "original_link": "https://www.nicovideo.jp/watch/sm17427454",
                 "nico_id": "sm17427454",
                 "creator": [
-                    "tokachi"
+                    "tokachi",
+                    "taka-to"
                 ],
                 "is_archive": true,
                 "added_at": 1779746463.7260575,
@@ -22006,7 +22040,11 @@
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "creator": [
-                    "芝EX"
+                    "芝EX",
+                    "メタル",
+                    "ぴろぴー",
+                    "kan",
+                    "銀夜"
                 ],
                 "is_archive": true,
                 "added_at": 1784275093.126404,
