@@ -10609,7 +10609,7 @@
     },
     {
         "id": "sAI1ItwotFs",
-        "nico_id": null,
+        "nico_id": "sm46626926",
         "title": "馬鹿ばっかり",
         "creator": [
             "てゐき"
@@ -10624,7 +10624,10 @@
         "yt_id": "sAI1ItwotFs",
         "added_at": 1786158773.8965642,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": null,
