@@ -3040,12 +3040,12 @@
             {
                 "id": "tAB5aau290w",
                 "title": "신세계아이돌 - Killing",
-                "upload_date": "20240828",
+                "upload_date": "2024/08/28",
                 "description": "https://www.nicovideo.jp/watch/sm44034992\n状態：視聴可能 ( 2025/09/28 )\n投稿日時：2024/08/28 23:53\n投稿者：MaYoung (ID:133056565)",
                 "original_link": "https://www.nicovideo.jp/watch/sm44034992",
-                "nico_id": "sm44034992",
+                "nico_id": "",
                 "creator": [
-                    "MaYoung"
+                    "거미의서브채널"
                 ],
                 "is_archive": true,
                 "added_at": 1777550232.8662732,
@@ -8901,19 +8901,22 @@
         "videos": [
             {
                 "id": "9BxpQta0lZM",
-                "title": "韓国風バカヤロイド - 月がオペラを歌って見た  /【2017/11/27】",
-                "upload_date": "20171127",
+                "title": "韓国風バカヤロイド - 月がオペラを歌って見た /【2017/11/27】",
+                "upload_date": "2017/11/27",
                 "description": "https://www.nicovideo.jp/watch/sm32335125\n状態：視聴可能 ( 2026/08/02 )\n投稿日時：2017/11/27 23:34\n投稿者：韓国産電子麻薬チャンネル / (ID:24170427)\n-\n出典：オリジナルより保存 _ ( DL - 2026/08/02 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm32335125",
                 "nico_id": "sm32335125",
-                "yt_id": null,
+                "yt_id": "",
                 "is_nico_viewable": true,
-                "is_yt_viewable": true,
+                "is_yt_viewable": false,
                 "creator": [
                     "韓国産電子麻薬チャンネル"
                 ],
                 "is_archive": true,
-                "added_at": 1785741678.593268
+                "added_at": 1785741678.593268,
+                "archive_id": "9BxpQta0lZM",
+                "archive_nico_id": "",
+                "tvple_id": "417489"
             },
             {
                 "id": "O_uw0CYvsDo",
@@ -11504,7 +11507,7 @@
                 "upload_date": "2016/02/05",
                 "description": "https://www.nicovideo.jp/watch/sm28247218\n状態：視聴可能 ( 2026/07/24 )\n投稿日時：2016/02/18 17:46\n投稿者：ERU / (ID:41427512)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/24 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm28247218",
-                "nico_id": "sm28247218",
+                "nico_id": "",
                 "yt_id": "",
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
@@ -15642,19 +15645,22 @@
             },
             {
                 "id": "DzZo_q8JkxM",
-                "title": "電話する月君GB  /【2013/01/01】/【現存未確認(一部のみ現存)】",
-                "upload_date": "20130101",
+                "title": "電話する月君GB  /【2013/01/01】",
+                "upload_date": "2013/01/01",
                 "description": "https://www.nicovideo.jp/watch/sm19724277\n状態：投稿者による自主削除、または非公開\n投稿日時：2013/01/01 00:00\n投稿者：kaikityou / (ID:8523480)\n-\n出典：コミュニティより保存 _ ( DL - 2026/08/12 )\nhttps://cafe.naver.com/sinyaku/2618",
                 "original_link": "https://www.nicovideo.jp/watch/sm19724277",
                 "nico_id": "sm19724277",
-                "yt_id": null,
+                "yt_id": "",
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
                 "creator": [
                     "kaikityou"
                 ],
                 "is_archive": true,
-                "added_at": 1786506623.294913
+                "added_at": 1786506623.294913,
+                "archive_id": "DzZo_q8JkxM",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "K8ehOPGmY2I",
@@ -21376,8 +21382,8 @@
             },
             {
                 "id": "iCccsqywJO0",
-                "title": "コナコナバナナ【バナナロイド×チルミルチルノ】/【2010/03/11】/【現存未確認】",
-                "upload_date": "20100311",
+                "title": "コナコナバナナ【バナナロイド×チルミルチルノ】/【2010/03/11】",
+                "upload_date": "2010/03/11",
                 "description": "https://www.nicovideo.jp/watch/sm9989048\n状態：株式会社バップによる権利者削除\n投稿日時：2010/03/11 18:52\n投稿者：πガスト / (ID:15047604)\n-\n出典：転載動画より保存 _ ( DL - 2026/08/12 )\nhttps://naver.me/GhwKyp8g",
                 "original_link": "https://www.nicovideo.jp/watch/sm9989048",
                 "nico_id": "sm9989048",
@@ -21388,7 +21394,10 @@
                 "added_at": 1786495546.2985842,
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
-                "yt_id": null
+                "yt_id": "",
+                "archive_id": "iCccsqywJO0",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "y-hvh-UU6Bk",
