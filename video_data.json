@@ -7619,19 +7619,21 @@
             {
                 "id": "x1gYzeCL0qU",
                 "title": "恋する夜神月（バカヤロイド）「書いていこう！」/【2020/02/28】",
-                "upload_date": "20200228",
+                "upload_date": "2020/02/28",
                 "description": "https://www.nicovideo.jp/watch/sm36430433\n状態：視聴可能 ( 2025/03/31 )\n投稿日時：2020/02/28 00:06\n投稿者：とげ/togexys",
                 "original_link": "https://www.nicovideo.jp/watch/sm36430433",
                 "nico_id": "sm36430433",
                 "creator": [
-                    "とげ",
-                    "togexys"
+                    "とげ"
                 ],
                 "is_archive": true,
                 "added_at": 1777614248.4226766,
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
-                "yt_id": null
+                "yt_id": "",
+                "archive_id": "x1gYzeCL0qU",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "-Z9CmCZFx8o",
@@ -9812,19 +9814,21 @@
             {
                 "id": "geol8ZQlerI",
                 "title": "創世少年まつだ☆マツダ【夜神月聖誕祭'17】/【2017/02/28】",
-                "upload_date": "20170228",
+                "upload_date": "2017/02/28",
                 "description": "https://www.nicovideo.jp/watch/sm30721228\n状態：視聴可能 ( 2026/08/02 )\n投稿日時：2017/02/28 00:00\n投稿者：togexys / (ID:46193618)\n-\n出典：オリジナルより保存 _ ( DL - 2017/11/27 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm30721228",
                 "nico_id": "sm30721228",
-                "yt_id": null,
+                "yt_id": "",
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "creator": [
-                    "とげ",
-                    "togexys"
+                    "とげ"
                 ],
                 "is_archive": true,
-                "added_at": 1785646854.479121
+                "added_at": 1785646854.479121,
+                "archive_id": "geol8ZQlerI",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "Fqcttuhigeo",
