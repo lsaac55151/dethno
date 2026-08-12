@@ -6616,12 +6616,12 @@
     },
     {
         "id": "Wo0enhb42Tg",
-        "nico_id": null,
-        "title": "바카야로이드 stronger than you",
+        "nico_id": "",
+        "title": "라이토 - stronger than you",
         "creator": [
-            "???"
+            "lifrex"
         ],
-        "upload_date": "2016/03/16",
+        "upload_date": "2016/03/06",
         "original_link": "https://www.youtube.com/watch?v=Wo0enhb42Tg",
         "description": "티비플 영상 아카이브 입니다",
         "is_archive": false,
@@ -6637,11 +6637,13 @@
         ],
         "thumbnail": "https://i.ytimg.com/vi/Wo0enhb42Tg/maxresdefault.jpg",
         "creator_thumbnail": null,
-        "yt_id": "Wo0enhb42Tg",
+        "yt_id": "",
         "added_at": 1783831384.7760324,
         "archive_id": "Wo0enhb42Tg",
         "is_nico_viewable": false,
-        "is_yt_viewable": false
+        "is_yt_viewable": false,
+        "archive_nico_id": "",
+        "tvple_id": "402533"
     },
     {
         "id": "rjKtliUa7lc",
