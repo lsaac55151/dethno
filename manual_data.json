@@ -10651,5 +10651,52 @@
         "added_at": 1786158854.9546783,
         "is_nico_viewable": true,
         "is_yt_viewable": true
+    },
+    {
+        "id": null,
+        "nico_id": "sm46671439",
+        "title": "夜神月 - Matsuda",
+        "creator": [
+            "ボニンシミョング(본인심영)"
+        ],
+        "upload_date": "2026/08/15",
+        "original_link": "https://www.nicovideo.jp/watch/sm46671439",
+        "description": "夜神月 X magnet原曲: https://www.youtube.com/watch?v=cf1ryWClGpU参考作: https://www.youtube.com/watch?v=zfg04Fy2QcQ",
+        "is_archive": false,
+        "tags": [
+            "<tag lock=\"1\">バカヤロイド",
+            "音mad",
+            "magnet"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46671439/46671439.59090722",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/14098/140988189.jpg",
+        "added_at": 1787167621.6922429,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": null,
+        "nico_id": "sm46688114",
+        "title": "DEAHE LIMIT",
+        "creator": [
+            "Mad愛好家"
+        ],
+        "upload_date": "2026/08/19",
+        "original_link": "https://www.nicovideo.jp/watch/sm46688114",
+        "description": "ライト君が夏をお届けします(8月中旬…)",
+        "is_archive": false,
+        "tags": [
+            "<tag lock=\"1\">バカヤロイド",
+            "HOT_LIMIT",
+            "夜神月",
+            "音MAD",
+            "デスノート",
+            "デスノMAD"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46688114/46688114.56158998",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/13253/132534657.jpg",
+        "added_at": 1787167643.328359,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     }
 ]

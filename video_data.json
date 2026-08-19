@@ -3038,25 +3038,6 @@
                 "yt_id": null
             },
             {
-                "id": "tAB5aau290w",
-                "title": "신세계아이돌 - Killing",
-                "upload_date": "2024/08/28",
-                "description": "https://www.nicovideo.jp/watch/sm44034992\n状態：視聴可能 ( 2025/09/28 )\n投稿日時：2024/08/28 23:53\n投稿者：MaYoung (ID:133056565)",
-                "original_link": "https://www.nicovideo.jp/watch/sm44034992",
-                "nico_id": "",
-                "creator": [
-                    "거미의서브채널"
-                ],
-                "is_archive": true,
-                "added_at": 1777550232.8662732,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "archive_id": "tAB5aau290w",
-                "archive_nico_id": "sm44034992",
-                "yt_id": "AIChOWNSIa8",
-                "tvple_id": ""
-            },
-            {
                 "id": "ZW6e04ee42M",
                 "title": "海は広いな 粉バナナ  /【2024/08/23】",
                 "upload_date": "20240823",
@@ -3955,6 +3936,25 @@
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "yt_id": null
+            },
+            {
+                "id": "tAB5aau290w",
+                "title": "신세계아이돌 - Killing",
+                "upload_date": "2024/08/28",
+                "description": "https://www.nicovideo.jp/watch/sm44034992\n状態：視聴可能 ( 2025/09/28 )\n投稿日時：2024/08/28 23:53\n投稿者：MaYoung (ID:133056565)",
+                "original_link": "https://www.nicovideo.jp/watch/sm44034992",
+                "nico_id": "",
+                "creator": [
+                    "거미의서브채널"
+                ],
+                "is_archive": true,
+                "added_at": 1777550232.8662732,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "archive_id": "tAB5aau290w",
+                "archive_nico_id": "sm44034992",
+                "yt_id": "AIChOWNSIa8",
+                "tvple_id": ""
             },
             {
                 "id": "hs5nqZ06RD4",
@@ -8900,25 +8900,6 @@
         "playlist_title": "2017年",
         "videos": [
             {
-                "id": "9BxpQta0lZM",
-                "title": "韓国風バカヤロイド - 月がオペラを歌って見た /【2017/11/27】",
-                "upload_date": "2017/11/27",
-                "description": "https://www.nicovideo.jp/watch/sm32335125\n状態：視聴可能 ( 2026/08/02 )\n投稿日時：2017/11/27 23:34\n投稿者：韓国産電子麻薬チャンネル / (ID:24170427)\n-\n出典：オリジナルより保存 _ ( DL - 2026/08/02 )",
-                "original_link": "https://www.nicovideo.jp/watch/sm32335125",
-                "nico_id": "sm32335125",
-                "yt_id": "",
-                "is_nico_viewable": true,
-                "is_yt_viewable": false,
-                "creator": [
-                    "韓国産電子麻薬チャンネル"
-                ],
-                "is_archive": true,
-                "added_at": 1785741678.593268,
-                "archive_id": "9BxpQta0lZM",
-                "archive_nico_id": "",
-                "tvple_id": "417489"
-            },
-            {
                 "id": "O_uw0CYvsDo",
                 "title": "【撃てーきゅう】メニメニマニマニ×DEATHNOTE【比較】/【2017/11/25】/【現存未確認】",
                 "upload_date": "20171125",
@@ -10085,6 +10066,25 @@
                 ],
                 "is_archive": true,
                 "added_at": 1785646803.3085074
+            },
+            {
+                "id": "9BxpQta0lZM",
+                "title": "韓国風バカヤロイド - 月がオペラを歌って見た /【2017/11/27】",
+                "upload_date": "2017/11/27",
+                "description": "https://www.nicovideo.jp/watch/sm32335125\n状態：視聴可能 ( 2026/08/02 )\n投稿日時：2017/11/27 23:34\n投稿者：韓国産電子麻薬チャンネル / (ID:24170427)\n-\n出典：オリジナルより保存 _ ( DL - 2026/08/02 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm32335125",
+                "nico_id": "sm32335125",
+                "yt_id": "",
+                "is_nico_viewable": true,
+                "is_yt_viewable": false,
+                "creator": [
+                    "韓国産電子麻薬チャンネル"
+                ],
+                "is_archive": true,
+                "added_at": 1785741678.593268,
+                "archive_id": "9BxpQta0lZM",
+                "archive_nico_id": "",
+                "tvple_id": "417489"
             },
             {
                 "id": "NF3OysVNh80",
@@ -11507,7 +11507,7 @@
                 "upload_date": "2016/02/05",
                 "description": "https://www.nicovideo.jp/watch/sm28247218\n状態：視聴可能 ( 2026/07/24 )\n投稿日時：2016/02/18 17:46\n投稿者：ERU / (ID:41427512)\n-\n出典：オリジナルより保存 _ ( DL - 2026/07/24 )",
                 "original_link": "https://www.nicovideo.jp/watch/sm28247218",
-                "nico_id": "",
+                "nico_id": "sm28247218",
                 "yt_id": "",
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
@@ -15644,25 +15644,6 @@
                 "yt_id": null
             },
             {
-                "id": "DzZo_q8JkxM",
-                "title": "電話する月君GB  /【2013/01/01】",
-                "upload_date": "2013/01/01",
-                "description": "https://www.nicovideo.jp/watch/sm19724277\n状態：投稿者による自主削除、または非公開\n投稿日時：2013/01/01 00:00\n投稿者：kaikityou / (ID:8523480)\n-\n出典：コミュニティより保存 _ ( DL - 2026/08/12 )\nhttps://cafe.naver.com/sinyaku/2618",
-                "original_link": "https://www.nicovideo.jp/watch/sm19724277",
-                "nico_id": "sm19724277",
-                "yt_id": "",
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "creator": [
-                    "kaikityou"
-                ],
-                "is_archive": true,
-                "added_at": 1786506623.294913,
-                "archive_id": "DzZo_q8JkxM",
-                "archive_nico_id": "",
-                "tvple_id": ""
-            },
-            {
                 "id": "K8ehOPGmY2I",
                 "title": "【単品】六兆年と夜ﾈ申物語.2012  /【2013/01/01】",
                 "upload_date": "20130101",
@@ -15713,6 +15694,25 @@
                 "is_yt_viewable": false,
                 "yt_id": "",
                 "archive_id": "MnxIR1ZuSDM",
+                "archive_nico_id": "",
+                "tvple_id": ""
+            },
+            {
+                "id": "DzZo_q8JkxM",
+                "title": "電話する月君GB  /【2013/01/01】",
+                "upload_date": "2013/01/01",
+                "description": "https://www.nicovideo.jp/watch/sm19724277\n状態：投稿者による自主削除、または非公開\n投稿日時：2013/01/01 00:00\n投稿者：kaikityou / (ID:8523480)\n-\n出典：コミュニティより保存 _ ( DL - 2026/08/12 )\nhttps://cafe.naver.com/sinyaku/2618",
+                "original_link": "https://www.nicovideo.jp/watch/sm19724277",
+                "nico_id": "sm19724277",
+                "yt_id": "",
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": [
+                    "kaikityou"
+                ],
+                "is_archive": true,
+                "added_at": 1786506623.294913,
+                "archive_id": "DzZo_q8JkxM",
                 "archive_nico_id": "",
                 "tvple_id": ""
             }
@@ -21381,25 +21381,6 @@
                 "yt_id": null
             },
             {
-                "id": "iCccsqywJO0",
-                "title": "コナコナバナナ【バナナロイド×チルミルチルノ】/【2010/03/11】",
-                "upload_date": "2010/03/11",
-                "description": "https://www.nicovideo.jp/watch/sm9989048\n状態：株式会社バップによる権利者削除\n投稿日時：2010/03/11 18:52\n投稿者：πガスト / (ID:15047604)\n-\n出典：転載動画より保存 _ ( DL - 2026/08/12 )\nhttps://naver.me/GhwKyp8g",
-                "original_link": "https://www.nicovideo.jp/watch/sm9989048",
-                "nico_id": "sm9989048",
-                "creator": [
-                    "πガスト"
-                ],
-                "is_archive": true,
-                "added_at": 1786495546.2985842,
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "yt_id": "",
-                "archive_id": "iCccsqywJO0",
-                "archive_nico_id": "",
-                "tvple_id": ""
-            },
-            {
                 "id": "y-hvh-UU6Bk",
                 "title": "【MAD】 Poké-Note Intro 【Pokémon Intro - Death Note】/【2010/03/05】",
                 "upload_date": "20100305",
@@ -22083,12 +22064,47 @@
                 "archive_id": "6nmLGJSTI7g",
                 "archive_nico_id": "sm23318761",
                 "tvple_id": ""
+            },
+            {
+                "id": "iCccsqywJO0",
+                "title": "コナコナバナナ【バナナロイド×チルミルチルノ】/【2010/03/11】",
+                "upload_date": "2010/03/11",
+                "description": "https://www.nicovideo.jp/watch/sm9989048\n状態：株式会社バップによる権利者削除\n投稿日時：2010/03/11 18:52\n投稿者：πガスト / (ID:15047604)\n-\n出典：転載動画より保存 _ ( DL - 2026/08/12 )\nhttps://naver.me/GhwKyp8g",
+                "original_link": "https://www.nicovideo.jp/watch/sm9989048",
+                "nico_id": "sm9989048",
+                "creator": [
+                    "πガスト"
+                ],
+                "is_archive": true,
+                "added_at": 1786495546.2985842,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "yt_id": "",
+                "archive_id": "iCccsqywJO0",
+                "archive_nico_id": "",
+                "tvple_id": ""
             }
         ]
     },
     {
         "playlist_title": "2009年",
         "videos": [
+            {
+                "id": "wJF2u8XLXWU",
+                "title": "【デスノート】Bakayaro Fly【Butter Fly】/【200?/??/??】",
+                "upload_date": "20260327",
+                "description": "https://www.nicovideo.jp/watch/sm\n状態：跡地(元URL) の不明\nタイトル名：概ね一致\n-\n出典：ニコニコ動画より保存\nダウンロード日時：2010/01/25 11:46",
+                "original_link": "https://www.nicovideo.jp/watch/sm",
+                "nico_id": null,
+                "creator": [
+                    "Unknown"
+                ],
+                "is_archive": true,
+                "added_at": 1777613902.083826,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "yt_id": null
+            },
             {
                 "id": "_vdekOk9DbQ",
                 "title": "【東方新世界】新たしきヤガミの血 ～ New　World　(おまけ付き)  /【2009/12/31】",
@@ -22392,6 +22408,22 @@
                 ],
                 "is_archive": true,
                 "added_at": 1784275101.6222491
+            },
+            {
+                "id": "-tVnXFnH-W0",
+                "title": "マリオストーリ６４　オズモーン戦【ヤガミストーリー】/【2009/11/27】/【現存未確認(一部のみ現存)】",
+                "upload_date": "20091127",
+                "description": "https://www.nicovideo.jp/watch/sm8931963\n状態：株式会社バップによる権利者削除\n投稿日時：2009/11/27 18:36\n投稿者：mono / (ID:11383092)\n-\n出典：オリジナル\"(mp3)\"のみ保存 _ ( DL - 2010/01/25 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm8931963",
+                "nico_id": "sm8931963",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": [
+                    "mono"
+                ],
+                "is_archive": true,
+                "added_at": 1787167595.1922603
             },
             {
                 "id": "ZF5ju5jisLc",
@@ -23688,6 +23720,22 @@
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
                 "yt_id": "WOpSmgcHuIs"
+            },
+            {
+                "id": "cunh56Hg4Rs",
+                "title": "MADとかで 「七色のニコニコ動画」 歌ってみた（再） / Ver.ハナゴエ  /【2009/07/01】",
+                "upload_date": "20090701",
+                "description": "https://www.nicovideo.jp/watch/sm7503309\n状態：投稿者による自主削除、または非公開\n投稿日時：2009/07/01 16:07\n投稿者：ハナゴエ / (ID:5031684)\n-\n出典：オリジナルより保存 _ ( DL - 2010/??/?? )",
+                "original_link": "https://www.nicovideo.jp/watch/sm7503309",
+                "nico_id": "sm7503309",
+                "yt_id": null,
+                "is_nico_viewable": false,
+                "is_yt_viewable": false,
+                "creator": [
+                    "ハナゴエ"
+                ],
+                "is_archive": true,
+                "added_at": 1787167600.8272011
             },
             {
                 "id": "rthzwZ_FceY",
@@ -27577,22 +27625,6 @@
                 ],
                 "is_archive": true,
                 "added_at": 1777279658.8439424,
-                "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "yt_id": null
-            },
-            {
-                "id": "wJF2u8XLXWU",
-                "title": "【デスノート】Bakayaro Fly【Butter Fly】/【200?/??/??】",
-                "upload_date": "20260327",
-                "description": "https://www.nicovideo.jp/watch/sm\n状態：跡地(元URL) の不明\nタイトル名：概ね一致\n-\n出典：ニコニコ動画より保存\nダウンロード日時：2010/01/25 11:46",
-                "original_link": "https://www.nicovideo.jp/watch/sm",
-                "nico_id": null,
-                "creator": [
-                    "Unknown"
-                ],
-                "is_archive": true,
-                "added_at": 1777613902.083826,
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
                 "yt_id": null
