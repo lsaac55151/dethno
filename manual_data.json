@@ -10182,31 +10182,6 @@
     },
     {
         "id": null,
-        "nico_id": "sm24658552",
-        "title": "新世界のFlower Dance",
-        "creator": [
-            "tokachi"
-        ],
-        "upload_date": "2014/10/10",
-        "original_link": "https://www.nicovideo.jp/watch/sm24658552",
-        "description": "詰め込みました。参考 sm19597879,sm20958811【mylist/25580333】",
-        "is_archive": false,
-        "tags": [
-            "<tag lock=\"1\">アニメ",
-            "音MAD",
-            "Flower_Dance",
-            "マイリスしなかったら心臓麻痺",
-            "もっと評価されるべき",
-            "バカヤロイド"
-        ],
-        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/24658552/24658552",
-        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/2152/21523375.jpg",
-        "added_at": 1784984295.710722,
-        "is_nico_viewable": true,
-        "is_yt_viewable": true
-    },
-    {
-        "id": null,
         "nico_id": "sm23268094",
         "title": "【新世界の神すげぇ】FREELY TOMORROW",
         "creator": [
@@ -10698,5 +10673,28 @@
         "added_at": 1787167643.328359,
         "is_nico_viewable": true,
         "is_yt_viewable": true
+    },
+    {
+        "id": "grooe1eifBo",
+        "nico_id": "",
+        "title": "【夜神月】ゆるゆりxデスノート  /【2014/07/02】",
+        "creator": [
+            "Tale",
+            "ゾーク"
+        ],
+        "upload_date": "2014/06/29",
+        "original_link": "https://www.youtube.com/watch?v=grooe1eifBo",
+        "description": "https://www.nicovideo.jp/watch/sm23912167\n状態：投稿者による自主削除、または非公開\n投稿日時：2014/07/02 19:14\n投稿者：하하하 / (ID:27097024)\n-\n出典：転載動画より保存 _ ( DL - 2026/08/22 )\nhttps://www.bilibili.com/video/BV1hW411p72w/",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/grooe1eifBo/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "",
+        "added_at": 1787391942.976043,
+        "is_nico_viewable": false,
+        "is_yt_viewable": false,
+        "archive_id": "grooe1eifBo",
+        "archive_nico_id": "",
+        "tvple_id": "156258"
     }
 ]
