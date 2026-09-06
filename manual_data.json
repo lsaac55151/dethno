@@ -10672,7 +10672,11 @@
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/13253/132534657.jpg",
         "added_at": 1787167643.328359,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "yt_id": "k42CuuwUXtk",
+        "tvple_id": ""
     },
     {
         "id": "grooe1eifBo",
@@ -10696,5 +10700,72 @@
         "archive_id": "grooe1eifBo",
         "archive_nico_id": "",
         "tvple_id": "156258"
+    },
+    {
+        "id": "WRodz9B5kqU",
+        "nico_id": null,
+        "title": "はいかきこんで",
+        "creator": [
+            "Mad愛好家"
+        ],
+        "upload_date": "2026/07/11",
+        "original_link": "https://www.youtube.com/watch?v=WRodz9B5kqU",
+        "description": "昔つくったやつと聞き比べたい\n↓クオリティ神ぃな先駆者様\nhttps://www.youtube.com/watch?v=qdR86s4HwM0\n\n#音mad #バカヤロイド #はいよろこんで",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi_webp/WRodz9B5kqU/maxresdefault.webp",
+        "creator_thumbnail": null,
+        "yt_id": "WRodz9B5kqU",
+        "added_at": 1788709081.7898715,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "Zy1rJtd77NI",
+        "nico_id": "sm46323518",
+        "title": "少年Y (少女A 音MAD)",
+        "creator": [
+            "Mad愛好家"
+        ],
+        "upload_date": "2026/05/17",
+        "original_link": "https://www.youtube.com/watch?v=Zy1rJtd77NI",
+        "description": "ひさびさ長い動画作ったのでつかれた……\nおすすめに直哉くんが出てきたの作ろうと思ったのです！\n(クオリティ神ィ)↓\nhttps://www.youtube.com/watch?v=0lSHZeVCn70\n\n原曲様:https://www.youtube.com/watch?v=AqI97zHMoQw\n↑二億再生おめでとうございます！！！！\n\nニコニコ→https://www.nicovideo.jp/watch/sm46323518\n\n#バカヤロイド #音mad #デスノート #少女a",
+        "is_archive": false,
+        "tags": [
+            "少女Amad",
+            "音mad",
+            "バカヤロイド"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/Zy1rJtd77NI/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "Zy1rJtd77NI",
+        "added_at": 1788709102.4035254,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
+    },
+    {
+        "id": "U0FKumzgY1k",
+        "nico_id": "sm46325361",
+        "title": "新世界の踊り子",
+        "creator": [
+            "Mad愛好家"
+        ],
+        "upload_date": "2026/05/18",
+        "original_link": "https://www.youtube.com/watch?v=U0FKumzgY1k",
+        "description": "暇だったので作りました\n#バカヤロイド #音mad #夜の踊り子",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/U0FKumzgY1k/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "U0FKumzgY1k",
+        "added_at": 1788709119.7114599,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     }
 ]
