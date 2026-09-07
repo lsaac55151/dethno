@@ -10647,7 +10647,11 @@
         "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/14098/140988189.jpg",
         "added_at": 1787167621.6922429,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "yt_id": "ODe8FfkK4tU",
+        "tvple_id": ""
     },
     {
         "id": null,
@@ -10762,6 +10766,273 @@
         "creator_thumbnail": null,
         "yt_id": "U0FKumzgY1k",
         "added_at": 1788709119.7114599,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
+    },
+    {
+        "id": "OyDrz1PdxqE",
+        "nico_id": null,
+        "title": "[운빨망겜 경연합작] カーミイ | kamy",
+        "creator": [
+            "본인심영"
+        ],
+        "upload_date": "2026/09/04",
+        "original_link": "https://www.youtube.com/watch?v=OyDrz1PdxqE",
+        "description": "#アイヴイ #バカヤロイド #바카야로이드\n\n원곡: https://youtu.be/u-YomJhPSN4?si=Fid52dQtqaMBolpD\n\n음원: 본인심영\n영상: 본인심영\n합작 보러가기: https://www.youtube.com/watch?v=IxNCFG5Yep8&t=313s",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/OyDrz1PdxqE/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "OyDrz1PdxqE",
+        "added_at": 1788741447.3992512,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "LiV1fZRMa7I",
+        "nico_id": null,
+        "title": "[183] 天下トーサンO to San☆",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2026/07/22",
+        "original_link": "https://www.youtube.com/watch?v=LiV1fZRMa7I",
+        "description": "https://youtu.be/JNrfj7GbN7w\n2021年辺りの音声です。\nバンドリはやったことないですが久々に聞くと曲がめっちゃいいですね…\n\n#バカヤロイド #音mad",
+        "is_archive": false,
+        "tags": [
+            "バカヤロイド",
+            "音MAD"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/LiV1fZRMa7I/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "LiV1fZRMa7I",
+        "added_at": 1788741549.2554216,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "zsdOAoB3TFc",
+        "nico_id": null,
+        "title": "[183] Heartny 4 You",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2026/07/22",
+        "original_link": "https://www.youtube.com/watch?v=zsdOAoB3TFc",
+        "description": "https://youtu.be/MGbPgOWgQ1A?list=RDMGbPgOWgQ1A\n2022年辺りの音声です\nすっかり忘れていましたけど見つけたんで上げてみます\n\n#バカヤロイド　#音mad",
+        "is_archive": false,
+        "tags": [
+            "バカヤロイド",
+            "音MAD"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/zsdOAoB3TFc/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "zsdOAoB3TFc",
+        "added_at": 1788741561.1132336,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "LUUMYiT1Fgg",
+        "nico_id": null,
+        "title": "【183】同時投稿しようとした音声",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2025/03/02",
+        "original_link": "https://www.youtube.com/watch?v=LUUMYiT1Fgg",
+        "description": "# 粉バナナはスリルショックサスペンス\n近いうちに非公開にします\n完成するかどうかは分かりませんね",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/LUUMYiT1Fgg/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "LUUMYiT1Fgg",
+        "added_at": 1788741565.8845975,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "sNcQJEH1j0M",
+        "nico_id": null,
+        "title": "창성의 아쿠에리온&사쿠라(독창) [S2 합작버젼]",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2023/01/22",
+        "original_link": "https://www.youtube.com/watch?v=sNcQJEH1j0M",
+        "description": "합작 링크: https://youtu.be/OJuHhpnoJ6s\n신의 포즈 일러스트는 ゾーク님이 그리신 일러스트를 사용했습니다:https://seiga.nicovideo.jp/seiga/im10994978?nicorepotwitter_upload_illust",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/sNcQJEH1j0M/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "sNcQJEH1j0M",
+        "added_at": 1788741627.0523431,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "t03qEwMAbg8",
+        "nico_id": null,
+        "title": "롤링 토상!각",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2023/08/08",
+        "original_link": "https://www.youtube.com/watch?v=t03qEwMAbg8",
+        "description": "",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/t03qEwMAbg8/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "t03qEwMAbg8",
+        "added_at": 1788741658.0696905,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "AhkaQu2SG_o",
+        "nico_id": null,
+        "title": "[sound only] 레스터!",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2018/06/13",
+        "original_link": "https://www.youtube.com/watch?v=AhkaQu2SG_o",
+        "description": "마음 같아서는 영상을 만들고 싶었지만\n저의 역량 부족으로 포기했습니다\n\n+그런데 아이러니 하게도 13일 뒤면 데스노트 11주년...\n\n음원/영상:베가스",
+        "is_archive": false,
+        "tags": [
+            "바카야로이드",
+            "데스노트",
+            "영감!",
+            "音MAD",
+            "소리매드"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi_webp/AhkaQu2SG_o/maxresdefault.webp",
+        "creator_thumbnail": null,
+        "yt_id": "AhkaQu2SG_o",
+        "added_at": 1788741730.4696078,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "8WEcs4KKKKA",
+        "nico_id": null,
+        "title": "AMAZING BREAK [데스노트 MAD]",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2024/01/06",
+        "original_link": "https://www.youtube.com/watch?v=8WEcs4KKKKA",
+        "description": "2017년 7월 3일",
+        "is_archive": false,
+        "tags": [
+            "바카야로이드"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi_webp/8WEcs4KKKKA/maxresdefault.webp",
+        "creator_thumbnail": null,
+        "yt_id": "8WEcs4KKKKA",
+        "added_at": 1788741783.9556358,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "MIbU5TwOPFQ",
+        "nico_id": null,
+        "title": "Shining MASTAR",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2018/08/24",
+        "original_link": "https://www.youtube.com/watch?v=MIbU5TwOPFQ",
+        "description": "(미등록 해제)2018년 2월 제작 음원",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi_webp/MIbU5TwOPFQ/maxresdefault.webp",
+        "creator_thumbnail": null,
+        "yt_id": "MIbU5TwOPFQ",
+        "added_at": 1788741796.5414062,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "4wRWg09DbVA",
+        "nico_id": null,
+        "title": "Death note ride [데스노트x별의커비]",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2017/09/29",
+        "original_link": "https://www.youtube.com/watch?v=4wRWg09DbVA",
+        "description": "참고-https://www.youtube.com/watch?v=fdc4yWdTSbc\n\n이제 슬슬 애니 만들시간...\n\n원곡-kirby air ride",
+        "is_archive": false,
+        "tags": [
+            "바카야로이드",
+            "데스노트",
+            "음매드",
+            "バカヤロイド",
+            "音MAD",
+            "デスノート",
+            "カービー",
+            "Air ride"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi_webp/4wRWg09DbVA/maxresdefault.webp",
+        "creator_thumbnail": null,
+        "yt_id": "4wRWg09DbVA",
+        "added_at": 1788741810.4692621,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "vcpAGaakfw8",
+        "nico_id": null,
+        "title": "Shoot them shoot 가루바나나!",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2017/07/15",
+        "original_link": "https://www.youtube.com/watch?v=vcpAGaakfw8",
+        "description": "막상 발음 들어보니까\n문법에 안 맞는 거 많...",
+        "is_archive": false,
+        "tags": [
+            "바카야로이드",
+            "New Game2기",
+            "Step by stop up"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi_webp/vcpAGaakfw8/maxresdefault.webp",
+        "creator_thumbnail": null,
+        "yt_id": "vcpAGaakfw8",
+        "added_at": 1788741943.5824003,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": "dqb1VqrbEVc",
+        "nico_id": "sm46740584",
+        "title": "【バリアフリー】透明な夜神に駆ける君と、目に見えない名を書いた。 | バカヤロイド",
+        "creator": [
+            "TB"
+        ],
+        "upload_date": "2026/08/30",
+        "original_link": "https://www.youtube.com/watch?v=dqb1VqrbEVc",
+        "description": "# 花火するべきだ！\n\n原曲：アニメ「透明な夜に駆ける君と、目に見えない恋をした。」ED: 「光」\nhttps://youtu.be/H_Ab3nKZUfM\n\n# 未熟ですけど解説字幕・音声が入ってます。\n# 簡単な状況説明だけですが解説音声は音声設定で確認できます。\n解説音声はマイクロソフトの「Nanami」を使いました\n\n今回は目を閉じても発音が聞こえるようにする事を気にして作業しました\n上手く伝えてたらいいですね\n\nニコニコ: https://www.nicovideo.jp/watch/sm46740584\n\n#音mad #バカヤロイド #かけ恋 #デスノート",
+        "is_archive": false,
+        "tags": [
+            "바카야로이드",
+            "배리어 프리",
+            "デスノートMAD",
+            "音MAD",
+            "透明夜",
+            "透明な夜に駆ける君と目に見えない恋をした",
+            "かけ恋",
+            "투명밤"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi/dqb1VqrbEVc/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "dqb1VqrbEVc",
+        "added_at": 1788742036.002351,
         "is_nico_viewable": true,
         "is_yt_viewable": true,
         "archive_id": "",
