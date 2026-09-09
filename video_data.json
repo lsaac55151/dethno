@@ -7980,25 +7980,6 @@
                 "yt_id": null
             },
             {
-                "id": "29m3b2RueZw",
-                "title": "キラッ！とマーチ 【キララ軍曹】/【2019/07/13】",
-                "upload_date": "2019/07/13",
-                "description": "https://www.nicovideo.jp/watch/sm35394573\n状態：視聴可能 ( 2025/03/26 )\n投稿日時：2019/07/13 18:06\n投稿者：TB",
-                "original_link": "https://www.nicovideo.jp/watch/sm35394573",
-                "nico_id": "sm35394573",
-                "creator": [
-                    "TB"
-                ],
-                "is_archive": true,
-                "added_at": 1777614558.0948768,
-                "is_nico_viewable": true,
-                "is_yt_viewable": true,
-                "yt_id": "r3hgmhDkXBo",
-                "archive_id": "29m3b2RueZw",
-                "archive_nico_id": "",
-                "tvple_id": ""
-            },
-            {
                 "id": "U1ReTQlXXIE",
                 "title": "パッパラ☆BANANA  /【2019/06/23】",
                 "upload_date": "20190623",
@@ -8281,6 +8262,25 @@
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
                 "yt_id": null
+            },
+            {
+                "id": "29m3b2RueZw",
+                "title": "キラッ！とマーチ 【キララ軍曹】/【2019/07/13】",
+                "upload_date": "2019/07/13",
+                "description": "https://www.nicovideo.jp/watch/sm35394573\n状態：視聴可能 ( 2025/03/26 )\n投稿日時：2019/07/13 18:06\n投稿者：TB",
+                "original_link": "https://www.nicovideo.jp/watch/sm35394573",
+                "nico_id": "sm35394573",
+                "creator": [
+                    "TB"
+                ],
+                "is_archive": true,
+                "added_at": 1777614558.0948768,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "yt_id": "r3hgmhDkXBo",
+                "archive_id": "29m3b2RueZw",
+                "archive_nico_id": "",
+                "tvple_id": ""
             }
         ]
     },
@@ -21055,6 +21055,22 @@
                 "is_nico_viewable": false,
                 "is_yt_viewable": false,
                 "yt_id": null
+            },
+            {
+                "id": "Fajzoxqbcro",
+                "title": "消された動画＆１８３集  /【2010/04/06】",
+                "upload_date": "20100406",
+                "description": "https://www.nicovideo.jp/watch/sm10299375\n状態：視聴可能 ( 2026/09/08 )\n投稿日時：2010/04/06 15:10\n投稿者：ギフト / (ID:2506598)\n-\n出典：オリジナルより保存 _ ( DL - 2026/09/08 )",
+                "original_link": "https://www.nicovideo.jp/watch/sm10299375",
+                "nico_id": "sm10299375",
+                "yt_id": null,
+                "is_nico_viewable": true,
+                "is_yt_viewable": true,
+                "creator": [
+                    "ギフト"
+                ],
+                "is_archive": true,
+                "added_at": 1788925904.7346241
             },
             {
                 "id": "xOwgsrqNMFo",
