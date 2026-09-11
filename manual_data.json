@@ -10981,5 +10981,24 @@
         "archive_id": "",
         "archive_nico_id": "",
         "tvple_id": ""
+    },
+    {
+        "id": "H-vfHDLyuvY",
+        "nico_id": null,
+        "title": "라이토 - 가희실격 (짧)",
+        "creator": [
+            "해세지"
+        ],
+        "upload_date": "2026/09/09",
+        "original_link": "https://www.youtube.com/watch?v=H-vfHDLyuvY",
+        "description": "#음매드 #바카야로이드",
+        "is_archive": false,
+        "tags": [],
+        "thumbnail": "https://i.ytimg.com/vi/H-vfHDLyuvY/maxresdefault.jpg",
+        "creator_thumbnail": null,
+        "yt_id": "H-vfHDLyuvY",
+        "added_at": 1789097476.2177367,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
     }
 ]
