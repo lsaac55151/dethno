@@ -7252,18 +7252,22 @@
             {
                 "id": "rqrwVG1yKXs",
                 "title": "キラいわよ！ /【2020/12/19】",
-                "upload_date": "20201219",
+                "upload_date": "2020/12/19",
                 "description": "https://www.nicovideo.jp/watch/sm37981837\n状態：視聴可能 ( 2025/04/03 )\n投稿日時：2020/12/19 00:04\n投稿者：茶々丸の内",
                 "original_link": "https://www.nicovideo.jp/watch/sm37981837",
                 "nico_id": "sm37981837",
                 "creator": [
-                    "茶々丸の内"
+                    "茶々丸の内",
+                    "とげ"
                 ],
                 "is_archive": true,
                 "added_at": 1777613728.326952,
                 "is_nico_viewable": true,
                 "is_yt_viewable": true,
-                "yt_id": null
+                "yt_id": "",
+                "archive_id": "rqrwVG1yKXs",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "1SVvkFsHhPc",
