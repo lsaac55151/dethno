@@ -15451,7 +15451,7 @@
             {
                 "id": "Z6njVKaSY0o",
                 "title": "はっぴぃまつだぁ【夜神月聖誕祭'13】/【2013/02/28】",
-                "upload_date": "20130228",
+                "upload_date": "2013/02/28",
                 "description": "https://www.nicovideo.jp/watch/sm20202817\n状態：株式会社バップによる権利者削除\n投稿日時：2013/02/28 00:13\n投稿者：taka-to / (ID:26218822)\n-\n出典：オリジナルより保存 _ ( DL - 2013/??/?? )",
                 "original_link": "https://www.nicovideo.jp/watch/sm20202817",
                 "nico_id": "sm20202817",
@@ -15461,8 +15461,11 @@
                 "is_archive": true,
                 "added_at": 1779746339.4413111,
                 "is_nico_viewable": false,
-                "is_yt_viewable": false,
-                "yt_id": null
+                "is_yt_viewable": true,
+                "yt_id": "ymdUTnzUnO4",
+                "archive_id": "Z6njVKaSY0o",
+                "archive_nico_id": "",
+                "tvple_id": ""
             },
             {
                 "id": "w6mxLjiVvBE",
