@@ -10862,12 +10862,12 @@
     },
     {
         "id": "8WEcs4KKKKA",
-        "nico_id": null,
+        "nico_id": "",
         "title": "AMAZING BREAK [데스노트 MAD]",
         "creator": [
             "TB"
         ],
-        "upload_date": "2024/01/06",
+        "upload_date": "2017/07/03",
         "original_link": "https://www.youtube.com/watch?v=8WEcs4KKKKA",
         "description": "2017년 7월 3일",
         "is_archive": false,
@@ -10879,16 +10879,19 @@
         "yt_id": "8WEcs4KKKKA",
         "added_at": 1788741783.9556358,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": "MIbU5TwOPFQ",
-        "nico_id": null,
+        "nico_id": "",
         "title": "Shining MASTAR",
         "creator": [
             "TB"
         ],
-        "upload_date": "2018/08/24",
+        "upload_date": "2018/02/00",
         "original_link": "https://www.youtube.com/watch?v=MIbU5TwOPFQ",
         "description": "(미등록 해제)2018년 2월 제작 음원",
         "is_archive": false,
@@ -10898,7 +10901,10 @@
         "yt_id": "MIbU5TwOPFQ",
         "added_at": 1788741796.5414062,
         "is_nico_viewable": true,
-        "is_yt_viewable": true
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     },
     {
         "id": "4wRWg09DbVA",
