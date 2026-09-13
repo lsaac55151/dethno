@@ -11253,5 +11253,78 @@
         "added_at": 1789111515.8988326,
         "is_nico_viewable": true,
         "is_yt_viewable": true
+    },
+    {
+        "id": null,
+        "nico_id": "sm46764965",
+        "title": "ループザルーム the ProLogue to Death Note",
+        "creator": [
+            "kaikityou"
+        ],
+        "upload_date": "2026/09/05",
+        "original_link": "https://www.nicovideo.jp/watch/sm46764965",
+        "description": "この事件、降りるわけにはいきません。この動画はコンシューマーゲーム音MAD晒しイベント3(mylist/79436417)に参加しています。DS『L the proLogue to DEATH NOTE ～螺旋の罠～』",
+        "is_archive": false,
+        "tags": [
+            "<tag lock=\"1\">ループザルーム",
+            "音MAD",
+            "コンシューマーゲーム音MAD晒しイベント3",
+            "デスノート",
+            "ループザルーム音madリンク"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46764965/46764965.33373321",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/852/8523480.jpg",
+        "added_at": 1789261448.9453943,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": null,
+        "nico_id": "sm46687950",
+        "title": "BAD ENDING LIGHT FUNK",
+        "creator": [
+            "はぶりす"
+        ],
+        "upload_date": "2026/08/19",
+        "original_link": "https://www.nicovideo.jp/watch/sm46687950",
+        "description": "素材不足です",
+        "is_archive": false,
+        "tags": [
+            "<tag lock=\"1\">音MAD",
+            "DEATHNOTE",
+            "デスノート",
+            "デスノートmad",
+            "MAD"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46687950/46687950.69160353",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/14419/144199230.jpg",
+        "added_at": 1789261498.782851,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": null,
+        "nico_id": "sm46669640",
+        "title": "KAMI BROTHER",
+        "creator": [
+            "二時だエマ"
+        ],
+        "upload_date": "2026/08/15",
+        "original_link": "https://www.nicovideo.jp/watch/sm46669640",
+        "description": "Audio : https://x.com/KMJ_otomadVideo : https://x.com/KMJ_otomadOriginal : KAKU P-MODEL - Big Brother",
+        "is_archive": false,
+        "tags": [
+            "<tag lock=\"1\">音MAD",
+            "デスノート"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46669640/46669640.29641744",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/9034/90344868.jpg",
+        "added_at": 1789261523.7778566,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "yt_id": "https://www.youtube.com/@Honshep",
+        "tvple_id": ""
     }
 ]
