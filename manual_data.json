@@ -11326,5 +11326,86 @@
         "archive_nico_id": "",
         "yt_id": "https://www.youtube.com/@Honshep",
         "tvple_id": ""
+    },
+    {
+        "id": null,
+        "nico_id": "sm46871510",
+        "title": "新世界の神になっちゃいそう！",
+        "creator": [
+            "Mad愛好家"
+        ],
+        "upload_date": "2026/10/01",
+        "original_link": "https://www.nicovideo.jp/watch/sm46871510",
+        "description": "十月も夜神月で楽しむ先駆者様https://www.nicovideo.jp/watch/sm45554190",
+        "is_archive": false,
+        "tags": [
+            "<tag lock=\"1\">音MAD",
+            "バカヤロイド",
+            "どうにかなっちゃいそう！",
+            "シブタク",
+            "デスノート",
+            "デスノートmad"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46871510/46871510.1531208",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/13253/132534657.jpg",
+        "added_at": 1791082449.480382,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true
+    },
+    {
+        "id": null,
+        "nico_id": "sm46873425",
+        "title": "キラじゃねえ【なんもねえ】",
+        "creator": [
+            "クルルヤック"
+        ],
+        "upload_date": "2026/10/02",
+        "original_link": "https://www.nicovideo.jp/watch/sm46873425",
+        "description": "「じゃ」の子音はユージようつべhttps://youtu.be/oneRdfl_iJs?si=XSPI-K45hB01Y7hv",
+        "is_archive": false,
+        "tags": [
+            "<tag lock=\"1\">音MAD",
+            "バカヤロイド",
+            "ヤニねこ",
+            "なんもねえ",
+            "デスノート",
+            "デスノートmad",
+            "キラねこ"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46873425/46873425.94933763",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/13310/133104757.jpg",
+        "added_at": 1791082456.3303077,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "yt_id": "oneRdfl_iJs",
+        "tvple_id": ""
+    },
+    {
+        "id": null,
+        "nico_id": "sm46874461",
+        "title": "革命【音MAD】",
+        "creator": [
+            "たくあん"
+        ],
+        "upload_date": "2026/10/02",
+        "original_link": "https://www.nicovideo.jp/watch/sm46874461",
+        "description": "YouTube版https://www.youtube.com/watch?v=MY9ZDX_tMw0原曲：運命https://www.youtube.com/watch?v=p4m7TnJuoXc",
+        "is_archive": false,
+        "tags": [
+            "<tag lock=\"1\">ダンジョン飯",
+            "バカヤロイド",
+            "音MAD"
+        ],
+        "thumbnail": "https://nicovideo.cdn.nimg.jp/thumbnails/46874461/46874461.14905265",
+        "creator_thumbnail": "https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/13474/134748373.jpg",
+        "added_at": 1791082476.3478801,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "yt_id": "MY9ZDX_tMw0",
+        "tvple_id": ""
     }
 ]
