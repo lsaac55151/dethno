@@ -11407,5 +11407,32 @@
         "archive_nico_id": "",
         "yt_id": "MY9ZDX_tMw0",
         "tvple_id": ""
+    },
+    {
+        "id": "SydwthaBa5o",
+        "nico_id": "",
+        "title": "[Battle Drug Royal S2]야가미 라이토 - 합성의 날개(Flügel der Synthese)",
+        "creator": [
+            "Team SO:DA",
+            "EvilServant 이블서번트",
+            "나약함"
+        ],
+        "upload_date": "2017/08/28",
+        "original_link": "https://www.youtube.com/watch?v=SydwthaBa5o",
+        "description": "Battle Drug Royal Season 2 Final Stage OP\nMP3 다운 - https://www.dropbox.com/s/t90npr0y3i035q4/%ED%95%A9%EC%84%B1%EC%9D%98%20%EB%82%A0%EA%B0%9C.mp3?dl=0\n\n음원 - EvilServant(Cubase)\n영상 - EvilServant, 나약함(Premire Pro, Maya)",
+        "is_archive": false,
+        "tags": [
+            "#티비플",
+            "#팀소다"
+        ],
+        "thumbnail": "https://i.ytimg.com/vi_webp/SydwthaBa5o/maxresdefault.webp",
+        "creator_thumbnail": null,
+        "yt_id": "SydwthaBa5o",
+        "added_at": 1794884160.0874414,
+        "is_nico_viewable": true,
+        "is_yt_viewable": true,
+        "archive_id": "",
+        "archive_nico_id": "",
+        "tvple_id": ""
     }
 ]
